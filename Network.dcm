@@ -1,0 +1,26 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Bulkhead_Ethernet_RightAngle_RDP-5SPFFV-TCU7001
+D RJ45 Modular Connector, Right Angle Passthrough/Bulkhead, IP67
+K Ethernet, Bulkhead, Passthrough, RJ45
+F http://www.amphenolltw.com/2012download/2D%20PDF/08_RJ%20Connectors/RDP-5SPFFV-TCU7001.pdf
+$ENDCMP
+#
+$CMP Switch_4-Port_Unmanaged_Brainbox-SW-504
+D Unmanaged network switch - Generic
+K Network, Switch, Unmanaged, 4 Port
+F http://www.brainboxes.com/files/catalog/product/SW/SW-504/documents/SW-504-datasheet.pdf
+$ENDCMP
+#
+$CMP Switch_4-Port_Unmanaged_Generic
+D Unmanaged network switch - Generic
+K Network, Switch, Unmanaged, 4 Port
+$ENDCMP
+#
+$CMP cMT-SVR-200
+D Maple Systems headless smart HMI with WiFi
+K WiFi, HMI, Server, MQTT, Bridge
+F https://www.maplesystems.com/product/modelname/cmt-svr-200
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,39 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP K30-Core_Touch
+D Banner Engineering K30 Core Touch - Illuminated Touch Button
+K Indicator, K30, Banner, Touch, Button
+F http://info.bannerengineering.com/cs/groups/public/documents/literature/189826.pdf
+$ENDCMP
+#
+$CMP K30-Pro_IO-Link
+D Banner Engineering K30 Pro with IO-Link
+K Indicator, K30, Pro, Banner, Touch, Button, IO-Link
+F http://info.bannerengineering.com/cs/groups/public/documents/literature/215851.pdf
+$ENDCMP
+#
+$CMP K50-Core_Touch
+D Banner Engineering K50 Core Touch - Illuminated Touch Button
+K Indicator, K50, Core, Banner, Touch, Button
+F http://info.bannerengineering.com/cs/groups/public/documents/literature/189829.pdf
+$ENDCMP
+#
+$CMP K50-Pro_IO-Link
+D Banner Engineering K50 Pro with IO-Link
+K Indicator, K50, Pro, IO-Link, Banner, Touch, Button
+F http://info.bannerengineering.com/cs/groups/public/documents/literature/208737.pdf
+$ENDCMP
+#
+$CMP SC10-Safety_Controller
+D Banner Engineering Safety Controller with Ethernet/IP. 10 Inputs (4 can be non-safe output). 2 Relay outputs
+K Safety, Controller, EIP, Ethernet/IP, Banner
+F http://info.bannerengineering.com/cs/groups/public/documents/literature/174868.pdf
+$ENDCMP
+#
+$CMP STB-TouchButton
+D Banner Engineering STB Self-Checking Optical Touch Button
+K Two-Hand, Two, Hand, Button, Touch
+F http://info.bannerengineering.com/cs/groups/public/documents/literature/64136.pdf
+$ENDCMP
+#
+#End Doc Library

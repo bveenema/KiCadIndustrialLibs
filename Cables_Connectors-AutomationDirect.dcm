@@ -1,0 +1,621 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Bulkhead_7-8-16_Female_.3m_ZP-S1-3FR-0P3M
+D ZIPport bulkhead connector, 7/8in - 16 UN2 thread barrel 3-pin female to pigtail, 16 AWG, 0.9ft/0.3m cable length, PVC conductor insulation material, North American color code. Mounting nut(s) included.
+K 7/8-16, Bulkhead, Female, Bare Lead
+F https://cdn.automationdirect.com/static/specs/zipminibulkhead.pdf
+$ENDCMP
+#
+$CMP Bulkhead_7-8-16_Female_.3m_ZP-S1C-4FR-0P3M-18
+D ZIPport bulkhead connector, 7/8in - 16 UN2 thread nut 4-pin female to pigtail, 18 AWG, 0.9ft/0.3m cable length, PVC conductor insulation material, European (Cenelec) color code. Mounting nut(s) included.
+K 7/8-16, Bulkhead, Female, Bare Lead
+F https://cdn.automationdirect.com/static/specs/zipminibulkhead.pdf
+$ENDCMP
+#
+$CMP Bulkhead_7-8-16_Male_0.3m_ZP-S1C-4MR-0P3M-18
+D ZIPport bulkhead connector, 7/8in - 16 UN2 thread barrel 4-pin male to pigtail, 18 AWG, 0.9ft/0.3m cable length, PVC conductor insulation material, European (Cenelec) color code. Mounting nut(s) included.
+K 7/8-16, Male, Bulkhead, Bare Lead
+F https://cdn.automationdirect.com/static/specs/zipminibulkhead.pdf
+$ENDCMP
+#
+$CMP Bulkhead_M12x04_Female_0.5m_7231-13501-9710050
+D M12 barrel 4-pin female to pigtail, 22 AWG, 1.6ft/0.5m cable length, polypropylene conductor insulation material. Mounting nut(s) included.
+K M12, Bulkhead, bare lead
+F https://cdn.automationdirect.com/static/specs/bulkheadconn.pdf
+$ENDCMP
+#
+$CMP Bulkhead_M12x04_Female_1m_7231-13541-9710100
+D M12 nut 4-pin female to pigtail, 22 AWG, 3.2ft/1m cable length, polypropylene conductor insulation material. Mounting nut(s) included.
+K M12, Bulkhead, bare lead
+F https://cdn.automationdirect.com/static/specs/bulkheadconn.pdf
+$ENDCMP
+#
+$CMP Bulkhead_M12x04_Male_0.5m_7231-13501-9710050
+D M12 barrel 4-pin male to pigtail, 22 AWG, 1.6ft/0.5m cable length, polypropylene conductor insulation material. Mounting nut(s) included.
+K M12, Bulkhead, bare lead
+F https://cdn.automationdirect.com/static/specs/bulkheadconn.pdf
+$ENDCMP
+#
+$CMP Bulkhead_M12x04_Male_1m_7231-13501-9710100
+D M12 barrel 4-pin male to pigtail, 22 AWG, 3.2ft/1m cable length, polypropylene conductor insulation material. Mounting nut(s) included.
+K M12, Bulkhead, bare lead
+F https://cdn.automationdirect.com/static/specs/bulkheadconn.pdf
+$ENDCMP
+#
+$CMP Bulkhead_M12x05_Female_0.5m_7231-13521-9720050
+D Bulkhead connector, M12 barrel 5-pin female to pigtail, 22 AWG, 1.6ft/0.5m cable length, polypropylene conductor insulation material. Mounting nut(s) included.
+K M12, Bulkhead, bare lead
+F https://cdn.automationdirect.com/static/specs/bulkheadconn.pdf
+$ENDCMP
+#
+$CMP Bulkhead_M12x05_Female_1m_7231-13561-9720100
+D Bulkhead connector, M12 nut 5-pin female to pigtail, 22 AWG, 3.2ft/1m cable length, polypropylene conductor insulation material. Mounting nut(s) included.
+K M12, Bulkhead, bare lead
+F https://cdn.automationdirect.com/static/specs/bulkheadconn.pdf
+$ENDCMP
+#
+$CMP Bulkhead_M12x05_Male_0.5m_7231-13521-9720050
+D Bulkhead connector, M12 barrel 5-pin male to pigtail, 22 AWG, 1.6ft/0.5m cable length, polypropylene conductor insulation material. Mounting nut(s) included.
+K M12, Bulkhead, bare lead
+F https://cdn.automationdirect.com/static/specs/bulkheadconn.pdf
+$ENDCMP
+#
+$CMP Bulkhead_M12x05_Male_1m_7231-13521-9720100
+D Bulkhead connector, M12 barrel 5-pin male to pigtail, 22 AWG, 3.2ft/1m cable length, polypropylene conductor insulation material. Mounting nut(s) included.
+K M12, Bulkhead, bare lead
+F https://cdn.automationdirect.com/static/specs/bulkheadconn.pdf
+$ENDCMP
+#
+$CMP Bulkhead_M12x08_Female_0.5m_7231-17181-9730050
+D Bulkhead connector, M12 nut 8-pin female to pigtail, 24 AWG, 1.6ft/0.5m cable length, polypropylene conductor insulation material. Mounting nut(s) included.
+K M12, Bulkhead, bare lead, female
+F https://cdn.automationdirect.com/static/specs/bulkheadconn.pdf
+$ENDCMP
+#
+$CMP Bulkhead_M12x08_Female_1m_7231-17181-9730100
+D Bulkhead connector, M12 nut 8-pin female to pigtail, 24 AWG, 3.2ft/1m cable length, polypropylene conductor insulation material. Mounting nut(s) included.
+K M12, Bulkhead, bare lead, female
+F https://cdn.automationdirect.com/static/specs/bulkheadconn.pdf
+$ENDCMP
+#
+$CMP Bulkhead_M12x08_Male_0.5m_7000-17162-9820050
+D Bulkhead connector, M12 male receptacle 8-pin to pigtail, 24 AWG, 1.6ft/0.5m cable length, polypropylene conductor insulation material, IP67. Mounting nut(s) included.
+K M12, Bulkhead, bare lead, male
+F https://cdn.automationdirect.com/static/specs/bulkheadconn.pdf
+$ENDCMP
+#
+$CMP Bulkhead_M12x08_Male_1m_7000-17162-9820100
+D Bulkhead connector, M12 male receptacle 8-pin to pigtail, 24 AWG, 3.2ft/1m cable length, polypropylene conductor insulation material, IP67. Mounting nut(s) included.
+K M12, Bulkhead, bare lead, male
+F https://cdn.automationdirect.com/static/specs/bulkheadconn.pdf
+$ENDCMP
+#
+$CMP Cable_M12x04_Female_Male_Axial_1m_7000-40021-0240100
+D Connection cable, M12 axial male to M12 axial female, 4-pole, PUR/PVC jacket, yellow, 3.2ft/1m cable length, IP65 IP66K IP67.
+K Cable, Male, Female, M12
+F https://cdn.automationdirect.com/static/specs/m12patchcbl.pdf
+$ENDCMP
+#
+$CMP Cable_M12x04_Female_Male_Axial_3m_7000-40021-0240300
+D Connection cable, M12 axial male to M12 axial female, 4-pole, PUR/PVC jacket, yellow, 9.8ft/3m cable length, IP65 IP66K IP67.
+K Cable, Male, Female, M12
+F https://cdn.automationdirect.com/static/specs/m12patchcbl.pdf
+$ENDCMP
+#
+$CMP Cable_M12x04_Female_Male_RightAngle_1m_7000-40261-0240100
+D Connection cable, M12 right-angle male to M12 right-angle female, 4-pole, PUR/PVC jacket, yellow, 3.2ft/1m cable length, IP65 IP66K IP67.
+K Cable, Male, Female, M12
+F https://cdn.automationdirect.com/static/specs/m12patchcbl.pdf
+$ENDCMP
+#
+$CMP Cable_M12x04_Female_Male_RightAngle_3m_7000-40261-0240300
+D Connection cable, M12 right-angle male to M12 right-angle female, 4-pole, PUR/PVC jacket, yellow, 9.8ft/3m cable length, IP65 IP66K IP67.
+K Cable, Male, Female, M12
+F https://cdn.automationdirect.com/static/specs/m12patchcbl.pdf
+$ENDCMP
+#
+$CMP Cable_M12x05_Female_Male_Axial_1m_7000-40041-0250100
+D Connection cable, M12 axial male to M12 axial female, 5-pole, PUR/PVC jacket, yellow, 3.2ft/1m cable length, IP65 IP66K IP67.
+K Cable, Male, Female, M12
+F https://cdn.automationdirect.com/static/specs/m12patchcbl.pdf
+$ENDCMP
+#
+$CMP Cable_M12x05_Female_Male_Axial_3m_7000-40041-0250300
+D Connection cable, M12 axial male to M12 axial female, 5-pole, PUR/PVC jacket, yellow, 9.8ft/3m cable length, IP65 IP66K IP67.
+K Cable, Male, Female, M12
+F https://cdn.automationdirect.com/static/specs/m12patchcbl.pdf
+$ENDCMP
+#
+$CMP Connector_7-8-16_Female_Axial_D5-13mm_ZP-S1C-4FP-FW
+D ZIPport field wireable connector, 7/8in - 16 UN2 thread nut 4-pin female axial, accepts cable diameter size 5-13mm, 20 - 14 AWG, screw terminal connection, European (Cenelec) color code, IP67.
+K 7/8-16, Connector, Field Wireable, Female
+F https://cdn.automationdirect.com/static/specs/zipfieldwireable.pdf
+$ENDCMP
+#
+$CMP Connector_7-8-16_Female_Axial_D8-17mm_ZP-S1C-4FP-FWX
+D ZIPport field wireable connector, 7/8in - 16 UN2 thread nut 4-pin female axial, accepts cable diameter size 8-17mm, 20 - 14 AWG, screw terminal connection, European (Cenelec) color code, IP67.
+K 7/8-16, Connector, Field Wireable, Female
+F https://cdn.automationdirect.com/static/specs/zipfieldwireable.pdf
+$ENDCMP
+#
+$CMP Connector_7-8-16_Male_Axial_D5-13mm_ZP-S1C-4MP-FW
+D ZIPport field wireable connector, 7/8in - 16 UN2 thread barrel 4-pin male axial, accepts cable diameter size 5-13mm, 20 - 14 AWG, screw terminal connection, European (Cenelec) color code, IP67.
+K 7/8-16, Connector, Male, Field Wireable
+F https://cdn.automationdirect.com/static/specs/zipfieldwireable.pdf
+$ENDCMP
+#
+$CMP Connector_7-8-16_Male_Axial_D8-17mm_ZP-S1C-4MP-FWX
+D ZIPport field wireable connector, 7/8in - 16 UN2 thread barrel 4-pin male axial, accepts cable diameter size 8-17mm, 20 - 14 AWG, screw terminal connection, European (Cenelec) color code, IP67.
+K 7/8-16, Connector, Male, Field Wireable
+F https://cdn.automationdirect.com/static/specs/zipfieldwireable.pdf
+$ENDCMP
+#
+$CMP Connector_M12x04_Female_Axial_D4-6mm_7000-12901-0000000
+D Field wireable connector, M12 nut 4-pin female axial connection, accepts cable diameter size 4-6mm, 18 AWG, screw terminal connection, IP67.
+K M12, Connector, Female
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x04_Female_Axial_D4-6mm_7000-12901-0000000_copy
+D Field wireable connector, M12 nut 4-pin female axial connection, accepts cable diameter size 4-6mm, 18 AWG, screw terminal connection, IP67.
+K M12, Connector, Female
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x04_Female_Axial_D6-8mm_7000-12941-0000000
+D Field wireable connector, M12 nut 4-pin female axial connection, accepts cable diameter size 6-8mm, 18 AWG, screw terminal connection, IP67.
+K M12, Connector, Female
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x04_Female_Axial_D6-8mm_7000-12941-0000000_copy
+D Field wireable connector, M12 nut 4-pin female axial connection, accepts cable diameter size 6-8mm, 18 AWG, screw terminal connection, IP67.
+K M12, Connector, Female
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x04_Female_RightAngle_D6-8mm_7000-12981-0000000
+D Field wireable connector, M12 nut 4-pin female right-angle connection, accepts cable diameter size 4-6mm, 18 AWG, screw terminal connection, IP67.
+K M12, Connector, Female
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x04_Female_RightAngle_D6-8mm_7000-12981-0000000_copy
+D Field wireable connector, M12 nut 4-pin female right-angle connection, accepts cable diameter size 4-6mm, 18 AWG, screw terminal connection, IP67.
+K M12, Connector, Female
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x04_Male_Axial_D4-6mm_7000-12701-0000000
+D Field wireable connector, M12 barrel 4-pin male axial connection, accepts cable diameter size 4-6mm, 18 AWG, screw terminal connection, IP67.
+K M12, Connector, Male
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x04_Male_Axial_D6-8mm_7000-12741-0000000
+D ield wireable connector, M12 barrel 4-pin male axial connection, accepts cable diameter size 6-8mm, 18 AWG, screw terminal connection, IP67.
+K M12, Connector, Male
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x04_Male_RightAngle_D4-6mm_7000-12821-0000000
+D Field wireable connector, M12 barrel 4-pin male right-angle connection, accepts cable diameter size 4-6mm, 18 AWG, screw terminal connection, IP67.
+K M12, Connector, Male
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x05_Female_Axial_D4-6mm_7000-12921-0000000
+D Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)
+K M12, Connector, Female
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x05_Female_Axial_D6-8mm_7000-12961-0000000
+D Field wireable connector, M12 nut 5-pin female axial connection, accepts cable diameter size 6-8mm, 18 AWG, screw terminal connection, IP67.
+K M12, Connector, Female
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x05_Female_RightAngle_D4-6mm_7000-13041-0000000
+D Field wireable connector, M12 nut 5-pin female right-angle connection, accepts cable diameter size 6-8mm, 18 AWG, screw terminal connection, IP67.
+K M12, Connector, Female
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x05_Male_Axial_D4-6mm_7000-12721-0000000
+D Field wireable connector, M12 barrel 5-pin male axial connection, accepts cable diameter size 4-6mm, 18 AWG, screw terminal connection, IP67.
+K M12, Connector, Male
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x05_Male_Axial_D6-8mm_7000-12761-0000000
+D Field wireable connector, M12 barrel 5-pin male axial connection, accepts cable diameter size 6-8mm, 18 AWG, screw terminal connection, IP67.
+K M12, Connector, Male
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x08_Female_Axial_D6-8mm_7000-17321-0000000
+D Field wireable connector, M12 nut 8-pin female axial connection, accepts cable diameter size 6-8mm, 20 AWG, screw terminal connection, IP67.
+K M12, Connector, Female
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x08_Female_RightAngle_D6-8mm_7000-17331-0000000
+D Field wireable connector, M12 nut 8-pin female right-angle connection, accepts cable diameter size 6-8mm, 20 AWG, screw terminal connection, IP67.
+K M12, Connector, Female
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x08_Male_Axial_D6-8mm_7000-17301-0000000
+D ield wireable connector, M12 barrel 8-pin male axial connection, accepts cable diameter size 6-8mm, 20 AWG, screw terminal connection, IP67.
+K M12, Connector, Male
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M12x08_Male_RightAngle_D6-8mm_7000-17311-0000000
+D Field wireable connector, M12 barrel 8-pin male right-angle connection, accepts cable diameter size 6-8mm, 20 AWG, screw terminal connection, IP67.
+K M12, Connector, Male
+F https://cdn.automationdirect.com/static/specs/m12fwscrewcon.pdf
+$ENDCMP
+#
+$CMP Connector_M8x03_Female_Axial_D4-5.1mm_7000-08361-0000000
+D Field wireable connector, M8 nut 3-pin female axial connection, accepts cable diameter size 4-5.1mm, 20 - 24 AWG, insulation displacement (IDC) connection, IP67.
+K M8, Connector, Female, 3
+F https://cdn.automationdirect.com/static/specs/idcfwconn.pdf
+$ENDCMP
+#
+$CMP Connector_M8x03_Male_Axial_D4-5.1mm_7000-08321-0000000
+D Field wireable connector, M8 barrel 3-pin male axial connection, accepts cable diameter size 4-5.1mm, 20 - 24 AWG, insulation displacement (IDC) connection, IP67.
+K M8, Connector, Male, 3
+F https://cdn.automationdirect.com/static/specs/idcfwconn.pdf
+$ENDCMP
+#
+$CMP Connector_M8x04_Female_Axial_D4-5.1mm_7000-08381-0000000
+D Field wireable connector, M8 nut 4-pin female axial connection, accepts cable diameter size 4-5.1mm, 20 - 24 AWG, insulation displacement (IDC) connection, IP67.
+K M8, Connector, Female, 4
+F https://cdn.automationdirect.com/static/specs/idcfwconn.pdf
+$ENDCMP
+#
+$CMP Connector_M8x04_Male_Axial_D4-5.1mm_7000-08341-0000000
+D Field wireable connector, M8 barrel 4-pin male axial connection, accepts cable diameter size 4-5.1mm, 20 - 24 AWG, insulation displacement (IDC) connection, IP67.
+K M8, Connector, Male, 4
+F https://cdn.automationdirect.com/static/specs/idcfwconn.pdf
+$ENDCMP
+#
+$CMP Ethernet_M12_Axial_M12_Axial_0.6m_7700-44511-S4U0060
+D Cat5e Ethernet straight-through patch cable, STP (overall foil shield), M12 male D-coded to M12 male D-coded, 1.9ft/0.6m cable length, teal. For use with 10/100 Mbps networks.
+K M12, Ethernet
+F https://cdn.automationdirect.com/static/specs/m12indenetpatchcbl.pdf
+$ENDCMP
+#
+$CMP Ethernet_M12_Axial_M12_Axial_1m_7700-44511-S4U0100
+D Cat5e Ethernet straight-through patch cable, STP (overall foil shield), M12 male D-coded to M12 male D-coded, 3.2ft/1m cable length, teal. For use with 10/100 Mbps networks.
+K M12, Ethernet
+F https://cdn.automationdirect.com/static/specs/m12indenetpatchcbl.pdf
+$ENDCMP
+#
+$CMP Ethernet_M12_Axial_M12_Axial_3m_7700-44511-S4U0300
+D Cat5e Ethernet straight-through patch cable, STP (overall foil shield), M12 male D-coded to M12 male D-coded, 9.8ft/3m cable length, teal. For use with 10/100 Mbps networks.
+K M12, Ethernet
+F https://cdn.automationdirect.com/static/specs/m12indenetpatchcbl.pdf
+$ENDCMP
+#
+$CMP Ethernet_M12_Axial_RJ45_0.6m_7700-44711-S4U0060
+D Cat5e Ethernet straight-through patch cable, STP (overall foil shield), RJ45 male to M12 axial male D-coded, 1.9ft/0.6m cable length, teal. For use with 10/100 Mbps networks.
+K M12, Ethernet
+F https://cdn.automationdirect.com/static/specs/m12indenetpatchcbl.pdf
+$ENDCMP
+#
+$CMP Ethernet_M12_Axial_RJ45_1m_7700-44711-S4U0100
+D Cat5e Ethernet straight-through patch cable, STP (overall foil shield), RJ45 male to M12 axial male D-coded, 3.2ft/1m cable length, teal. For use with 10/100 Mbps networks.
+K M12, Ethernet
+F https://cdn.automationdirect.com/static/specs/m12indenetpatchcbl.pdf
+$ENDCMP
+#
+$CMP Ethernet_M12_Axial_RJ45_3m_7700-44711-S4U0300
+D Cat5e Ethernet straight-through patch cable, STP (overall foil shield), RJ45 male to M12 axial male D-coded, 9.8ft/3m cable length, teal. For use with 10/100 Mbps networks.
+K M12, Ethernet
+F https://cdn.automationdirect.com/static/specs/m12indenetpatchcbl.pdf
+$ENDCMP
+#
+$CMP Ethernet_M12_RightAngle_M12_Axial_0.6m_7700-44541-S4U0060
+D Cat5e Ethernet straight-through patch cable, STP (overall foil shield), M12 male D-coded to M12 right-angle male D-coded, 1.9ft/0.6m cable length, teal. For use with 10/100 Mbps networks.
+K M12, Ethernet
+F https://cdn.automationdirect.com/static/specs/m12indenetpatchcbl.pdf
+$ENDCMP
+#
+$CMP Ethernet_M12_RightAngle_M12_Axial_1m_7700-44541-S4U0100
+D Cat5e Ethernet straight-through patch cable, STP (overall foil shield), M12 male D-coded to M12 right-angle male D-coded, 3.2ft/1m cable length, teal. For use with 10/100 Mbps networks.
+K M12, Ethernet
+F https://cdn.automationdirect.com/static/specs/m12indenetpatchcbl.pdf
+$ENDCMP
+#
+$CMP Ethernet_M12_RightAngle_M12_Axial_3m_7700-44541-S4U0300
+D Cat5e Ethernet straight-through patch cable, STP (overall foil shield), M12 male D-coded to M12 right-angle male D-coded, 9.8ft/3m cable length, teal. For use with 10/100 Mbps networks.
+K M12, Ethernet
+F https://cdn.automationdirect.com/static/specs/m12indenetpatchcbl.pdf
+$ENDCMP
+#
+$CMP Ethernet_M12_RightAngle_RJ45_0.6m_7700-44761-S4U0060
+D Cat5e Ethernet straight-through patch cable, STP (overall foil shield), RJ45 male to M12 right-angle male D-coded, 1.9ft/0.6m cable length, teal. For use with 10/100 Mbps networks.
+K M12, Ethernet
+F https://cdn.automationdirect.com/static/specs/m12indenetpatchcbl.pdf
+$ENDCMP
+#
+$CMP Ethernet_M12_RightAngle_RJ45_1m_7700-44761-S4U0100
+D Cat5e Ethernet straight-through patch cable, STP (overall foil shield), RJ45 male to M12 right-angle male D-coded, 3.2ft/1m cable length, teal. For use with 10/100 Mbps networks.
+K M12, Ethernet
+F https://cdn.automationdirect.com/static/specs/m12indenetpatchcbl.pdf
+$ENDCMP
+#
+$CMP Ethernet_M12_RightAngle_RJ45_3m_7700-44761-S4U0300
+D Cat5e Ethernet straight-through patch cable, STP (overall foil shield), RJ45 male to M12 right-angle male D-coded, 9.8ft/3m cable length, teal. For use with 10/100 Mbps networks.
+K M12, Ethernet
+F https://cdn.automationdirect.com/static/specs/m12indenetpatchcbl.pdf
+$ENDCMP
+#
+$CMP PassThru_M12_Ethernet_RJ45_Axial_7000-44671-0000000
+D Field wireable Ethernet connector, M12 D-coded female 4-pole to RJ45 female Ethernet axial, M12-IP68, RJ45-IP20. Mounting nut(s) included. Exceeds Category 5E specifications.
+K PassThru, Pass, Through, M12, RJ45, Ethernet
+F https://cdn.automationdirect.com/static/specs/rj45shfwcon.pdf
+$ENDCMP
+#
+$CMP PassThru_M12_Ethernet_RJ45_RightAngle_7000-44681-0000000
+D Field wireable Ethernet connector, M12 D-coded female 4-pole to RJ45 female Ethernet 90-degree, M12-IP68, RJ45-IP20. Mounting nut(s) included. Exceeds Category 5E specifications.
+K PassThru, Pass, Through, M12, RJ45, Ethernet
+F https://cdn.automationdirect.com/static/specs/rj45shfwcon.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x3_Female_Axial_10m_ZP-S1-3FP-6M
+D ZIPport connection cable, 7/8in - 16 UN2 thread nut 3-pin female axial to pigtail with North American color code, PVC outer jacket, yellow, nickel-plated brass connector, 19.6ft/6m cable length, IP67.
+K 7/8-16, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/zipminicordsets.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x3_Female_Axial_2m_ZP-S1-3FP-2M
+D ZIPport connection cable, 7/8in - 16 UN2 thread nut 3-pin male axial to pigtail with North American color code, PVC outer jacket, yellow, nickel-plated brass connector, 6.5ft/2m cable length, IP67.
+K 7/8-16, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/zipminicordsets.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x3_Female_Axial_4m_ZP-S1-3FP-10M
+D ZIPport connection cable, 7/8in - 16 UN2 thread nut 3-pin female axial to pigtail with North American color code, PVC outer jacket, yellow, nickel-plated brass connector, 32.8ft/10m cable length, IP67.
+K 7/8-16, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/zipminicordsets.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x3_Female_Axial_4m_ZP-S1-3FP-4M
+D ZIPport connection cable, 7/8in - 16 UN2 thread nut 3-pin female axial to pigtail with North American color code, PVC outer jacket, yellow, nickel-plated brass connector, 13.1ft/4m cable length, IP67.
+K 7/8-16, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x3_Male_Axial_10m_ZP-S1-3MP-10M
+D ZIPport connection cable, 7/8in - 16 UN2 thread nut 3-pin male axial to pigtail with North American color code, PVC outer jacket, yellow, nickel-plated brass connector, 32.8ft/10m cable length, IP67.
+K 7/8-16, Male, Bare Lead, Axial
+F https://cdn.automationdirect.com/static/specs/zipminicordsets.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x3_Male_Axial_2m_ZP-S1-3MP-2M
+D ZIPport connection cable, 7/8in - 16 UN2 thread nut 3-pin male axial to pigtail with North American color code, PVC outer jacket, yellow, nickel-plated brass connector, 6.5ft/2m cable length, IP67.
+K 7/8-16, Male, Bare Lead, Axial
+F https://cdn.automationdirect.com/static/specs/zipminicordsets.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x3_Male_Axial_4m_ZP-S1-3MP-4M
+D ZIPport connection cable, 7/8in - 16 UN2 thread nut 3-pin male axial to pigtail with North American color code, PVC outer jacket, yellow, nickel-plated brass connector, 13.1ft/4m cable length, IP67.
+K 7/8-16, Male, Bare Lead, Axial
+F https://cdn.automationdirect.com/static/specs/zipminicordsets.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x3_Male_Axial_6m_ZP-S1-3MP-6M
+D ZIPport connection cable, 7/8in - 16 UN2 thread nut 3-pin male axial to pigtail with North American color code, PVC outer jacket, yellow, nickel-plated brass connector, 19.6ft/6m cable length, IP67.
+K 7/8-16, Male, Bare Lead, Axial
+F https://cdn.automationdirect.com/static/specs/zipminicordsets.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x4_Female_Axial_10m_ZP-S1C-4FPX-10M
+D ZIPport connection cable, 7/8in - 16 UN2 thread nut 4-pin female axial to pigtail with European (Cenelec) color code, PVC outer jacket, yellow, nickel-plated brass connector, 32.8ft/10m cable length, IP67.
+K 7/8-16, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/zipminicordsets.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x4_Female_Axial_2m_ZP-S1C-4FPX-2M
+D ZIPport connection cable, 7/8in - 16 UN2 thread nut 4-pin female axial to pigtail with European (Cenelec) color code, PVC outer jacket, yellow, nickel-plated brass connector, 6.5ft/2m cable length, IP67.
+K 7/8-16, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/zipminicordsets.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x4_Female_Axial_4m_ZP-S1C-4FPX-4M
+D ZIPport connection cable, 7/8in - 16 UN2 thread nut 4-pin female axial to pigtail with European (Cenelec) color code, PVC outer jacket, yellow, nickel-plated brass connector, 13.1ft/4m cable length, IP67.
+K 7/8-16, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x4_Female_Axial_4m_ZP-S1C-4FPX-6M
+D ZIPport connection cable, 7/8in - 16 UN2 thread nut 4-pin female axial to pigtail with European (Cenelec) color code, PVC outer jacket, yellow, nickel-plated brass connector, 19.6ft/6m cable length, IP67.
+K 7/8-16, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/zipminicordsets.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x4_Male_Axial_10m_ZP-S1C-4MPX-10M
+D ZIPport connection cable, 7/8in - 16 UN2 thread barrel 4-pin male axial to pigtail with European (Cenelec) color code, PVC outer jacket, yellow, nickel-plated brass connector, 32.8ft/10m cable length, IP67.
+K 7/8-16, Male, Bare Lead, Axial
+F https://cdn.automationdirect.com/static/specs/zipminicordsets.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x4_Male_Axial_2m_ZP-S1C-4MPX-2M
+D ZIPport connection cable, 7/8in - 16 UN2 thread barrel 4-pin male axial to pigtail with European (Cenelec) color code, PVC outer jacket, yellow, nickel-plated brass connector, 6.5ft/2m cable length, IP67.
+K 7/8-16, Male, Bare Lead, Axial
+F https://cdn.automationdirect.com/static/specs/zipminicordsets.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x4_Male_Axial_4m_ZP-S1C-4MPX-4M
+D ZIPport connection cable, 7/8in - 16 UN2 thread barrel 4-pin male axial to pigtail with European (Cenelec) color code, PVC outer jacket, yellow, nickel-plated brass connector, 13.1ft/4m cable length, IP67.
+K 7/8-16, Male, Bare Lead, Axial
+F https://cdn.automationdirect.com/static/specs/zipminicordsets.pdf
+$ENDCMP
+#
+$CMP Pigtail_7-8-16x4_Male_Axial_6m_ZP-S1C-4MPX-6M
+D ZIPport connection cable, 7/8in - 16 UN2 thread nut 4-pin male axial to pigtail with European (Cenelec) color code, PVC outer jacket, yellow, nickel-plated brass connector, 19.6ft/6m cable length, IP67.
+K 7/8-16, Male, Bare Lead, Axial
+F https://cdn.automationdirect.com/static/specs/zipminicordsets.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x04_Female_Axial_10m_7000-12221-0241000
+D Connection cable, M12 axial female to pigtail, 4-pole, PUR/PVC jacket, yellow, 32.8ft/10m cable length, IP65 IP66K IP67.
+K M12, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x04_Female_Axial_15m_7000-12221-0241500
+D M12 axial female to pigtail, 4-pole, PUR/PVC jacket, yellow, 49.2ft/15m cable length, IP65 IP66K IP67
+K M12, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x04_Female_Axial_2m_7000-12221-0240200
+D Connection cable, M12 axial female to pigtail, 4-pole, PUR/PVC jacket, yellow, 6.5ft/2m cable length, IP65 IP66K IP67.
+K M12, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x04_Female_Axial_7m_7000-12221-0240700
+D Connection cable, M12 axial female to pigtail, 4-pole, PUR/PVC jacket, yellow, 22.9ft/7m cable length, IP65 IP66K IP67.
+K M12, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x04_Female_RightAngle_10m_7000-12341-0241000
+D M12 right-angle female to pigtail, 4-pole, PUR/PVC jacket, yellow, 32.8ft/10m cable length, IP65 IP66K IP67
+K M12, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x04_Female_RightAngle_15m_7000-12341-0241500
+D M12 right-angle female to pigtail, 4-pole, PUR/PVC jacket, yellow, 49.2ft/15m cable length, IP65 IP66K IP67
+K M12, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x04_Female_RightAngle_2m_7000-12341-0240200
+D Connection cable, M12 right-angle female to pigtail, 4-pole, PUR/PVC jacket, yellow, 6.5ft/2m cable length, IP65 IP66K IP67.
+K M12, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x04_Female_RightAngle_7m_7000-12341-0240700
+D M12 axial female to pigtail, 4-pole, PUR/PVC jacket, yellow, 32.8ft/10m cable length, IP65 IP66K IP67.
+K M12, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x05_Female_Axial_10m_7000-12241-0251000
+D Connection cable, M12 axial female to pigtail, 5-pole, PUR/PVC jacket, yellow, 32.8ft/10m cable length, IP65 IP66K IP67.
+K M12, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x05_Female_Axial_3m_7000-12241-0250300
+D Connection cable, M12 axial female to pigtail, 5-pole, PUR/PVC jacket, yellow, 9.8ft/3m cable length, IP65 IP66K IP67.
+K M12, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x05_Female_Axial_5m_7000-12241-0250500
+D Connection cable, M12 axial female to pigtail, 5-pole, PUR/PVC jacket, yellow, 16.4ft/5m cable length, IP65 IP66K IP67.
+K M12, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x05_Female_RightAngle_10m_7000-12361-0251000
+D Connection cable, M12 right-angle female to pigtail, 5-pole, PUR/PVC jacket, yellow, 32.8ft/10m cable length, IP65 IP66K IP67.
+K M12, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x05_Female_RightAngle_2m_7000-12361-0250300
+D Connection cable, M12 right-angle female to pigtail, 5-pole, PUR/PVC jacket, yellow, 9.8ft/3m cable length, IP65 IP66K IP67.
+K M12, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x05_Female_RightAngle_5m_7000-12361-0250500
+D Connection cable, M12 right-angle female to pigtail, 5-pole, PUR/PVC jacket, yellow, 16.4ft/5m cable length, IP65 IP66K IP67.
+K M12, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x08_Female_Axial_10m_7000-17041-292100
+D Connection cable, M12 axial female to pigtail, 8-pole, PUR jacket, gray, 32.8ft/10m cable length, IP67.
+K M12, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x08_Female_Axial_10m_7000-17041-2951000
+D Connection cable, M12 axial female to pigtail, 8-pole, PUR jacket, gray, 32.8ft/10m cable length, IP67.
+K M12, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x08_Female_Axial_3m_7000-17041-2920300
+D Connection cable, M12 axial female to pigtail, 8-pole, PUR jacket, gray, 9.8ft/3m cable length, IP67.
+K M12, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x08_Female_Axial_3m_7000-17041-2950300
+D Connection cable, M12 axial female to pigtail, 8-pole, PUR jacket, gray, 9.8ft/3m cable length, IP67.
+K M12, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x08_Female_Axial_5m_7000-17041-2920500
+D Connection cable, M12 axial female to pigtail, 8-pole, PUR jacket, gray, 16.4ft/5m cable length, IP67.
+K M12, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x08_Female_Axial_5m_7000-17041-2950500
+D Connection cable, M12 axial female to pigtail, 8-pole, PUR jacket, gray, 16.4ft/5m cable length, IP67.
+K M12, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x08_Female_RightAngle_10m_7000-17061-2921000
+D Connection cable, M12 right-angle female to pigtail, 8-pole, PUR jacket, gray, 32.8ft/10m cable length, IP67.
+K M12, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x08_Female_RightAngle_10m_7000-17061-2951000
+D Connection cable, M12 right-angle female to pigtail, 8-pole, PUR jacket, gray, 32.8ft/10m cable length, IP67.
+K M12, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x08_Female_RightAngle_3m_7000-17061-2920300
+D Connection cable, M12 right-angle female to pigtail, 8-pole, PUR jacket, gray, 9.8ft/3m cable length, IP67.
+K M12, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x08_Female_RightAngle_3m_7000-17061-2950300
+D Connection cable, M12 right-angle female to pigtail, 8-pole, PUR jacket, gray, 9.8ft/3m cable length, IP67.
+K M12, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x08_Female_RightAngle_5m_7000-17061-2920500
+D Connection cable, M12 right-angle female to pigtail, 8-pole, PUR jacket, gray, 16.4ft/5m cable length, IP67.
+K M12, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M12x08_Female_RightAngle_5m_7000-17061-2950500
+D Connection cable, M12 right-angle female to pigtail, 8-pole, PUR jacket, gray, 16.4ft/5m cable length, IP67.
+K M12, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
+$ENDCMP
+#
+#End Doc Library

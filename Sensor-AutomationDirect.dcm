@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Distance_PhotoElectric_QM-Series
+D Photoelectric sensor, rectangular, visible red light emission, selectable light-on/dark-on
+K Distance, Sensor, Photo, Electric
+F https://cdn.automationdirect.com/static/specs/peminirectqm.pdf
+$ENDCMP
+#
+#End Doc Library

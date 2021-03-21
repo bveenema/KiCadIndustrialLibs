@@ -1,0 +1,32 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Distance_PhotoElectric_QM-Series
+#
+DEF Distance_PhotoElectric_QM-Series COMP 0 40 Y Y 1 F N
+F0 "COMP" 0 400 50 H V C CNN
+F1 "Distance_PhotoElectric_QM-Series" 0 300 50 H V C CNN
+F2 "" 0 300 50 H I C CNN
+F3 "" 0 300 50 H I C CNN
+F4 "Automation Direct" -150 0 50 H I C CNN "Vendor"
+F5 "QMXX-OX-OX" -150 0 50 H I C CNN "MPN"
+DRAW
+T 0 -150 175 50 0 0 0 D Normal 0 C C
+T 0 25 -50 25 0 0 0 NPN Normal 0 C C
+T 0 25 50 25 0 0 0 PNP Normal 0 C C
+S -75 250 -225 -150 0 1 0 N
+S 200 -150 -75 250 0 1 0 N
+P 2 0 1 0 -175 -25 -175 -75 N
+P 2 0 1 0 -125 -25 -125 -75 N
+P 3 0 1 0 -25 -25 -25 0 0 0 N
+P 3 0 1 0 -25 25 -25 0 0 0 N
+P 4 0 1 0 0 -100 -25 -100 -25 -75 -50 -25 N
+P 4 0 1 0 0 100 -25 100 -25 75 -50 25 N
+P 5 0 1 0 -200 -50 -150 0 -100 -50 -150 -100 -200 -50 N
+X +V 1(BN) 450 100 250 L 50 50 1 1 W
+X GND 3(BU) 450 -100 250 L 50 50 1 1 W
+X OUT 4(BK) 450 0 250 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

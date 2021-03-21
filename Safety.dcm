@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SafetySwitch-E-Stop-2NC
+D Emergency Stop, Dual Contact, Positively Driven
+K estop, emergency, stop, button, switch
+$ENDCMP
+#
+#End Doc Library

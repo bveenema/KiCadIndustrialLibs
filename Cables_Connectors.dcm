@@ -1,0 +1,113 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Cable_4pos_Female_Female
+D 4 Contact, Female to Female
+K Female, Cable
+$ENDCMP
+#
+$CMP Cable_4pos_Female_Male
+D 4 Contact, Female to Male
+K Female, Male, Cable, 4
+$ENDCMP
+#
+$CMP Cable_4pos_Male_Male
+D 4 Contact, Male to Male
+K Male, Cable, 4
+$ENDCMP
+#
+$CMP Cable_5pos_Female_Female
+D 5 Contact, Female to Female
+K Female, Cable
+$ENDCMP
+#
+$CMP Cable_5pos_Female_Male
+D Cable, 5 Contact, Female/Male
+K Female, Male, Cable
+$ENDCMP
+#
+$CMP Cable_5pos_Male_Male
+D 5 Contact, Male to Male, Cable
+K Male, Cable, 5
+$ENDCMP
+#
+$CMP Cable_8pos_Female_Female
+D 8 Contact, Female to Female
+K Female, Cable, 8
+$ENDCMP
+#
+$CMP Cable_8pos_Female_Male
+D 8 Contact, Female to Male
+K Female, Male, Cable, 8
+$ENDCMP
+#
+$CMP Cable_8pos_Male_Male
+D 8 Contact, Male to Male
+K Male, Cable, 8
+$ENDCMP
+#
+$CMP Cable_Female_Female
+D Female to Female Cable, Unspecified number of contacts
+K Cable, Female
+$ENDCMP
+#
+$CMP Cable_Female_Male
+D Female to Male Cable, Unspecified number of contacts
+K Cable, Male, Female
+$ENDCMP
+#
+$CMP Cable_Male_Male
+D Male to Male Cable, Unspecified number of contacts
+K Male, Cable
+$ENDCMP
+#
+$CMP Connector_4pos_Female
+D 4 Contact Female Connector, Field Wireable
+K Connector, Female
+$ENDCMP
+#
+$CMP Connector_4pos_Male
+D 4 Contact Male Connector, Field Wireable
+K Connector, Male
+$ENDCMP
+#
+$CMP Connector_5pos_Female
+D 5 Contact Female Connector, Field Wireable
+K Connector, Female
+$ENDCMP
+#
+$CMP Connector_5pos_Male
+D 5 Contact Male Connector, Field Wireable
+K Connector, Male
+$ENDCMP
+#
+$CMP Pigtail_3pos_Female
+D 4 Contact, Female to Pigtail
+K Pigtail, Female, Bare Lead, 4
+$ENDCMP
+#
+$CMP Pigtail_3pos_Male
+D 3 Contact, Male to Pigtail
+K Pigtail, Male, Bare Lead, 3
+$ENDCMP
+#
+$CMP Pigtail_4pos_Female
+D 4 Contact, Female to Pigtail
+K Pigtail, Female, Bare Lead, 4
+$ENDCMP
+#
+$CMP Pigtail_4pos_Male
+D 4 Contact, Male to Pigtail
+K Pigtail, Male, Bare Lead, 4
+$ENDCMP
+#
+$CMP Pigtail_5pos_Female
+D 5 Contact, Female to Pigtail
+K Pigtail, Female, Bare Lead, 5
+$ENDCMP
+#
+$CMP Pigtail_5pos_Male
+D 5 Contact, Male to Pigtail
+K Pigtail, Male, Bare Lead, 5
+$ENDCMP
+#
+#End Doc Library

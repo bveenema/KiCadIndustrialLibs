@@ -1,0 +1,63 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP EZRPL-AC-03B
+D EZRack PLC Base, AC Powered - 110/220, 3 Slot
+K EZRack, PLC, AC
+F https://www.ezautomation.net/PLC-Programmable-Logic-Controller/ezrackplc/pdfs/EZRack%20PLC-hardware-manual.pdf.pdf
+$ENDCMP
+#
+$CMP EZRPL-AC-05B
+D EZRack PLC Base, AC Powered - 110/220, 5 Slot
+K EZRack, PLC, AC
+F https://www.ezautomation.net/PLC-Programmable-Logic-Controller/ezrackplc/pdfs/EZRack%20PLC-hardware-manual.pdf.pdf
+$ENDCMP
+#
+$CMP EZRPL-AC-07B
+D EZRack PLC Base, AC Powered - 110/220, 7 Slot
+K EZRack, PLC, AC
+F https://www.ezautomation.net/PLC-Programmable-Logic-Controller/ezrackplc/pdfs/EZRack%20PLC-hardware-manual.pdf.pdf
+$ENDCMP
+#
+$CMP EZRPL-CPU-1UE
+D EZRack PLC CPU with 1 RS232/422/485 Serial Port and Ethernet
+K EZRack, PLC, Serial, Ethernet
+F https://www.ezautomation.net/PLC-Programmable-Logic-Controller/ezrackplc/pdfs/EZRack%20PLC-hardware-manual.pdf.pdf
+$ENDCMP
+#
+$CMP EZRPL-CPU-2UE
+D EZRack PLC CPU with 2 RS232/422/485 Serial Port and Ethernet
+K EZRack, PLC, Serial, Ethernet
+F https://www.ezautomation.net/PLC-Programmable-Logic-Controller/ezrackplc/pdfs/EZRack%20PLC-hardware-manual.pdf.pdf
+$ENDCMP
+#
+$CMP EZRPL-IO-16DCI
+D 16 pt. DC Input Module, Sinking or Sourcing
+K EZRack, PLC, IO, Input, Sink, Source
+F https://www.ezautomation.net/IO-Modules/pdfs/EZRPL-IO-16DCI.pdf
+$ENDCMP
+#
+$CMP EZRPL-IO-4DCOP4RLO
+D EZRack IO Module, 4 port 24VDC Output (Sourcing), 4 port Form C (SPDT) Relay Out Module (5 Amps/pt.)
+K EZRack, PLC, IO, Output, Sourcing, Relay
+F https://www.ezautomation.net/IO-Modules/pdfs/EZRPL-IO-4DCOP4RLO.pdf
+$ENDCMP
+#
+$CMP EZRPL-IO-6DI4DO-2ANI2ANOC
+D 6 DC Inputs, 4 DC Outputs, 2 Analog In, 2 Analog Out (Current 12-bit resolution)
+K EZRack, PLC, IO, Input, Output, Analog
+F https://www.ezautomation.net/IO-Modules/pdfs/EZRPL-IO-6DI4DO-2ANI2ANOC.pdf
+$ENDCMP
+#
+$CMP EZRPL-IO-6DI4DO-2ANI2ANOV
+D 6 DC Inputs, 4 DC Outputs, 2 Analog In, 2 Analog Out (Voltage 12-bit resolution)
+K EZRack, PLC, IO, Input, Output, Analog
+F https://www.ezautomation.net/IO-Modules/pdfs/EZRPL-IO-6DI4DO-2ANI2ANOV.pdf
+$ENDCMP
+#
+$CMP EZRPL-IO-FILL
+D EZRack PLC I/O Filler Module
+K EZRack, PLC, IO, Output, Sourcing, Relay
+F https://www.ezautomation.net/PLC-Programmable-Logic-Controller/ezrackplc/pdfs/EZRack%20PLC-hardware-manual.pdf.pdf
+$ENDCMP
+#
+#End Doc Library

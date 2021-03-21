@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SafetyRelay-1CH_LG5924-02-61-24
+D Dold safety relay, emergency stop, 1-channel, 24 VDC, (2) N.O. safety output(s), fixed screw terminals.
+K Safety, Relay, 1 CH
+F https://cdn.automationdirect.com/static/specs/safetyrelay1chestop.pdf
+$ENDCMP
+#
+$CMP SafetySwitch-CablePull-1NC-1NO_SDM2K98X11
+D Comepi safety switch, cable-pull interlock, with reset, 15m, (1) N.C. safety output(s), (1) N.O. monitoring output(s), die-cast aluminum body, plastic head, (3) 1/2in NPT cable entries.
+K Safety, Cable, Pull
+F https://cdn.automationdirect.com/static/specs/comepisafetyswitches.pdf
+$ENDCMP
+#
+#End Doc Library

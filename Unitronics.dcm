@@ -1,0 +1,19 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SMXX-J-TA22-RA22
+D Unitronics PLC with integrated HMI
+K SM35, SM43, SM70, PLC, HMI,  Unitronics
+$ENDCMP
+#
+$CMP USC-Bx-TR22
+D Unitronics Unistream PLC TR22
+K USC, Unitronics, Unistream, PLC, TR22
+F https://unitronicsplc.com/wp-content/uploads/2019/05/IG_USC-Bx-B1_TR22_T24.pdf
+$ENDCMP
+#
+$CMP VXXX-J-TRA22-RA22
+D Unitronics PLC with integrated HMI
+K V130, V350, V430, PLC, HMI,  Unitronics
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,39 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP EX260-SIL1
+D SMC EX260 Fieldbus System - Output device for driving 5-port solenoid valves, IO-Link
+K SMC, Valve, EX260, Fieldbus, IO-Link, SY3000, SY5000, SY7000
+F https://content2.smcetech.com/pdf/EX260.pdf
+$ENDCMP
+#
+$CMP SY5000_Valve_5-3_ExhaustCenter
+D SMC SY5000 Valve for Manifold Assembly - 5/3 Exhaust Center
+K SMC, Valve, SY5000, 5/3, Exhaust Center, SY3000, SY5000, SY7000
+F https://content2.smcetech.com/pdf/SY.New.pdf
+$ENDCMP
+#
+$CMP SY50M-1_P-E_Block_Base
+D SMC SY50M-1 SUB/EXH Block Assembly - Base Station
+K SMC, Valve, SY50M, Base, P-E, Plate, SY3000, SY5000, SY7000
+F https://content2.smcetech.com/pdf/SY.New.pdf
+$ENDCMP
+#
+$CMP SY50M-3_P-E_Block_End
+D SMC SY50M-1 SUB/EXH Block Assembly - End Block
+K SMC, Valve, SY50M, End, P-E, Plate, SY3000, SY5000, SY7000
+F https://content2.smcetech.com/pdf/SY.New.pdf
+$ENDCMP
+#
+$CMP SY50M-40-1_P-Block
+D SMC SY50M-40-1 SUP Blocking Disc Assembly
+K SMC, Valve, SY50M, Block, SY3000, SY5000, SY7000
+F https://content2.smcetech.com/pdf/SY.New.pdf
+$ENDCMP
+#
+$CMP SY50M-40-2_E-Block
+D SMC SY50M-40-1 EXH Blocking Disc Assembly
+K SMC, Valve, SY50M, Block, SY3000, SY5000, SY7000
+F https://content2.smcetech.com/pdf/SY.New.pdf
+$ENDCMP
+#
+#End Doc Library
