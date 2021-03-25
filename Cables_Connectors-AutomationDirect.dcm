@@ -618,4 +618,40 @@ K M12, Right Angle, Bare Lead
 F https://cdn.automationdirect.com/static/specs/m12sensorcbl.pdf
 $ENDCMP
 #
+$CMP Pigtail_M8x04_Female_Axial_10m_7000-08061-2111000
+D Connection cable, M8 axial female to pigtail, 4-pole, PVC jacket, gray, 32.8ft/10m cable length, IP65 IP66K IP67.
+K M8, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m8sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M8x04_Female_Axial_2m_7000-08061-2110200
+D Connection cable, M8 axial female to pigtail, 4-pole, PVC jacket, gray, 6.5ft/2m cable length, IP65 IP66K IP67.
+K M8, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m8sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M8x04_Female_Axial_5m_7000-08061-2110500
+D Connection cable, M8 axial female to pigtail, 4-pole, PVC jacket, gray, 16.4ft/5m cable length, IP65 IP66K IP67.
+K M8, Axial, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m8sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M8x04_Female_RightAngle_10m_7000-08101-2111000
+D Connection cable, M8 right-angle female to pigtail, 4-pole, PVC jacket, gray, 32.8ft/10m cable length, IP65 IP66K IP67.
+K M8, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m8sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M8x04_Female_RightAngle_2m_7000-08101-2110200
+D Connection cable, M8 right-angle female to pigtail, 4-pole, PVC jacket, gray, 6.5ft/2m cable length, IP65 IP66K IP67.
+K M8, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m8sensorcbl.pdf
+$ENDCMP
+#
+$CMP Pigtail_M8x04_Female_RightAngle_5m_7000-08101-2110500
+D Connection cable, M8 right-angle female to pigtail, 4-pole, PVC jacket, gray, 16.4ft/5m cable length, IP65 IP66K IP67.
+K M8, Right Angle, Bare Lead
+F https://cdn.automationdirect.com/static/specs/m8sensorcbl.pdf
+$ENDCMP
+#
 #End Doc Library
