@@ -1,0 +1,19 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Indicator_2Pos
+K Indicator, 2 Position
+$ENDCMP
+#
+$CMP Indicator_3Pos
+K Indicator, 3 Position
+$ENDCMP
+#
+$CMP Indicator_4Pos
+K Indicator, 4 Position
+$ENDCMP
+#
+$CMP Indicator_5Pos
+K Indicator, 5 Position
+$ENDCMP
+#
+#End Doc Library
