@@ -1,0 +1,35 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Indicator_MultiColor_28mm_CML1-159-30
+#
+DEF Indicator_MultiColor_28mm_CML1-159-30 I 0 10 Y Y 1 F N
+F0 "I" 0 350 50 H V C CNN
+F1 "Indicator_MultiColor_28mm_CML1-159-30" 0 250 50 H V C CNN
+F2 "" 25 450 50 H I C CNN
+F3 "" 25 450 50 H I C CNN
+F4 "Color" 0 0 50 H V C CNN "Color"
+ALIAS Indicator_RedGreen_28mm_CDL1-159-30-GR Indicator_RedGreen_40mm_CDL1-158-30-GR Indicator_MultiColor_40mm_CML1-158-30
+DRAW
+C 0 0 150 0 1 0 N
+C 0 0 150 1 2 0 N
+P 2 0 1 0 -125 -125 -175 -175 N
+P 2 0 1 0 -125 125 -175 175 N
+P 2 0 1 0 125 -125 175 -175 N
+P 2 0 1 0 125 125 175 175 N
+P 2 1 2 0 -125 -125 -175 -175 N
+P 2 1 2 0 -125 125 -175 175 N
+P 2 1 2 0 125 -125 175 -175 N
+P 2 1 2 0 125 125 175 175 N
+X ~ 1 -250 100 135 R 30 50 1 1 B
+X ~ 2 -250 50 105 R 30 50 1 1 B
+X ~ 3 -250 -50 105 R 30 50 1 1 B
+X ~ 4 -250 -100 135 R 30 50 1 1 B
+X ~ 1 -250 100 135 R 50 50 1 2 B
+X ~ 2 -250 0 100 R 50 50 1 2 B
+X ~ 3 250 0 100 L 50 50 1 2 B
+X ~ 4 -250 -100 135 R 50 50 1 2 B
+ENDDRAW
+ENDDEF
+#
+#End Library

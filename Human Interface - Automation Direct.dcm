@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Indicator_MultiColor_28mm_CML1-159-30
+D Captron LED indicating light, permanent light function, IP69K, 22mm, red/yellow/green/blue/white/orange/violet, 28mm, round, plastic base, aluminum bezel, 24 VDC, full voltage. M8x4 Male Connector 
+K Indicator, 4 Position, Multi color, M8x4
+F https://cdn.automationdirect.com/static/manuals/captronpb/cmlcdlins.pdf
+$ENDCMP
+#
+$CMP Indicator_MultiColor_40mm_CML1-158-30
+D Captron LED indicating light, permanent light function, IP69K, 22mm, red/yellow/green/blue/white/orange/violet, 40mm, round, plastic base, stainless steel bezel, 24 VDC, full voltage. M8x4 Male Connector 
+K Indicator, 4 Position, Multi color, M8x4
+F https://cdn.automationdirect.com/static/manuals/captronpb/cmlcdlins.pdf
+$ENDCMP
+#
+$CMP Indicator_RedGreen_28mm_CDL1-159-30-GR
+D aptron LED indicating light, permanent light function, IP69K, 22mm, red/green, 28mm, round, plastic base, aluminum bezel, 24 VDC, full voltage. M8x4 Male Connector 
+K Indicator, 4 Position, Red, Green, M8x4
+F https://cdn.automationdirect.com/static/manuals/captronpb/cmlcdlins.pdf
+$ENDCMP
+#
+$CMP Indicator_RedGreen_40mm_CDL1-158-30-GR
+D Captron LED indicating light, permanent light function, IP69K, 22mm, red/green, 40mm, round, plastic base, stainless steel bezel, 24 VDC, full voltage. M8x4 Male Connector 
+K Indicator, 4 Position, Red, Green, M8x4
+F https://cdn.automationdirect.com/static/manuals/captronpb/cmlcdlins.pdf
+$ENDCMP
+#
+#End Doc Library

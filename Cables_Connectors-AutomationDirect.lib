@@ -1041,7 +1041,7 @@ F6 "Brown" -225 65 20 H V L CNN "Wire 1 Color"
 F7 "White" -225 15 20 H V L CNN "Wire 2 Color"
 F8 "Blue" -225 -35 20 H V L CNN "Wire 3 Color"
 F9 "Black" -225 -85 20 H V L CNN "Wire 4 Color"
-ALIAS Pigtail_M12x04_Female_RightAngle_2m_7000-12341-0240200 Pigtail_M12x04_Female_Axial_7m_7000-12221-0240700 Pigtail_M12x04_Female_RightAngle_7m_7000-12341-0240700 Pigtail_M12x04_Female_RightAngle_10m_7000-12341-0241000 Pigtail_M12x04_Female_Axial_15m_7000-12221-0241500 Pigtail_M12x04_Female_RightAngle_15m_7000-12341-0241500 Pigtail_M12x04_Female_Axial_10m_7000-12221-0241000
+ALIAS Pigtail_M12x04_Female_RightAngle_2m_7000-12341-0240200 Pigtail_M12x04_Female_Axial_7m_7000-12221-0240700 Pigtail_M12x04_Female_RightAngle_7m_7000-12341-0240700 Pigtail_M12x04_Female_RightAngle_10m_7000-12341-0241000 Pigtail_M12x04_Female_Axial_15m_7000-12221-0241500 Pigtail_M12x04_Female_RightAngle_15m_7000-12341-0241500 Pigtail_M12x04_Female_Axial_10m_7000-12221-0241000 Pigtail_M8x04_Female_Axial_2m_7000-08061-2110200 Pigtail_M8x04_Female_RightAngle_2m_7000-08101-2110200 Pigtail_M8x04_Female_Axial_5m_7000-08061-2110500 Pigtail_M8x04_Female_RightAngle_5m_7000-08101-2110500 Pigtail_M8x04_Female_Axial_10m_7000-08061-2111000 Pigtail_M8x04_Female_RightAngle_10m_7000-08101-2111000
 DRAW
 A -300 -100 20 -899 899 1 1 6 N -300 -120 -300 -80
 A -300 -50 20 -899 899 1 1 6 N -300 -70 -300 -30
