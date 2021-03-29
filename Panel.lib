@@ -1,0 +1,94 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# TerminalBlock_Jumper_2Pos
+#
+DEF ~TerminalBlock_Jumper_2Pos TERM 0 40 N Y 1 F N
+F0 "TERM" 0 0 50 H I C CNN
+F1 "TerminalBlock_Jumper_2Pos" 25 0 50 H I C CNN
+F2 "" 25 0 50 H I C CNN
+F3 "" 25 0 50 H I C CNN
+F4 "Yellow" 0 0 25 H V C CNN "Color"
+DRAW
+S -70 20 70 -20 0 1 0 F
+X ~ ~ -50 0 0 U 50 50 1 1 B
+X ~ ~ 50 0 0 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# TerminalBlock_SingleLevel_1-1
+#
+DEF ~TerminalBlock_SingleLevel_1-1 TERM 0 40 N Y 1 F N
+F0 "TERM" 0 0 50 H I C CNN
+F1 "TerminalBlock_SingleLevel_1-1" 25 0 50 H I C CNN
+F2 "" 25 0 50 H I C CNN
+F3 "" 25 0 50 H I C CNN
+F4 "Grey" 0 0 25 H V C CNN "Color"
+DRAW
+S -50 150 50 -150 0 1 0 N
+P 2 0 1 0 -50 -75 50 -75 N
+P 2 0 1 0 -50 -25 50 -25 N
+P 2 0 1 0 -50 25 50 25 N
+P 2 0 1 0 -50 75 50 75 N
+X ~ 1 0 250 100 D 50 50 1 1 B
+X ~ 100 0 50 0 U 50 50 1 1 B
+X ~ 2 0 -250 100 U 50 50 1 1 B
+X ~ 200 0 -50 0 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# TerminalBlock_SingleLevel_2-1
+#
+DEF ~TerminalBlock_SingleLevel_2-1 TERM 0 40 N Y 1 F N
+F0 "TERM" 25 0 50 H I C CNN
+F1 "TerminalBlock_SingleLevel_2-1" 50 0 50 H I C CNN
+F2 "" 50 50 50 H I C CNN
+F3 "" 50 50 50 H I C CNN
+F4 "Grey" 0 0 25 H V C CNN "Color"
+DRAW
+S -50 150 50 -150 0 1 0 N
+P 2 0 1 0 -50 -75 50 -75 N
+P 2 0 1 0 -50 -25 50 -25 N
+P 2 0 1 0 -50 25 50 25 N
+P 2 0 1 0 -50 75 50 75 N
+P 2 0 1 0 10 -200 10 -150 N
+P 2 0 1 0 10 200 10 150 N
+P 2 0 1 0 25 -250 25 -150 N
+P 2 0 1 0 25 250 25 150 N
+X ~ 1 0 250 25 R 50 50 1 1 B
+X ~ 100 0 50 0 U 50 50 1 1 B
+X ~ 2 0 200 10 R 50 50 1 1 B
+X ~ 200 0 -50 0 U 50 50 1 1 B
+X ~ 3 0 -200 10 R 50 50 1 1 B
+X ~ 4 0 -250 25 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# TerminalBlock_SingleLevel_2-2
+#
+DEF ~TerminalBlock_SingleLevel_2-2 TERM 0 40 N Y 1 F N
+F0 "TERM" 0 0 50 H I C CNN
+F1 "TerminalBlock_SingleLevel_2-2" 25 0 50 H I C CNN
+F2 "" 25 0 50 H I C CNN
+F3 "" 25 0 50 H I C CNN
+F4 "Grey" 0 0 25 H V C CNN "Color"
+DRAW
+S -50 150 50 -150 0 1 0 N
+P 2 0 1 0 -50 -75 50 -75 N
+P 2 0 1 0 -50 -25 50 -25 N
+P 2 0 1 0 -50 25 50 25 N
+P 2 0 1 0 -50 75 50 75 N
+P 2 0 1 0 10 -200 10 -150 N
+P 2 0 1 0 10 200 10 150 N
+P 2 0 1 0 25 -250 25 -150 N
+P 2 0 1 0 25 250 25 150 N
+X ~ 1 0 250 25 R 50 50 1 1 B
+X ~ 100 0 50 0 U 50 50 1 1 B
+X ~ 2 0 200 10 R 50 50 1 1 B
+X ~ 200 0 -50 0 U 50 50 1 1 B
+X ~ 3 0 -200 10 R 50 50 1 1 B
+X ~ 4 0 -250 25 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

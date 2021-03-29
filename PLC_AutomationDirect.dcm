@@ -1,0 +1,51 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Productivity1000_P1-01AC
+D Productivity1000 AC/DC power supply, 120-240 VAC or 125 VDC nominal input. External power supply optional
+K PLC, Power Supply, Productivity 1000
+F https://cdn.automationdirect.com/static/specs/P1-01AC.pdf
+$ENDCMP
+#
+$CMP Productivity1000_P1-01DC
+D Productivity1000 DC power supply, 12-24 VDC nominal input. External power supply optional. For applications not exceeding (8) P1000 modules
+K PLC, Power Supply, Productivity 1000
+F https://cdn.automationdirect.com/static/specs/P1-01AC.pdf
+$ENDCMP
+#
+$CMP Productivity1000_P1-02AC
+D Productivity1000 AC power supply, 120-240 VAC or 125 VDC nominal input. External power supply optional. For applications exceeding (8) P1000 modules
+K PLC, Power Supply, Productivity 1000
+F https://cdn.automationdirect.com/static/specs/P1-02AC.pdf
+$ENDCMP
+#
+$CMP Productivity1000_P1-08TRS
+D Productivity1000 relay output module, 8-point, 6-24 VDC/6-120 VAC, (6) Form A, (2) Form C, 8 isolated common(s), 1 point(s) per common, 3A/point. Requires P2-RTB or P2-RTB-1 removable terminal block or ZIPLink pre-wired cables.
+K PLC, I/O, Relay, Productivity 1000
+F https://cdn.automationdirect.com/static/specs/P1-08TRS.pdf
+$ENDCMP
+#
+$CMP Productivity1000_P1-16TR
+D Productivity1000 relay output module, 16-point, 6-24 VDC/6-120 VAC, (16) Form A (SPST) no-suppression, 2 isolated common(s), 8 point(s) per common, 2A/point, 8A/common. Requires P2-RTB or P2-RTB-1 removable terminal block or ZIPLink pre-wired cables
+K PLC, I/O, Relay, Productivity 1000
+F https://cdn.automationdirect.com/static/specs/P1-16TR.pdf
+$ENDCMP
+#
+$CMP ProductivityOpen_P1AM-100
+D ProductivityOpen Arduino-compatible CPU, microSD card slot, (1) microB-USB port(s), external 24 VDC required.
+K PLC, CPU, Productivity Open
+F https://cdn.automationdirect.com/static/specs/p1amspecs.pdf
+$ENDCMP
+#
+$CMP ProductivityOpen_P1AM-ETH
+D ProductivityOpen Ethernet shield, 1 port, (1) Ethernet 10/100Base-T (RJ45) port(s). For use with ProductivityOpen P1AM-100 CPU
+K PLC, Ethernet, Productivity Open
+F https://cdn.automationdirect.com/static/specs/p1ameth.pdf
+$ENDCMP
+#
+$CMP ProductivityOpen_P1AM-GPIO
+D ProductivityOpen MKR-pins extension shield, 0-3.3 VDC. For use with ProductivityOpen P1AM-100 CPU. Requires P2-RTB or P2-RTB-1 removable terminal block or ZIPLink pre-wired cables. See product insert for complete list of I/O configuration options
+K PLC, I/O, Productivity Open
+F https://cdn.automationdirect.com/static/specs/p1amgpio.pdf
+$ENDCMP
+#
+#End Doc Library
