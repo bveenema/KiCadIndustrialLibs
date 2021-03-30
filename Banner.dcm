@@ -24,6 +24,30 @@ K Indicator, K50, Pro, IO-Link, Banner, Touch, Button
 F http://info.bannerengineering.com/cs/groups/public/documents/literature/208737.pdf
 $ENDCMP
 #
+$CMP K50_Core_Multipurpose_NPN_NC_K50RNT2GRYF2Q
+D General Purpose Multicolor Indicator with Independent Momentary Touch Button Output, NPN, Normally Closed
+K Indicator, Button, PNP, Normally Closed
+F https://info.bannerengineering.com/cs/groups/public/documents/literature/189830.pdf
+$ENDCMP
+#
+$CMP K50_Core_Multipurpose_NPN_NO_K50ANT2GRYF2Q
+D General Purpose Multicolor Indicator with Independent Momentary Touch Button Output, NPN, Normally Open
+K Indicator, Button, NPN, Normally Open
+F https://info.bannerengineering.com/cs/groups/public/documents/literature/189830.pdf
+$ENDCMP
+#
+$CMP K50_Core_Multipurpose_PNP_NC_K50RPT2GRYF2Q
+D General Purpose Multicolor Indicator with Independent Momentary Touch Button Output, PNP, Normally Closed
+K Indicator, Button, PNP, Normally Closed
+F https://info.bannerengineering.com/cs/groups/public/documents/literature/189830.pdf
+$ENDCMP
+#
+$CMP K50_Core_Multipurpose_PNP_NO_K50APT2GRYF2Q
+D General Purpose Multicolor Indicator with Independent Momentary Touch Button Output, PNP, Normally Open
+K Indicator, Button, PNP, Normally Open
+F https://info.bannerengineering.com/cs/groups/public/documents/literature/189830.pdf
+$ENDCMP
+#
 $CMP SC10-Safety_Controller
 D Banner Engineering Safety Controller with Ethernet/IP. 10 Inputs (4 can be non-safe output). 2 Relay outputs
 K Safety, Controller, EIP, Ethernet/IP, Banner
