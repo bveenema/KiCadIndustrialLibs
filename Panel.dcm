@@ -1,0 +1,19 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TerminalBlock_Jumper_2Pos
+K Panel, Jumper, Terminal Block
+$ENDCMP
+#
+$CMP TerminalBlock_SingleLevel_1-1
+K Panel, Terminal Block, Single Level, one to one
+$ENDCMP
+#
+$CMP TerminalBlock_SingleLevel_2-1
+K Panel, Terminal Block, Single Level, two to one
+$ENDCMP
+#
+$CMP TerminalBlock_SingleLevel_2-2
+K Panel, Terminal Block, Single Level, two to two
+$ENDCMP
+#
+#End Doc Library

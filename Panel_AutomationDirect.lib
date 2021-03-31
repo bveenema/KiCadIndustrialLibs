@@ -1,0 +1,46 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# TerminalBlock_Jumper_2Pos__25A_Yellow_DN-2J4YMN
+#
+DEF ~TerminalBlock_Jumper_2Pos__25A_Yellow_DN-2J4YMN TERM 0 40 N Y 1 F N
+F0 "TERM" 0 0 50 H I C CNN
+F1 "TerminalBlock_Jumper_2Pos__25A_Yellow_DN-2J4YMN" 25 0 50 H I C CNN
+F2 "" 25 0 50 H I C CNN
+F3 "" 25 0 50 H I C CNN
+F4 "Yellow" 0 0 25 H V C CNN "Color"
+F5 "DN-2J4YMN" 0 0 50 H I C CNN "MPN"
+F6 "Automation Direct" 0 0 50 H I C CNN "Vendor"
+F7 "DN-2J4YMN" 0 0 50 H I C CNN "Vendor P/N"
+DRAW
+S -70 20 70 -20 0 1 0 F
+X ~ ~ -50 0 0 U 50 50 1 1 B
+X ~ ~ 50 0 0 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# TerminalBlock_SingleLevel_1-1_20A_Grey_DN-Q12-A
+#
+DEF ~TerminalBlock_SingleLevel_1-1_20A_Grey_DN-Q12-A TERM 0 40 N Y 1 F N
+F0 "TERM" 0 0 50 H I C CNN
+F1 "TerminalBlock_SingleLevel_1-1_20A_Grey_DN-Q12-A" 25 0 50 H I C CNN
+F2 "" 25 0 50 H I C CNN
+F3 "" 25 0 50 H I C CNN
+F4 "Grey" 0 0 25 H V C CNN "Color"
+F5 "DN-Q12-A" 0 0 50 H I C CNN "MPN"
+F6 "Automation Direct" 0 0 50 H I C CNN "Vendor"
+F7 "DN-Q12-A" 0 0 50 H I C CNN "Vendor P/N"
+DRAW
+S -50 150 50 -150 0 1 0 N
+P 2 0 1 0 -50 -75 50 -75 N
+P 2 0 1 0 -50 -25 50 -25 N
+P 2 0 1 0 -50 25 50 25 N
+P 2 0 1 0 -50 75 50 75 N
+X ~ 1 0 250 100 D 50 50 1 1 B
+X ~ 100 0 50 0 U 50 50 1 1 B
+X ~ 2 0 -250 100 U 50 50 1 1 B
+X ~ 200 0 -50 0 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

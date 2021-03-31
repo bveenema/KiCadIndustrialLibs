@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RoboClaw_2x15A
+D RoboClaw 2x15A, 34VDC Dual Channel
+K Motor Controller, DC
+F http://downloads.basicmicro.com/docs/roboclaw_datasheet_2x15A.pdf
+$ENDCMP
+#
+#End Doc Library
