@@ -2,159 +2,7 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "Antenna_Extender"
-		(pin_names
-			(offset 1.016)
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "CABLE"
-			(at 0 2.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Antenna_Extender"
-			(at 0 -2.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 2.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 2.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "Antenna_Extender_1_1"
-			(arc
-				(start -15.24 0.508)
-				(mid -14.732 0)
-				(end -15.24 -0.508)
-				(stroke
-					(width 0.1524)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -11.43 3.81) (xy -11.43 -3.81)
-				)
-				(stroke
-					(width 0.508)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -8.89 3.81) (xy -8.89 -3.81)
-				)
-				(stroke
-					(width 0.508)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -7.62 0) (xy -14.732 0)
-				)
-				(stroke
-					(width 0.1524)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -7.62 0) (xy 7.62 0)
-				)
-				(stroke
-					(width 0.889)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(pin passive line
-				(at -15.24 0 0)
-				(length 0)
-				(hide yes)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 10.16 0 180)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "Switch_4-Port_Unmanaged_Generic"
+	(symbol "Switch_4-Port_Unmanaged_Brainbox-SW-504"
 		(pin_names
 			(offset 1.016)
 		)
@@ -170,7 +18,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Switch_4-Port_Unmanaged_Generic"
+		(property "Value" "Switch_4-Port_Unmanaged_Brainbox-SW-504"
 			(at 2.54 12.7 0)
 			(effects
 				(font
@@ -188,7 +36,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.brainboxes.com/files/catalog/product/SW/SW-504/documents/SW-504-datasheet.pdf"
 			(at 15.24 11.43 0)
 			(effects
 				(font
@@ -197,7 +45,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unmanaged network switch - Generic"
+		(property "Description" "Unmanaged network switch, 10/100 Mbs"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SW-504"
 			(at 0 0 0)
 			(effects
 				(font
@@ -215,7 +72,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "Switch_4-Port_Unmanaged_Generic_0_1"
+		(symbol "Switch_4-Port_Unmanaged_Brainbox-SW-504_0_1"
 			(rectangle
 				(start -3.81 11.43)
 				(end 3.81 -11.43)
@@ -228,7 +85,7 @@
 				)
 			)
 		)
-		(symbol "Switch_4-Port_Unmanaged_Generic_1_1"
+		(symbol "Switch_4-Port_Unmanaged_Brainbox-SW-504_1_1"
 			(pin bidirectional line
 				(at -6.35 3.81 0)
 				(length 2.54)
@@ -394,7 +251,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Switch_5-Port_Unmanaged_Generic"
+	(symbol "Switch_5-Port_Unmanaged_Brainbox_SW-505"
 		(pin_names
 			(offset 1.016)
 		)
@@ -410,7 +267,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Switch_5-Port_Unmanaged_Generic"
+		(property "Value" "Switch_5-Port_Unmanaged_Brainbox_SW-505"
 			(at 2.54 13.97 0)
 			(effects
 				(font
@@ -428,7 +285,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.brainboxes.com/files/catalog/product/SW/SW-505/documents/SW-505-datasheet.pdf"
 			(at 15.24 12.7 0)
 			(effects
 				(font
@@ -437,7 +294,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unmanaged network switch - Generic"
+		(property "Description" "Unmanaged network switch 10/100 Mbs"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SW-505"
 			(at 0 0 0)
 			(effects
 				(font
@@ -455,7 +321,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "Switch_5-Port_Unmanaged_Generic_0_1"
+		(symbol "Switch_5-Port_Unmanaged_Brainbox_SW-505_0_1"
 			(rectangle
 				(start -3.81 12.7)
 				(end 3.81 -12.7)
@@ -468,7 +334,7 @@
 				)
 			)
 		)
-		(symbol "Switch_5-Port_Unmanaged_Generic_1_1"
+		(symbol "Switch_5-Port_Unmanaged_Brainbox_SW-505_1_1"
 			(pin bidirectional line
 				(at -6.35 5.08 0)
 				(length 2.54)
@@ -652,7 +518,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Switch_8-Port_Unmanaged_Generic"
+	(symbol "Switch_8-Port_Unmanaged_Brainbox_SW-508"
 		(pin_names
 			(offset 1.016)
 		)
@@ -668,7 +534,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Switch_8-Port_Unmanaged_Generic"
+		(property "Value" "Switch_8-Port_Unmanaged_Brainbox_SW-508"
 			(at 2.54 12.7 0)
 			(effects
 				(font
@@ -686,7 +552,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.brainboxes.com/files/catalog/product/SW/SW-508/documents/SW-508-datasheet.pdf"
 			(at 15.24 11.43 0)
 			(effects
 				(font
@@ -695,7 +561,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unmanaged network switch"
+		(property "Description" "Unmanaged network switch, 10/100 Mbs"
 			(at 0 0 0)
 			(effects
 				(font
@@ -704,7 +570,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Network, Switch, Unmanaged, 9 Port"
+		(property "MPN" "SW-508"
 			(at 0 0 0)
 			(effects
 				(font
@@ -713,7 +579,16 @@
 				(hide yes)
 			)
 		)
-		(symbol "Switch_8-Port_Unmanaged_Generic_0_1"
+		(property "ki_keywords" "Network, Switch, Unmanaged, 8 Port"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Switch_8-Port_Unmanaged_Brainbox_SW-508_0_1"
 			(rectangle
 				(start -7.62 11.43)
 				(end 7.62 -11.43)
@@ -726,7 +601,7 @@
 				)
 			)
 		)
-		(symbol "Switch_8-Port_Unmanaged_Generic_1_1"
+		(symbol "Switch_8-Port_Unmanaged_Brainbox_SW-508_1_1"
 			(pin bidirectional line
 				(at -10.16 3.81 0)
 				(length 2.54)
