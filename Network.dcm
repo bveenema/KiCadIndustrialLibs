@@ -7,7 +7,7 @@ F http://www.amphenolltw.com/2012download/2D%20PDF/08_RJ%20Connectors/RDP-5SPFFV
 $ENDCMP
 #
 $CMP Switch_4-Port_Unmanaged_Brainbox-SW-504
-D Unmanaged network switch - Generic
+D Unmanaged network switch, 10/100 Mbs
 K Network, Switch, Unmanaged, 4 Port
 F http://www.brainboxes.com/files/catalog/product/SW/SW-504/documents/SW-504-datasheet.pdf
 $ENDCMP
@@ -15,6 +15,28 @@ $ENDCMP
 $CMP Switch_4-Port_Unmanaged_Generic
 D Unmanaged network switch - Generic
 K Network, Switch, Unmanaged, 4 Port
+$ENDCMP
+#
+$CMP Switch_5-Port_Unmanaged_Brainbox_SW-505
+D Unmanaged network switch 10/100 Mbs
+K Network, Switch, Unmanaged, 5 Port
+F http://www.brainboxes.com/files/catalog/product/SW/SW-505/documents/SW-505-datasheet.pdf
+$ENDCMP
+#
+$CMP Switch_5-Port_Unmanaged_Generic
+D Unmanaged network switch - Generic
+K Network, Switch, Unmanaged, 5 Port
+$ENDCMP
+#
+$CMP Switch_8-Port_Unmanaged_Brainbox_SW-508
+D Unmanaged network switch, 10/100 Mbs
+K Network, Switch, Unmanaged, 8 Port
+F http://www.brainboxes.com/files/catalog/product/SW/SW-508/documents/SW-508-datasheet.pdf
+$ENDCMP
+#
+$CMP Switch_8-Port_Unmanaged_Generic
+D Unmanaged network switch
+K Network, Switch, Unmanaged, 9 Port
 $ENDCMP
 #
 $CMP cMT-SVR-200

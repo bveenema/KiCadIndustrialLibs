@@ -1,0 +1,39 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP OTB-TouchButton_AC_OTBA5
+D OTB Series: Momentary Action Touch Button w/Black F.C. Input: 120V ac; Upper Housing: Polysulfone. Output: E/M Relay (SPDT) 2m (6.5ft) Cable
+K Optical Touch Button
+F https://info.bannerengineering.com/cs/groups/public/documents/literature/28436.pdf
+$ENDCMP
+#
+$CMP SC10-Safety_Controller
+D Banner Engineering Safety Controller with Ethernet/IP. 10 Inputs (4 can be non-safe output). 2 Relay outputs
+K Safety, Controller, EIP, Ethernet/IP, Banner
+F http://info.bannerengineering.com/cs/groups/public/documents/literature/174868.pdf
+$ENDCMP
+#
+$CMP STB-TouchButton
+D Banner Engineering STB Self-Checking Optical Touch Button
+K Two-Hand, Two, Hand, Button, Touch
+F http://info.bannerengineering.com/cs/groups/public/documents/literature/64136.pdf
+$ENDCMP
+#
+$CMP SafetySwitch-Door_Actuator_SI-RF-A
+D RF Standard Actuator Dimensions: 15 mm x 26 mm x 36 mm
+K Safety Door Switch
+F https://info.bannerengineering.com/cs/groups/public/documents/literature/209488.pdf
+$ENDCMP
+#
+$CMP SafetySwitch-Door_OSSD_SI-RFDT-LP8
+D ISD Compatible, Coding: Low, Diagnostics: ISD, Reset: Automatic, Connector: M12 8-pin 250 mm Pigtail, Used With: SI-RF-A
+K Safety Door Switch, M12
+F https://info.bannerengineering.com/cs/groups/public/documents/literature/209488.pdf
+$ENDCMP
+#
+$CMP SafetySwitch-Interlock-2NO_SI-LS83E-Q5A
+D ISD Connect Compatible Interlock Body; Two NC M12 5 pin QD Connector
+K Safety Interlock, M12
+F https://info.bannerengineering.com/cs/groups/public/documents/literature/59622.pdf
+$ENDCMP
+#
+#End Doc Library

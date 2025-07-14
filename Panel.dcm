@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP BOM_Item
+D BOM Only Item
+$ENDCMP
+#
 $CMP TerminalBlock_Jumper_2Pos
 K Panel, Jumper, Terminal Block
 $ENDCMP

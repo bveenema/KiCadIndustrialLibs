@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TerminalBlock_Jumper_2Pos__25A_Yellow_DN-2J4YMN
+D DINnector terminal block jumper, push-in type, 2-pole, yellow, 25A, 600V rated (UL). Package of 25. For use with DN-T10-A, DN-D10-A, DN-M10-A or DN-Q10-A series terminal block.
+K Panel, Jumper, Terminal Block
+F https://cdn.automationdirect.com/static/specs/dinacc.pdf
+$ENDCMP
+#
+$CMP TerminalBlock_SingleLevel_1-1_20A_Grey_DN-Q12-A
+D DINnector screwless single-level feedthrough terminal block, accepts wire size 24-12 AWG, gray, 20A, 600V rated (UL), 35mm DIN rail mount, 10kA SCCR. Package of 50. For use with jumpers DN-24J2Y, DN-2J2Y or DN-3J2Y
+K Panel, Terminal Block, Single Level, one to one
+F https://cdn.automationdirect.com/static/specs/screwlessdinfeedthru.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ClearPath_MotionControl_CPM-MCxV-xxxxx-xxx
+D ClearPath Motion Control Motor, Intelligent Servo Motor
+K Servo, Motor
+F https://www.teknic.com/files/downloads/clearpath_user_manual.pdf
+$ENDCMP
+#
+#End Doc Library

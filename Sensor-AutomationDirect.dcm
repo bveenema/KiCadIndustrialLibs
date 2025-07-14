@@ -6,4 +6,10 @@ K Distance, Sensor, Photo, Electric
 F https://cdn.automationdirect.com/static/specs/peminirectqm.pdf
 $ENDCMP
 #
+$CMP Proximity_Inductive_AE1&AE6-Series
+D Inductive proximity sensor, tubular, 8mm diameter x 45mm body, IP67
+K Proximity, Sensor, Inductive, M8, 8mm, IP67
+F https://cdn.automationdirect.com/static/specs/prox8mmae1ae6.pdf
+$ENDCMP
+#
 #End Doc Library

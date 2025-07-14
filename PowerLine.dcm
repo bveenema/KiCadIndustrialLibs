@@ -1,0 +1,103 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CircuitBreaker_1P
+D Single pole circuit breaker
+K CB
+F ~
+$ENDCMP
+#
+$CMP CircuitBreaker_2P
+D Double pole circuit breaker
+K CB 2P
+F ~
+$ENDCMP
+#
+$CMP CircuitBreaker_3P
+D Triple pole circuit breaker
+K CB 3P
+F ~
+$ENDCMP
+#
+$CMP LineFilter
+D Power Line Filter
+K Filter, Power
+F ~
+$ENDCMP
+#
+$CMP PowerCable_3Pos_BareLead
+D 3 Position
+K Power, Cable
+$ENDCMP
+#
+$CMP PowerEntryModule
+D Power Engty Module, Single Phase
+K Power, Entry, Module, Socket, Plug
+F ~
+$ENDCMP
+#
+$CMP PowerEntryModule_1Phase_Filtered
+D Power Engty Module, Single Phase
+K Power, Entry, Module, Socket, Plug
+F ~
+$ENDCMP
+#
+$CMP PowerEntryModule_1Phase_Filtered_Switched
+D Power Engty Module, Single Phase
+K Power, Entry, Module, Socket, Plug
+F ~
+$ENDCMP
+#
+$CMP PowerEntryModule_1Phase_Fused
+D Power Engty Module, Single Phase
+K Power, Entry, Module, Socket, Plug
+F ~
+$ENDCMP
+#
+$CMP PowerEntryModule_1Phase_Fused_Filtered
+D Power Engty Module, Single Phase
+K Power, Entry, Module, Socket, Plug
+F ~
+$ENDCMP
+#
+$CMP PowerEntryModule_1Phase_Fused_Filtered_Switched
+D Power Engty Module, Single Phase
+K Power, Entry, Module, Socket, Plug
+F ~
+$ENDCMP
+#
+$CMP PowerEntryModule_1Phase_Fused_Switched
+D Power Engty Module, Single Phase
+K Power, Entry, Module, Socket, Plug
+F ~
+$ENDCMP
+#
+$CMP PowerPlug_Input
+D Power Plug, Input
+K Power, Entry, Module, Socket, Plug
+F ~
+$ENDCMP
+#
+$CMP PowerPlug_Output
+D Power Plug, Output
+K Power, plug
+F ~
+$ENDCMP
+#
+$CMP PowerSupply
+D Industrial Power Supply
+K power supply ac/dc
+$ENDCMP
+#
+$CMP PowerSwitch_2-Pole
+D 2 Pole Power Switch
+K Power Switch 2 Pole
+F ~
+$ENDCMP
+#
+$CMP PowerSwitch_3-Pole
+D 3 Pole Power Switch
+K Power Switch 3 Pole
+F ~
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TBEN-L4-8IOL
+D Turck IO-Link Master, 4x Type A, 4x Type B, V1/V2 Supply
+K IO-Link, IOL, Master, TBEN, Type A, Type B
+F https://www.turck.us/attachment/d301407.pdf
+$ENDCMP
+#
+$CMP TBEN-L4-PLC
+D Turck PLC
+K TBEN, Turck, PLC
+F https://www.turck.us/attachment/d301431.pdf
+$ENDCMP
+#
+$CMP TBEN-S2-4AI
+D Turck Remote Analog Input Module
+K TBEN, Turck, Analog, Input, Remote
+F https://www.turck.us/attachment/100001931.pdf
+$ENDCMP
+#
+#End Doc Library

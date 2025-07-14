@@ -1,9 +1,21 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# BOM_Item
+#
+DEF BOM_Item BOM 0 40 Y Y 1 F N
+F0 "BOM" 0 0 50 H I C CNN
+F1 "BOM_Item" 50 0 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 25 0 1 0 F
+ENDDRAW
+ENDDEF
+#
 # TerminalBlock_Jumper_2Pos
 #
-DEF ~TerminalBlock_Jumper_2Pos TERM 0 40 N Y 1 F N
+DEF TerminalBlock_Jumper_2Pos TERM 0 40 N Y 1 F N
 F0 "TERM" 0 0 50 H I C CNN
 F1 "TerminalBlock_Jumper_2Pos" 25 0 50 H I C CNN
 F2 "" 25 0 50 H I C CNN
@@ -18,7 +30,7 @@ ENDDEF
 #
 # TerminalBlock_SingleLevel_1-1
 #
-DEF ~TerminalBlock_SingleLevel_1-1 TERM 0 40 N Y 1 F N
+DEF TerminalBlock_SingleLevel_1-1 TERM 0 40 N Y 1 F N
 F0 "TERM" 0 0 50 H I C CNN
 F1 "TerminalBlock_SingleLevel_1-1" 25 0 50 H I C CNN
 F2 "" 25 0 50 H I C CNN
@@ -39,7 +51,7 @@ ENDDEF
 #
 # TerminalBlock_SingleLevel_2-1
 #
-DEF ~TerminalBlock_SingleLevel_2-1 TERM 0 40 N Y 1 F N
+DEF TerminalBlock_SingleLevel_2-1 TERM 0 40 N Y 1 F N
 F0 "TERM" 25 0 50 H I C CNN
 F1 "TerminalBlock_SingleLevel_2-1" 50 0 50 H I C CNN
 F2 "" 50 50 50 H I C CNN
@@ -66,7 +78,7 @@ ENDDEF
 #
 # TerminalBlock_SingleLevel_2-2
 #
-DEF ~TerminalBlock_SingleLevel_2-2 TERM 0 40 N Y 1 F N
+DEF TerminalBlock_SingleLevel_2-2 TERM 0 40 N Y 1 F N
 F0 "TERM" 0 0 50 H I C CNN
 F1 "TerminalBlock_SingleLevel_2-2" 25 0 50 H I C CNN
 F2 "" 25 0 50 H I C CNN

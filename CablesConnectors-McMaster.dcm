@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP M12x05_Male-to-BareLead_6897K45
+D 5 Pin M12 Bulkhead connector, male to bare lead wires
+K M12, male, bare lead
+F https://www.mcmaster.com/6897K45/
+$ENDCMP
+#
+#End Doc Library

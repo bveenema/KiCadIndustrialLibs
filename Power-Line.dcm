@@ -1,0 +1,49 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Fuse
+D Fuse
+K fuse
+F ~
+$ENDCMP
+#
+$CMP PowerSwitch_2-Pole
+D 2 place power switch (disconnect)
+K Power Switch, Disconnect
+$ENDCMP
+#
+$CMP PowerSwitch_3-Pole
+D 3 place power switch (disconnect)
+K Power Switch, Disconnect
+$ENDCMP
+#
+$CMP Transformer_1P_1S
+D Transformer, single primary, single secondary
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+$CMP Transformer_1P_2S
+D Transformer, single primary, dual secondary
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+$CMP Transformer_1P_SS
+D Transformer, single primary, split secondary
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+$CMP Transformer_SP_1S
+D Transformer, split primary, single secondary
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+$CMP Transformer_SP_2S
+D Transformer, split primary, dual secondary
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+#End Doc Library
