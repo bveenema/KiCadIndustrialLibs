@@ -265,7 +265,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at -15.24 26.67 270)
 				(length 7.62)
 				(name ""
@@ -283,7 +283,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -15.24 -26.67 90)
 				(length 7.62)
 				(name ""
@@ -301,7 +301,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at -11.43 26.67 270)
 				(length 7.62)
 				(name ""
@@ -319,7 +319,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -11.43 -26.67 90)
 				(length 7.62)
 				(name ""
@@ -337,7 +337,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -7.62 26.67 270)
 				(length 7.62)
 				(name ""
@@ -605,7 +605,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_out line
 				(at -13.97 16.51 0)
 				(length 7.62)
 				(name "GND"
@@ -641,7 +641,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_out line
 				(at -13.97 11.43 0)
 				(length 7.62)
 				(name "VSUPPLY"
@@ -677,7 +677,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_out line
 				(at -13.97 6.35 0)
 				(length 7.62)
 				(name "VSUPPLY"
@@ -731,7 +731,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -1.27 0)
 				(length 7.62)
 				(name "IO-1"
@@ -749,7 +749,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -3.81 0)
 				(length 7.62)
 				(name "IO-0"
@@ -767,7 +767,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -6.35 0)
 				(length 7.62)
 				(name "IO-2"
@@ -785,7 +785,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_out line
 				(at -13.97 -8.89 0)
 				(length 7.62)
 				(name "VSUPPLY"
@@ -803,7 +803,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -11.43 0)
 				(length 7.62)
 				(name "IO-3"
@@ -821,7 +821,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_out line
 				(at -13.97 -13.97 0)
 				(length 7.62)
 				(name "GND"
@@ -839,7 +839,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -16.51 0)
 				(length 7.62)
 				(name "IO-4+"
@@ -857,7 +857,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -19.05 0)
 				(length 7.62)
 				(name "IO-4"
@@ -875,7 +875,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -21.59 0)
 				(length 7.62)
 				(name "IO-5+"
@@ -893,7 +893,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -24.13 0)
 				(length 7.62)
 				(name "IO-5"
@@ -1365,7 +1365,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at -22.86 26.67 270)
 				(length 7.62)
 				(name ""
@@ -1383,7 +1383,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -22.86 -26.67 90)
 				(length 7.62)
 				(name ""
@@ -1401,7 +1401,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at -19.05 26.67 270)
 				(length 7.62)
 				(name ""
@@ -1419,7 +1419,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -19.05 -26.67 90)
 				(length 7.62)
 				(name ""
@@ -1437,7 +1437,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -15.24 26.67 270)
 				(length 7.62)
 				(name ""
@@ -1455,7 +1455,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -15.24 -26.67 90)
 				(length 7.62)
 				(name ""
@@ -1473,7 +1473,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -11.43 -26.67 90)
 				(length 7.62)
 				(name ""
@@ -1629,7 +1629,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at -13.97 0 0)
 				(length 7.62)
 				(name "I"
@@ -1647,7 +1647,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at -13.97 -5.08 0)
 				(length 7.62)
 				(name "I"
@@ -1665,7 +1665,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at -13.97 -10.16 0)
 				(length 7.62)
 				(name "I"
@@ -1683,7 +1683,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at -13.97 -15.24 0)
 				(length 7.62)
 				(name "AI"
@@ -1701,7 +1701,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at -13.97 -20.32 0)
 				(length 7.62)
 				(name "AI"
@@ -1719,7 +1719,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at -13.97 -25.4 0)
 				(length 7.62)
 				(name "AI"
@@ -1737,7 +1737,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at -13.97 -30.48 0)
 				(length 7.62)
 				(name "AI"
@@ -2465,7 +2465,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_out line
 				(at -13.97 16.51 0)
 				(length 7.62)
 				(name "GND"
@@ -2501,7 +2501,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_out line
 				(at -13.97 11.43 0)
 				(length 7.62)
 				(name "VSUPPLY"
@@ -2537,7 +2537,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_out line
 				(at -13.97 6.35 0)
 				(length 7.62)
 				(name "VSUPPLY"
@@ -2591,7 +2591,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -1.27 0)
 				(length 7.62)
 				(name "IO-1"
@@ -2609,7 +2609,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -3.81 0)
 				(length 7.62)
 				(name "IO-0"
@@ -2627,7 +2627,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -6.35 0)
 				(length 7.62)
 				(name "IO-2"
@@ -2645,7 +2645,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_out line
 				(at -13.97 -8.89 0)
 				(length 7.62)
 				(name "VSUPPLY"
@@ -2663,7 +2663,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -11.43 0)
 				(length 7.62)
 				(name "IO-3"
@@ -2681,7 +2681,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_out line
 				(at -13.97 -13.97 0)
 				(length 7.62)
 				(name "GND"
@@ -2699,7 +2699,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -16.51 0)
 				(length 7.62)
 				(name "IO-4+"
@@ -2717,7 +2717,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -19.05 0)
 				(length 7.62)
 				(name "IO-4"
@@ -2735,7 +2735,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -21.59 0)
 				(length 7.62)
 				(name "IO-5+"
@@ -2753,7 +2753,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -13.97 -24.13 0)
 				(length 7.62)
 				(name "IO-5"
