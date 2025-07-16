@@ -1504,14 +1504,6 @@
 					(type none)
 				)
 			)
-			(text "NPN Inputs"
-				(at 0 -7.112 900)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(text "I/O"
 				(at 7.62 33.02 900)
 				(effects
