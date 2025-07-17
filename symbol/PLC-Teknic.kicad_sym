@@ -7,7 +7,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "PC"
-			(at 0.762 0 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15,7 +15,7 @@
 			)
 		)
 		(property "Value" "CCIO-8"
-			(at 0.508 0 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -358,8 +358,8 @@
 		)
 		(symbol "ClearCore_CCIO-8_2_1"
 			(rectangle
-				(start -6.35 20.32)
-				(end 6.35 -20.32)
+				(start 0 73.66)
+				(end 12.7 -73.66)
 				(stroke
 					(width 0)
 					(type default)
@@ -368,16 +368,8 @@
 					(type none)
 				)
 			)
-			(text "NPN Inputs"
-				(at 0 0.254 900)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(text "I/O"
-				(at 7.62 20.32 900)
+				(at 13.97 73.66 900)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -386,7 +378,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 17.78 0)
+				(at -7.62 71.12 0)
 				(length 7.62)
 				(name "I/O"
 					(effects
@@ -404,7 +396,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 12.7 0)
+				(at -7.62 50.8 0)
 				(length 7.62)
 				(name "I/O"
 					(effects
@@ -422,7 +414,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 7.62 0)
+				(at -7.62 30.48 0)
 				(length 7.62)
 				(name "I/O"
 					(effects
@@ -440,7 +432,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 2.54 0)
+				(at -7.62 10.16 0)
 				(length 7.62)
 				(name "I/O"
 					(effects
@@ -458,7 +450,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -2.54 0)
+				(at -7.62 -10.16 0)
 				(length 7.62)
 				(name "I/O"
 					(effects
@@ -476,7 +468,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -7.62 0)
+				(at -7.62 -30.48 0)
 				(length 7.62)
 				(name "I/O"
 					(effects
@@ -494,7 +486,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -12.7 0)
+				(at -7.62 -50.8 0)
 				(length 7.62)
 				(name "I/O"
 					(effects
@@ -512,7 +504,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -17.78 0)
+				(at -7.62 -71.12 0)
 				(length 7.62)
 				(name "I/0"
 					(effects
@@ -532,8 +524,318 @@
 		)
 		(symbol "ClearCore_CCIO-8_3_1"
 			(rectangle
-				(start -6.35 25.4)
-				(end 6.35 -25.4)
+				(start 0 76.2)
+				(end 12.7 -76.2)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "I/O Power"
+				(at 13.97 76.2 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 73.66 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.0-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 68.58 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.0+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 53.34 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.1-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 48.26 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.1+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 33.02 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.2-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 27.94 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.2+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 12.7 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.3-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 7.62 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.3+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -7.62 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.4-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -12.7 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.4+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -27.94 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.5-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -33.02 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.5+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -48.26 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.6-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -53.34 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.6+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -68.58 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.7-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -73.66 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.7+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "ClearCore_CCIO-8_4_1"
+			(rectangle
+				(start 0 22.86)
+				(end 12.7 -27.94)
 				(stroke
 					(width 0)
 					(type solid)
@@ -543,7 +845,7 @@
 				)
 			)
 			(text "COMBINED I/O"
-				(at 7.62 25.4 900)
+				(at 13.97 22.86 900)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -551,10 +853,10 @@
 					(justify right)
 				)
 			)
-			(pin input line
-				(at -13.97 24.13 0)
+			(pin no_connect line
+				(at -7.62 21.59 0)
 				(length 7.62)
-				(name "A-9"
+				(name "NC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -569,10 +871,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -13.97 21.59 0)
+			(pin no_connect line
+				(at -7.62 19.05 0)
 				(length 7.62)
-				(name "A-10"
+				(name "NC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -587,10 +889,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -13.97 19.05 0)
+			(pin no_connect line
+				(at -7.62 16.51 0)
 				(length 7.62)
-				(name "A-11"
+				(name "NC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -606,7 +908,7 @@
 				)
 			)
 			(pin power_out line
-				(at -13.97 16.51 0)
+				(at -7.62 13.97 0)
 				(length 7.62)
 				(name "GND"
 					(effects
@@ -623,10 +925,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -13.97 13.97 0)
+			(pin no_connect line
+				(at -7.62 11.43 0)
 				(length 7.62)
-				(name "A-12"
+				(name "NC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -642,7 +944,7 @@
 				)
 			)
 			(pin power_out line
-				(at -13.97 11.43 0)
+				(at -7.62 8.89 0)
 				(length 7.62)
 				(name "VSUPPLY"
 					(effects
@@ -660,9 +962,9 @@
 				)
 			)
 			(pin input line
-				(at -13.97 8.89 0)
+				(at -7.62 6.35 0)
 				(length 7.62)
-				(name "DI-6"
+				(name "IO-6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -678,7 +980,7 @@
 				)
 			)
 			(pin power_out line
-				(at -13.97 6.35 0)
+				(at -7.62 3.81 0)
 				(length 7.62)
 				(name "VSUPPLY"
 					(effects
@@ -696,9 +998,9 @@
 				)
 			)
 			(pin input line
-				(at -13.97 3.81 0)
+				(at -7.62 1.27 0)
 				(length 7.62)
-				(name "DI-7"
+				(name "IO-7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -713,10 +1015,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -13.97 1.27 0)
+			(pin no_connect line
+				(at -7.62 -1.27 0)
 				(length 7.62)
-				(name "DI-8"
+				(name "NC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -732,7 +1034,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -1.27 0)
+				(at -7.62 -3.81 0)
 				(length 7.62)
 				(name "IO-1"
 					(effects
@@ -750,7 +1052,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -3.81 0)
+				(at -7.62 -6.35 0)
 				(length 7.62)
 				(name "IO-0"
 					(effects
@@ -768,7 +1070,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -6.35 0)
+				(at -7.62 -8.89 0)
 				(length 7.62)
 				(name "IO-2"
 					(effects
@@ -786,7 +1088,7 @@
 				)
 			)
 			(pin power_out line
-				(at -13.97 -8.89 0)
+				(at -7.62 -11.43 0)
 				(length 7.62)
 				(name "VSUPPLY"
 					(effects
@@ -804,7 +1106,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -11.43 0)
+				(at -7.62 -13.97 0)
 				(length 7.62)
 				(name "IO-3"
 					(effects
@@ -822,7 +1124,7 @@
 				)
 			)
 			(pin power_out line
-				(at -13.97 -13.97 0)
+				(at -7.62 -16.51 0)
 				(length 7.62)
 				(name "GND"
 					(effects
@@ -839,10 +1141,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -13.97 -16.51 0)
+			(pin no_connect line
+				(at -7.62 -19.05 0)
 				(length 7.62)
-				(name "IO-4+"
+				(name "NC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -858,7 +1160,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -19.05 0)
+				(at -7.62 -21.59 0)
 				(length 7.62)
 				(name "IO-4"
 					(effects
@@ -875,10 +1177,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -13.97 -21.59 0)
+			(pin no_connect line
+				(at -7.62 -24.13 0)
 				(length 7.62)
-				(name "IO-5+"
+				(name "NC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -894,7 +1196,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -24.13 0)
+				(at -7.62 -26.67 0)
 				(length 7.62)
 				(name "IO-5"
 					(effects
@@ -919,7 +1221,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "PC"
-			(at -0.254 0 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -927,7 +1229,7 @@
 			)
 		)
 		(property "Value" "CLCR-4-13"
-			(at -0.508 0 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1494,8 +1796,8 @@
 		)
 		(symbol "ClearCore_CLCR-4-13_2_1"
 			(rectangle
-				(start -6.35 33.02)
-				(end 6.35 -33.02)
+				(start -12.7 124.46)
+				(end 0 -124.46)
 				(stroke
 					(width 0)
 					(type default)
@@ -1505,7 +1807,7 @@
 				)
 			)
 			(text "I/O"
-				(at 7.62 33.02 900)
+				(at 1.27 124.46 900)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1514,7 +1816,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 30.48 0)
+				(at -20.32 121.92 0)
 				(length 7.62)
 				(name "I/O/AO"
 					(effects
@@ -1532,7 +1834,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 25.4 0)
+				(at -20.32 101.6 0)
 				(length 7.62)
 				(name "I/O"
 					(effects
@@ -1550,7 +1852,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 20.32 0)
+				(at -20.32 81.28 0)
 				(length 7.62)
 				(name "I/O"
 					(effects
@@ -1568,7 +1870,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 15.24 0)
+				(at -20.32 60.96 0)
 				(length 7.62)
 				(name "I/O"
 					(effects
@@ -1586,7 +1888,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 10.16 0)
+				(at -20.32 40.64 0)
 				(length 7.62)
 				(name "I/O/PWM/H"
 					(effects
@@ -1604,7 +1906,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 5.08 0)
+				(at -20.32 20.32 0)
 				(length 7.62)
 				(name "I/O/PWM/H"
 					(effects
@@ -1622,7 +1924,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 0 0)
+				(at -20.32 0 0)
 				(length 7.62)
 				(name "I"
 					(effects
@@ -1640,7 +1942,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -5.08 0)
+				(at -20.32 -20.32 0)
 				(length 7.62)
 				(name "I"
 					(effects
@@ -1658,7 +1960,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -10.16 0)
+				(at -20.32 -40.64 0)
 				(length 7.62)
 				(name "I"
 					(effects
@@ -1676,7 +1978,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -15.24 0)
+				(at -20.32 -60.96 0)
 				(length 7.62)
 				(name "AI"
 					(effects
@@ -1694,7 +1996,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -20.32 0)
+				(at -20.32 -81.28 0)
 				(length 7.62)
 				(name "AI"
 					(effects
@@ -1712,7 +2014,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -25.4 0)
+				(at -20.32 -101.6 0)
 				(length 7.62)
 				(name "AI"
 					(effects
@@ -1730,7 +2032,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -30.48 0)
+				(at -20.32 -121.92 0)
 				(length 7.62)
 				(name "AI"
 					(effects
@@ -1750,8 +2052,498 @@
 		)
 		(symbol "ClearCore_CLCR-4-13_3_1"
 			(rectangle
-				(start -6.35 45.72)
-				(end 6.35 -45.72)
+				(start 0 129.54)
+				(end 12.7 -124.46)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "I/O Power"
+				(at 13.97 129.54 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 127 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.0-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 121.92 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.0+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 106.68 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.1-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 101.6 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.1+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 87.63 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.2-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 81.28 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.2+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 66.04 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.3-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 60.96 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.3+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 45.72 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.4-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 40.64 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.4+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 25.4 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.5-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 20.32 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "IO.5+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 5.08 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "DI.6-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 0 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "DI.6+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -15.24 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "DI.7-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -20.32 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "DI.7+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -35.56 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "DI.8-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -40.64 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "DI.8+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -55.88 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A.9-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -60.96 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A.9+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -76.2 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A.10-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -81.28 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A.10+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -96.52 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A.11-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -101.6 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A.11+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -116.84 0)
+				(length 7.62)
+				(name "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A.12-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -121.92 0)
+				(length 7.62)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A.12+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "ClearCore_CLCR-4-13_4_1"
+			(rectangle
+				(start 0 45.72)
+				(end 12.7 -45.72)
 				(stroke
 					(width 0)
 					(type default)
@@ -1762,7 +2554,7 @@
 			)
 			(polyline
 				(pts
-					(xy -6.35 22.86) (xy 6.35 22.86)
+					(xy 0 22.86) (xy 12.7 22.86)
 				)
 				(stroke
 					(width 0)
@@ -1774,7 +2566,7 @@
 			)
 			(polyline
 				(pts
-					(xy -6.35 0) (xy 6.35 0)
+					(xy 0 0) (xy 12.7 0)
 				)
 				(stroke
 					(width 0)
@@ -1786,7 +2578,7 @@
 			)
 			(polyline
 				(pts
-					(xy -6.35 -22.86) (xy 6.35 -22.86)
+					(xy 0 -22.86) (xy 12.7 -22.86)
 				)
 				(stroke
 					(width 0)
@@ -1797,7 +2589,7 @@
 				)
 			)
 			(text "MOTOR"
-				(at 7.874 45.72 900)
+				(at 14.224 45.72 900)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1806,7 +2598,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 43.18 0)
+				(at -7.62 43.18 0)
 				(length 7.62)
 				(name "Enable+"
 					(effects
@@ -1824,7 +2616,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 40.64 0)
+				(at -7.62 40.64 0)
 				(length 7.62)
 				(name "Enable-"
 					(effects
@@ -1842,7 +2634,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 38.1 0)
+				(at -7.62 38.1 0)
 				(length 7.62)
 				(name "Step+"
 					(effects
@@ -1860,7 +2652,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 35.56 0)
+				(at -7.62 35.56 0)
 				(length 7.62)
 				(name "Step-"
 					(effects
@@ -1878,7 +2670,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 33.02 0)
+				(at -7.62 33.02 0)
 				(length 7.62)
 				(name "Direction+"
 					(effects
@@ -1896,7 +2688,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 30.48 0)
+				(at -7.62 30.48 0)
 				(length 7.62)
 				(name "Direction-"
 					(effects
@@ -1914,7 +2706,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 27.94 0)
+				(at -7.62 27.94 0)
 				(length 7.62)
 				(name "HLFB+"
 					(effects
@@ -1932,7 +2724,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 25.4 0)
+				(at -7.62 25.4 0)
 				(length 7.62)
 				(name "HLFB-"
 					(effects
@@ -1950,7 +2742,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 20.32 0)
+				(at -7.62 20.32 0)
 				(length 7.62)
 				(name "Enable+"
 					(effects
@@ -1968,7 +2760,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 17.78 0)
+				(at -7.62 17.78 0)
 				(length 7.62)
 				(name "Enable-"
 					(effects
@@ -1986,7 +2778,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 15.24 0)
+				(at -7.62 15.24 0)
 				(length 7.62)
 				(name "Step+"
 					(effects
@@ -2004,7 +2796,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 12.7 0)
+				(at -7.62 12.7 0)
 				(length 7.62)
 				(name "Step-"
 					(effects
@@ -2022,7 +2814,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 10.16 0)
+				(at -7.62 10.16 0)
 				(length 7.62)
 				(name "Direction+"
 					(effects
@@ -2040,7 +2832,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 7.62 0)
+				(at -7.62 7.62 0)
 				(length 7.62)
 				(name "Direction-"
 					(effects
@@ -2058,7 +2850,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 5.08 0)
+				(at -7.62 5.08 0)
 				(length 7.62)
 				(name "HLFB+"
 					(effects
@@ -2076,7 +2868,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 2.54 0)
+				(at -7.62 2.54 0)
 				(length 7.62)
 				(name "HLFB-"
 					(effects
@@ -2094,7 +2886,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 -2.54 0)
+				(at -7.62 -2.54 0)
 				(length 7.62)
 				(name "Enable+"
 					(effects
@@ -2112,7 +2904,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 -5.08 0)
+				(at -7.62 -5.08 0)
 				(length 7.62)
 				(name "Enable-"
 					(effects
@@ -2130,7 +2922,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 -7.62 0)
+				(at -7.62 -7.62 0)
 				(length 7.62)
 				(name "Step+"
 					(effects
@@ -2148,7 +2940,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 -10.16 0)
+				(at -7.62 -10.16 0)
 				(length 7.62)
 				(name "Step-"
 					(effects
@@ -2166,7 +2958,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 -12.7 0)
+				(at -7.62 -12.7 0)
 				(length 7.62)
 				(name "Direction+"
 					(effects
@@ -2184,7 +2976,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 -15.24 0)
+				(at -7.62 -15.24 0)
 				(length 7.62)
 				(name "Direction-"
 					(effects
@@ -2202,7 +2994,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -17.78 0)
+				(at -7.62 -17.78 0)
 				(length 7.62)
 				(name "HLFB+"
 					(effects
@@ -2220,7 +3012,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -20.32 0)
+				(at -7.62 -20.32 0)
 				(length 7.62)
 				(name "HLFB-"
 					(effects
@@ -2238,7 +3030,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 -25.4 0)
+				(at -7.62 -25.4 0)
 				(length 7.62)
 				(name "Enable+"
 					(effects
@@ -2256,7 +3048,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 -27.94 0)
+				(at -7.62 -27.94 0)
 				(length 7.62)
 				(name "Enable-"
 					(effects
@@ -2274,7 +3066,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 -30.48 0)
+				(at -7.62 -30.48 0)
 				(length 7.62)
 				(name "Step+"
 					(effects
@@ -2292,7 +3084,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 -33.02 0)
+				(at -7.62 -33.02 0)
 				(length 7.62)
 				(name "Step-"
 					(effects
@@ -2310,7 +3102,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 -35.56 0)
+				(at -7.62 -35.56 0)
 				(length 7.62)
 				(name "Direction+"
 					(effects
@@ -2328,7 +3120,7 @@
 				)
 			)
 			(pin output line
-				(at -13.97 -38.1 0)
+				(at -7.62 -38.1 0)
 				(length 7.62)
 				(name "Direction-"
 					(effects
@@ -2346,7 +3138,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -40.64 0)
+				(at -7.62 -40.64 0)
 				(length 7.62)
 				(name "HLFB+"
 					(effects
@@ -2364,7 +3156,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -43.18 0)
+				(at -7.62 -43.18 0)
 				(length 7.62)
 				(name "HLFB-"
 					(effects
@@ -2382,10 +3174,10 @@
 				)
 			)
 		)
-		(symbol "ClearCore_CLCR-4-13_4_1"
+		(symbol "ClearCore_CLCR-4-13_5_1"
 			(rectangle
-				(start -6.35 25.4)
-				(end 6.35 -25.4)
+				(start 0 25.4)
+				(end 12.7 -25.4)
 				(stroke
 					(width 0)
 					(type solid)
@@ -2395,7 +3187,7 @@
 				)
 			)
 			(text "COMBINED I/O"
-				(at 7.62 25.4 900)
+				(at 13.97 25.4 900)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2404,7 +3196,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 24.13 0)
+				(at -7.62 24.13 0)
 				(length 7.62)
 				(name "A-9"
 					(effects
@@ -2422,7 +3214,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 21.59 0)
+				(at -7.62 21.59 0)
 				(length 7.62)
 				(name "A-10"
 					(effects
@@ -2440,7 +3232,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 19.05 0)
+				(at -7.62 19.05 0)
 				(length 7.62)
 				(name "A-11"
 					(effects
@@ -2458,7 +3250,7 @@
 				)
 			)
 			(pin power_out line
-				(at -13.97 16.51 0)
+				(at -7.62 16.51 0)
 				(length 7.62)
 				(name "GND"
 					(effects
@@ -2476,7 +3268,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 13.97 0)
+				(at -7.62 13.97 0)
 				(length 7.62)
 				(name "A-12"
 					(effects
@@ -2494,7 +3286,7 @@
 				)
 			)
 			(pin power_out line
-				(at -13.97 11.43 0)
+				(at -7.62 11.43 0)
 				(length 7.62)
 				(name "VSUPPLY"
 					(effects
@@ -2512,7 +3304,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 8.89 0)
+				(at -7.62 8.89 0)
 				(length 7.62)
 				(name "DI-6"
 					(effects
@@ -2530,7 +3322,7 @@
 				)
 			)
 			(pin power_out line
-				(at -13.97 6.35 0)
+				(at -7.62 6.35 0)
 				(length 7.62)
 				(name "VSUPPLY"
 					(effects
@@ -2548,7 +3340,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 3.81 0)
+				(at -7.62 3.81 0)
 				(length 7.62)
 				(name "DI-7"
 					(effects
@@ -2566,7 +3358,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 1.27 0)
+				(at -7.62 1.27 0)
 				(length 7.62)
 				(name "DI-8"
 					(effects
@@ -2584,7 +3376,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -1.27 0)
+				(at -7.62 -1.27 0)
 				(length 7.62)
 				(name "IO-1"
 					(effects
@@ -2602,7 +3394,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -3.81 0)
+				(at -7.62 -3.81 0)
 				(length 7.62)
 				(name "IO-0"
 					(effects
@@ -2620,7 +3412,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -6.35 0)
+				(at -7.62 -6.35 0)
 				(length 7.62)
 				(name "IO-2"
 					(effects
@@ -2638,7 +3430,7 @@
 				)
 			)
 			(pin power_out line
-				(at -13.97 -8.89 0)
+				(at -7.62 -8.89 0)
 				(length 7.62)
 				(name "VSUPPLY"
 					(effects
@@ -2656,7 +3448,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -11.43 0)
+				(at -7.62 -11.43 0)
 				(length 7.62)
 				(name "IO-3"
 					(effects
@@ -2674,7 +3466,7 @@
 				)
 			)
 			(pin power_out line
-				(at -13.97 -13.97 0)
+				(at -7.62 -13.97 0)
 				(length 7.62)
 				(name "GND"
 					(effects
@@ -2692,7 +3484,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -16.51 0)
+				(at -7.62 -16.51 0)
 				(length 7.62)
 				(name "IO-4+"
 					(effects
@@ -2710,7 +3502,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -19.05 0)
+				(at -7.62 -19.05 0)
 				(length 7.62)
 				(name "IO-4"
 					(effects
@@ -2728,7 +3520,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -21.59 0)
+				(at -7.62 -21.59 0)
 				(length 7.62)
 				(name "IO-5+"
 					(effects
@@ -2746,7 +3538,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -13.97 -24.13 0)
+				(at -7.62 -24.13 0)
 				(length 7.62)
 				(name "IO-5"
 					(effects
