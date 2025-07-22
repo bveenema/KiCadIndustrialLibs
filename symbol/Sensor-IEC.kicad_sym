@@ -1464,7 +1464,7 @@
 		)
 		(symbol "Proximity Sensor NO/NC_1_1"
 			(pin bidirectional line
-				(at -3.81 7.62 270)
+				(at -5.08 7.62 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1474,6 +1474,24 @@
 					)
 				)
 				(number "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 0 7.62 270)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "+V"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1492,24 +1510,6 @@
 					)
 				)
 				(number "NO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 1.27 7.62 270)
-				(length 3.81)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "+V"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1696,7 +1696,7 @@
 		)
 		(symbol "Proximity Sensor NO/NC Dual_1_1"
 			(pin bidirectional line
-				(at -3.81 7.62 270)
+				(at -5.08 7.62 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1706,6 +1706,24 @@
 					)
 				)
 				(number "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 0 7.62 270)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "+V"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1724,24 +1742,6 @@
 					)
 				)
 				(number "NO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 1.27 7.62 270)
-				(length 3.81)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "+V"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1770,7 +1770,7 @@
 		)
 		(symbol "Proximity Sensor NO/NC Dual_2_1"
 			(pin bidirectional line
-				(at -3.81 7.62 270)
+				(at -5.08 7.62 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1780,6 +1780,24 @@
 					)
 				)
 				(number "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 0 7.62 270)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "+V"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1798,24 +1816,6 @@
 					)
 				)
 				(number "NO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 1.27 7.62 270)
-				(length 3.81)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "+V"
 					(effects
 						(font
 							(size 1.27 1.27)
