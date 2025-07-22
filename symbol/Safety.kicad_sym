@@ -2,596 +2,7 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "SafetyRelay 3NO 1NC OSSD"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "K"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SafetyRelay 3NO 1NC OSSD"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "safety, relay, NO, NC, OSSD, monitor"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "SafetyRelay 3NO 1NC OSSD_0_1"
-			(rectangle
-				(start -36.83 10.16)
-				(end 36.83 -10.16)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 12.7 10.16) (xy 12.7 5.969)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 12.7 -2.921) (xy 12.7 0.635) (xy 10.16 6.985)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 12.7 -10.16) (xy 12.7 -7.62) (xy 10.16 -1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 17.78 10.16) (xy 17.78 5.969)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 17.78 -2.921) (xy 17.78 0.635) (xy 15.24 6.985)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 17.78 -10.16) (xy 17.78 -7.62) (xy 15.24 -1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 22.86 10.16) (xy 22.86 5.969)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 22.86 -2.921) (xy 22.86 0.635) (xy 20.32 6.985)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 22.86 -10.16) (xy 22.86 -7.62) (xy 20.32 -1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 27.94 -1.651) (xy 27.94 10.16)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 27.94 -1.651) (xy 27.94 -2.54) (xy 30.48 -2.54)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 27.94 -8.001) (xy 31.75 -8.001) (xy 31.75 0.889)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 27.94 -10.16) (xy 27.94 -7.62) (xy 30.48 -1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 31.75 7.239) (xy 27.94 7.239)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 31.75 7.239) (xy 31.75 6.35) (xy 34.29 6.35)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 31.75 0.889) (xy 34.29 6.985)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "SafetyRelay 3NO 1NC OSSD_1_1"
-			(polyline
-				(pts
-					(xy 5.08 10.16) (xy 5.08 -10.16)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 29.21 -4.445) (xy 5.08 -4.445)
-				)
-				(stroke
-					(width 0)
-					(type dash)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 33.02 4.445) (xy 5.08 4.445)
-				)
-				(stroke
-					(width 0)
-					(type dash)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(pin bidirectional line
-				(at -34.29 13.97 270)
-				(length 3.81)
-				(name "Power"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -29.21 13.97 270)
-				(length 3.81)
-				(name "Power"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -21.59 13.97 270)
-				(length 3.81)
-				(name "CTL+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "S11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -21.59 -13.97 90)
-				(length 3.81)
-				(name "CTL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "S10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -16.51 13.97 270)
-				(length 3.81)
-				(name "AutoStart"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "S21"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 13.97 270)
-				(length 3.81)
-				(name "ManualStart"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "S22"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -2.54 13.97 270)
-				(length 3.81)
-				(name "OSSD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "S12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 2.54 13.97 270)
-				(length 3.81)
-				(name "OSSD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "S14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 12.7 13.97 270)
-				(length 3.81)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 12.7 -13.97 90)
-				(length 3.81)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 13.97 270)
-				(length 3.81)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "23"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -13.97 90)
-				(length 3.81)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 22.86 13.97 270)
-				(length 3.81)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "33"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 22.86 -13.97 90)
-				(length 3.81)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "34"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 27.94 13.97 270)
-				(length 3.81)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "41"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 27.94 -13.97 90)
-				(length 3.81)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "42"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "SafetyRelay-1CH"
+	(symbol "Safety Relay - 1CH"
 		(pin_names
 			(offset 1.016)
 		)
@@ -606,7 +17,7 @@
 				)
 			)
 		)
-		(property "Value" "SafetyRelay-1CH"
+		(property "Value" "Safety Relay - 1CH"
 			(at 0 16.51 0)
 			(effects
 				(font
@@ -641,7 +52,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SafetyRelay-1CH_0_0"
+		(symbol "Safety Relay - 1CH_0_0"
 			(polyline
 				(pts
 					(xy -5.715 8.89) (xy -5.715 7.62)
@@ -1165,7 +576,7 @@
 				)
 			)
 		)
-		(symbol "SafetyRelay-1CH_0_1"
+		(symbol "Safety Relay - 1CH_0_1"
 			(polyline
 				(pts
 					(xy -6.35 -7.62) (xy -3.81 -7.62)
@@ -1215,7 +626,7 @@
 				)
 			)
 		)
-		(symbol "SafetyRelay-1CH_1_1"
+		(symbol "Safety Relay - 1CH_1_1"
 			(polyline
 				(pts
 					(xy -3.81 -7.62) (xy -1.27 -6.35)
@@ -1837,14 +1248,603 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SafetySwitch-CablePull-1NC-1NO"
+	(symbol "Safety Relay - 3NO 1NC OSSD"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "K"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Safety Relay - 3NO 1NC OSSD"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "safety, relay, NO, NC, OSSD, monitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Safety Relay - 3NO 1NC OSSD_0_1"
+			(rectangle
+				(start -36.83 10.16)
+				(end 36.83 -10.16)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.7 10.16) (xy 12.7 5.969)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.7 -2.921) (xy 12.7 0.635) (xy 10.16 6.985)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.7 -10.16) (xy 12.7 -7.62) (xy 10.16 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 10.16) (xy 17.78 5.969)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 -2.921) (xy 17.78 0.635) (xy 15.24 6.985)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 -10.16) (xy 17.78 -7.62) (xy 15.24 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 22.86 10.16) (xy 22.86 5.969)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 22.86 -2.921) (xy 22.86 0.635) (xy 20.32 6.985)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 22.86 -10.16) (xy 22.86 -7.62) (xy 20.32 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 27.94 -1.651) (xy 27.94 10.16)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 27.94 -1.651) (xy 27.94 -2.54) (xy 30.48 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 27.94 -8.001) (xy 31.75 -8.001) (xy 31.75 0.889)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 27.94 -10.16) (xy 27.94 -7.62) (xy 30.48 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 31.75 7.239) (xy 27.94 7.239)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 31.75 7.239) (xy 31.75 6.35) (xy 34.29 6.35)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 31.75 0.889) (xy 34.29 6.985)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Safety Relay - 3NO 1NC OSSD_1_1"
+			(polyline
+				(pts
+					(xy 5.08 10.16) (xy 5.08 -10.16)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 29.21 -4.445) (xy 5.08 -4.445)
+				)
+				(stroke
+					(width 0)
+					(type dash)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 33.02 4.445) (xy 5.08 4.445)
+				)
+				(stroke
+					(width 0)
+					(type dash)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin bidirectional line
+				(at -40.64 3.81 0)
+				(length 3.81)
+				(name "OSSD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "S14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -40.64 -3.81 0)
+				(length 3.81)
+				(name "OSSD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "S12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -34.29 13.97 270)
+				(length 3.81)
+				(name "PWR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -29.21 13.97 270)
+				(length 3.81)
+				(name "PWR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -21.59 13.97 270)
+				(length 3.81)
+				(name "CTL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "S10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -16.51 13.97 270)
+				(length 3.81)
+				(name "CTL+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "S11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 13.97 270)
+				(length 3.81)
+				(name "AutoStart"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "S21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -6.35 13.97 270)
+				(length 3.81)
+				(name "ManualStart"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "S22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 13.97 270)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -13.97 90)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 17.78 13.97 270)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 17.78 -13.97 90)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 22.86 13.97 270)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 22.86 -13.97 90)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "34"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 27.94 13.97 270)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "41"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 27.94 -13.97 90)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "42"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Safety Switch - CablePull-1NC-1NO"
 		(pin_names
 			(offset 1.016)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "COMP"
+		(property "Reference" "S"
 			(at 0 12.7 0)
 			(effects
 				(font
@@ -1852,7 +1852,7 @@
 				)
 			)
 		)
-		(property "Value" "SafetySwitch-CablePull-1NC-1NO"
+		(property "Value" "Safety Switch - CablePull-1NC-1NO"
 			(at 0 10.16 0)
 			(effects
 				(font
@@ -1887,7 +1887,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SafetySwitch-CablePull-1NC-1NO_0_1"
+		(symbol "Safety Switch - CablePull-1NC-1NO_0_1"
 			(rectangle
 				(start -0.635 3.175)
 				(end 0.635 5.715)
@@ -1911,7 +1911,7 @@
 				)
 			)
 		)
-		(symbol "SafetySwitch-CablePull-1NC-1NO_1_1"
+		(symbol "Safety Switch - CablePull-1NC-1NO_1_1"
 			(polyline
 				(pts
 					(xy -3.81 1.27) (xy 3.81 -1.27)
@@ -2178,14 +2178,14 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SafetySwitch-CablePull-2NC"
+	(symbol "Safety Switch - CablePull-2NC"
 		(pin_names
 			(offset 1.016)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "COMP"
+		(property "Reference" "S"
 			(at 0 12.7 0)
 			(effects
 				(font
@@ -2193,7 +2193,7 @@
 				)
 			)
 		)
-		(property "Value" "SafetySwitch-CablePull-2NC"
+		(property "Value" "Safety Switch - CablePull-2NC"
 			(at 0 10.16 0)
 			(effects
 				(font
@@ -2228,7 +2228,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SafetySwitch-CablePull-2NC_0_1"
+		(symbol "Safety Switch - CablePull-2NC_0_1"
 			(rectangle
 				(start -0.635 3.175)
 				(end 0.635 5.715)
@@ -2264,7 +2264,7 @@
 				)
 			)
 		)
-		(symbol "SafetySwitch-CablePull-2NC_1_1"
+		(symbol "Safety Switch - CablePull-2NC_1_1"
 			(polyline
 				(pts
 					(xy -3.81 1.27) (xy 3.81 -1.27)
@@ -2531,14 +2531,14 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SafetySwitch-CablePull-2NC-1NO"
+	(symbol "Safety Switch - CablePull-2NC-1NO"
 		(pin_names
 			(offset 1.016)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "COMP"
+		(property "Reference" "S"
 			(at 0 15.24 0)
 			(effects
 				(font
@@ -2546,7 +2546,7 @@
 				)
 			)
 		)
-		(property "Value" "SafetySwitch-CablePull-2NC-1NO"
+		(property "Value" "Safety Switch - CablePull-2NC-1NO"
 			(at 0 12.7 0)
 			(effects
 				(font
@@ -2581,7 +2581,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SafetySwitch-CablePull-2NC-1NO_0_1"
+		(symbol "Safety Switch - CablePull-2NC-1NO_0_1"
 			(rectangle
 				(start -0.635 5.715)
 				(end 0.635 8.255)
@@ -2617,7 +2617,7 @@
 				)
 			)
 		)
-		(symbol "SafetySwitch-CablePull-2NC-1NO_1_1"
+		(symbol "Safety Switch - CablePull-2NC-1NO_1_1"
 			(polyline
 				(pts
 					(xy -3.81 3.81) (xy 3.81 1.27)
@@ -2992,14 +2992,14 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SafetySwitch-CablePull-3NC"
+	(symbol "Safety Switch - CablePull-3NC"
 		(pin_names
 			(offset 1.016)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "COMP"
+		(property "Reference" "S"
 			(at 0 15.24 0)
 			(effects
 				(font
@@ -3007,7 +3007,7 @@
 				)
 			)
 		)
-		(property "Value" "SafetySwitch-CablePull-3NC"
+		(property "Value" "Safety Switch - CablePull-3NC"
 			(at 0 12.7 0)
 			(effects
 				(font
@@ -3042,7 +3042,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SafetySwitch-CablePull-3NC_0_1"
+		(symbol "Safety Switch - CablePull-3NC_0_1"
 			(rectangle
 				(start -0.635 5.715)
 				(end 0.635 8.255)
@@ -3090,7 +3090,7 @@
 				)
 			)
 		)
-		(symbol "SafetySwitch-CablePull-3NC_1_1"
+		(symbol "Safety Switch - CablePull-3NC_1_1"
 			(polyline
 				(pts
 					(xy -3.81 3.81) (xy 3.81 1.27)
@@ -3465,14 +3465,14 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SafetySwitch-E-Stop-2NC"
+	(symbol "Safety Switch - E-Stop-2NC"
 		(pin_names
 			(offset 1.016)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "B"
+		(property "Reference" "S"
 			(at 0 10.795 0)
 			(effects
 				(font
@@ -3480,7 +3480,7 @@
 				)
 			)
 		)
-		(property "Value" "SafetySwitch-E-Stop-2NC"
+		(property "Value" "Safety Switch - E-Stop-2NC"
 			(at 0 8.89 0)
 			(effects
 				(font
@@ -3524,7 +3524,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SafetySwitch-E-Stop-2NC_0_1"
+		(symbol "Safety Switch - E-Stop-2NC_0_1"
 			(polyline
 				(pts
 					(xy -3.81 1.27) (xy 3.81 -1.27)
@@ -3825,7 +3825,7 @@
 				)
 			)
 		)
-		(symbol "SafetySwitch-E-Stop-2NC_1_1"
+		(symbol "Safety Switch - E-Stop-2NC_1_1"
 			(pin bidirectional line
 				(at -7.62 1.27 0)
 				(length 3.81)
@@ -3919,14 +3919,14 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SafetySwitch-Interlock-2NO"
+	(symbol "Safety Switch - Interlock-2NO"
 		(pin_names
 			(offset 1.016)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "COMP"
+		(property "Reference" "S"
 			(at 0 9.525 0)
 			(effects
 				(font
@@ -3934,7 +3934,7 @@
 				)
 			)
 		)
-		(property "Value" "SafetySwitch-Interlock-2NO"
+		(property "Value" "Safety Switch - Interlock-2NO"
 			(at 0 6.985 0)
 			(effects
 				(font
@@ -3969,7 +3969,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SafetySwitch-Interlock-2NO_0_1"
+		(symbol "Safety Switch - Interlock-2NO_0_1"
 			(polyline
 				(pts
 					(xy -3.81 0) (xy 3.81 0)
@@ -4051,7 +4051,7 @@
 				)
 			)
 		)
-		(symbol "SafetySwitch-Interlock-2NO_1_1"
+		(symbol "Safety Switch - Interlock-2NO_1_1"
 			(polyline
 				(pts
 					(xy 0 1.27) (xy 0 1.905)
@@ -4187,23 +4187,23 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SafetySwitch_Locking-1"
+	(symbol "Safety Switch - Magnetic Non-Contact 2NC"
 		(pin_names
-			(offset 1.016)
+			(offset 0)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
-			(at 0 13.97 0)
+		(property "Reference" "S"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SafetySwitch_Locking-1"
-			(at 0 11.43 0)
+		(property "Value" "Safety Switch - Magnetic Non-Contact 2NC"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4211,7 +4211,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at -5.08 3.81 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4220,7 +4220,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at -5.08 3.81 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4237,261 +4237,167 @@
 				(hide yes)
 			)
 		)
-		(symbol "SafetySwitch_Locking-1_0_1"
-			(rectangle
-				(start -8.89 10.16)
-				(end 8.89 -10.16)
-				(stroke
-					(width 0)
-					(type solid)
+		(property "Actuator PN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -8.89 5.08) (xy -5.08 5.08) (xy 1.27 6.35)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -8.89 -1.27) (xy -5.08 -1.27) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -8.89 -5.08) (xy -5.08 -5.08)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -6.35 -6.35) (xy -6.35 -8.89) (xy 0 -8.89) (xy 0 -6.35) (xy -1.27 -6.35)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.842 -6.35) (xy -4.318 -6.35)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.588 -5.842) (xy -5.588 -6.858) (xy -4.953 -6.35) (xy -5.588 -5.842)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.08 -5.08) (xy -6.35 -6.35) (xy -5.08 -7.62) (xy -3.81 -6.35) (xy -5.08 -5.08)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.08 -7.62) (xy -8.89 -7.62)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -4.826 -5.715) (xy -4.826 -6.985)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 -5.08) (xy -2.54 -7.62) (xy -1.27 -7.62) (xy -1.27 -5.08) (xy -2.54 -5.08) (xy -1.27 -7.62)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 -6.35) (xy -3.81 -6.35)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 -1.27) (xy -1.905 -0.635)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 -2.54) (xy -1.905 -1.905)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 -3.81) (xy -1.905 -3.175)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 -5.08) (xy -1.905 -4.445)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.27 5.08) (xy 5.08 5.08) (xy 5.08 7.62) (xy -8.89 7.62)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.27 -1.27) (xy 5.08 -1.27) (xy 5.08 1.27) (xy -8.89 1.27)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.842 0) (xy 8.128 0) (xy 7.62 0.508)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 6.985 0)
-				(radius 1.4224)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 8.128 0) (xy 7.62 -0.508)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
-		(symbol "SafetySwitch_Locking-1_1_1"
-			(pin passive line
-				(at -12.7 7.62 0)
+		(property "ki_keywords" "safety, switch, magnet, magnetic, non-contact, NC, normally closed, dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Safety Switch - Magnetic Non-Contact 2NC_1_1"
+			(rectangle
+				(start -6.985 3.81)
+				(end 3.81 -3.81)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.715 2.54) (xy -5.715 1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -5.715 -0.635)
+				(end -5.08 -2.54)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 3.175) (xy -6.35 1.905) (xy -5.08 0.635) (xy -3.81 1.905) (xy -5.08 3.175)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -5.08 -0.635)
+				(end -4.445 -1.27)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -5.08 -1.905)
+				(end -4.445 -2.54)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy -4.445 2.54) (xy -4.445 1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 3.81) (xy 0 0.635) (xy -1.27 0.635)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -2.54) (xy -1.27 1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.905 -0.635) (xy -2.54 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type dot)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 3.81) (xy 2.54 0.635) (xy 1.27 0.635)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -3.81) (xy 2.54 -2.54) (xy 1.27 1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin bidirectional line
+				(at -6.35 7.62 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -4500,7 +4406,7 @@
 						)
 					)
 				)
-				(number "22"
+				(number "0V"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4508,8 +4414,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -12.7 5.08 0)
+			(pin bidirectional line
+				(at -3.81 7.62 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -4518,7 +4424,7 @@
 						)
 					)
 				)
-				(number "21"
+				(number "+V"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4526,26 +4432,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -12.7 1.27 0)
-				(length 3.81)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -12.7 -1.27 0)
+			(pin bidirectional line
+				(at 0 7.62 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -4562,8 +4450,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -12.7 -5.08 0)
+			(pin output line
+				(at 0 -7.62 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -4572,7 +4460,7 @@
 						)
 					)
 				)
-				(number "E1"
+				(number "12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4580,8 +4468,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -12.7 -7.62 0)
+			(pin bidirectional line
+				(at 2.54 7.62 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -4590,7 +4478,25 @@
 						)
 					)
 				)
-				(number "E2"
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 2.54 -7.62 90)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4601,23 +4507,23 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SafetySwitch_Locking-2"
+	(symbol "Safety Switch - Magnetic Non-Contact 2NC 1NO"
 		(pin_names
-			(offset 1.016)
+			(offset 0)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
-			(at 0 20.32 0)
+		(property "Reference" "S"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SafetySwitch_Locking-2"
-			(at 0 17.78 0)
+		(property "Value" "Safety Switch - Magnetic Non-Contact 2NC 1NO"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4625,7 +4531,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at -5.08 10.16 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4634,7 +4540,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at -5.08 10.16 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4651,262 +4557,39 @@
 				(hide yes)
 			)
 		)
-		(symbol "SafetySwitch_Locking-2_0_1"
-			(rectangle
-				(start -9.144 16.764)
-				(end 8.636 -17.78)
-				(stroke
-					(width 0)
-					(type solid)
+		(property "Actuator PN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -8.89 11.43) (xy -5.08 11.43) (xy 1.27 12.7)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -8.89 -7.62) (xy -5.08 -7.62) (xy 1.27 -6.35)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -8.89 -11.43) (xy -5.08 -11.43)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -6.35 -12.7) (xy -6.35 -15.24) (xy 0 -15.24) (xy 0 -12.7) (xy -1.27 -12.7)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.842 -12.7) (xy -4.318 -12.7)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.588 -12.192) (xy -5.588 -13.208) (xy -4.953 -12.7) (xy -5.588 -12.192)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.08 -11.43) (xy -6.35 -12.7) (xy -5.08 -13.97) (xy -3.81 -12.7) (xy -5.08 -11.43)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.08 -13.97) (xy -8.89 -13.97)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -4.826 -12.065) (xy -4.826 -13.335)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 -11.43) (xy -2.54 -13.97) (xy -1.27 -13.97) (xy -1.27 -11.43) (xy -2.54 -11.43) (xy -1.27 -13.97)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 -12.7) (xy -3.81 -12.7)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 -7.62) (xy -1.905 -6.985)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 -8.89) (xy -1.905 -8.255)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 -10.16) (xy -1.905 -9.525)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 -11.43) (xy -1.905 -10.795)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.27 11.43) (xy 5.08 11.43) (xy 5.08 13.97) (xy -8.89 13.97)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.27 -7.62) (xy 5.08 -7.62) (xy 5.08 -5.08) (xy -8.89 -5.08)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.842 -6.35) (xy 8.128 -6.35) (xy 7.62 -5.842)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 6.985 -6.35)
-				(radius 1.4224)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 8.128 -6.35) (xy 7.62 -6.858)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
-		(symbol "SafetySwitch_Locking-2_1_1"
+		(property "ki_keywords" "safety, switch, magnet, magnetic, non-contact, monitor, NC, NO, normall open, normally closed, dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Safety Switch - Magnetic Non-Contact 2NC 1NO_1_1"
+			(rectangle
+				(start -6.985 3.81)
+				(end 6.35 -3.81)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(polyline
 				(pts
-					(xy -8.89 5.08) (xy -5.08 5.08) (xy 1.27 6.35)
+					(xy -5.715 2.54) (xy -5.715 1.27)
 				)
 				(stroke
 					(width 0)
@@ -4916,9 +4599,20 @@
 					(type none)
 				)
 			)
+			(rectangle
+				(start -5.715 -0.635)
+				(end -5.08 -2.54)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
 			(polyline
 				(pts
-					(xy -8.89 -1.27) (xy -5.08 -1.27) (xy 1.27 0)
+					(xy -5.08 3.175) (xy -6.35 1.905) (xy -5.08 0.635) (xy -3.81 1.905) (xy -5.08 3.175)
 				)
 				(stroke
 					(width 0)
@@ -4928,69 +4622,31 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy -1.905 5.08) (xy -1.905 5.715)
-				)
+			(rectangle
+				(start -5.08 -0.635)
+				(end -4.445 -1.27)
 				(stroke
 					(width 0)
 					(type solid)
 				)
 				(fill
-					(type none)
+					(type outline)
 				)
 			)
-			(polyline
-				(pts
-					(xy -1.905 3.81) (xy -1.905 4.445)
-				)
+			(rectangle
+				(start -5.08 -1.905)
+				(end -4.445 -2.54)
 				(stroke
 					(width 0)
 					(type solid)
 				)
 				(fill
-					(type none)
+					(type outline)
 				)
 			)
 			(polyline
 				(pts
-					(xy -1.905 2.54) (xy -1.905 3.175)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 1.27) (xy -1.905 1.905)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 0) (xy -1.905 0.635)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 -1.27) (xy -1.905 -0.635)
+					(xy -4.445 2.54) (xy -4.445 1.27)
 				)
 				(stroke
 					(width 0)
@@ -5002,7 +4658,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 -2.54) (xy -1.905 -1.905)
+					(xy 0 3.81) (xy 0 0.635) (xy -1.27 0.635)
 				)
 				(stroke
 					(width 0)
@@ -5014,7 +4670,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 -3.81) (xy -1.905 -3.175)
+					(xy 0 -3.81) (xy 0 -2.54) (xy -1.27 1.27)
 				)
 				(stroke
 					(width 0)
@@ -5026,7 +4682,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 -5.08) (xy -1.905 -4.445)
+					(xy 2.54 3.81) (xy 2.54 0.635) (xy 1.27 0.635)
 				)
 				(stroke
 					(width 0)
@@ -5038,7 +4694,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 -6.35) (xy -1.905 -5.715)
+					(xy 2.54 -3.81) (xy 2.54 -2.54) (xy 1.27 1.27)
 				)
 				(stroke
 					(width 0)
@@ -5050,7 +4706,19 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 5.08) (xy 5.08 5.08) (xy 5.08 7.62) (xy -8.89 7.62)
+					(xy 4.445 -0.635) (xy -2.54 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type dot)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 3.81) (xy 5.08 1.27)
 				)
 				(stroke
 					(width 0)
@@ -5062,7 +4730,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 -1.27) (xy 5.08 -1.27) (xy 5.08 1.27) (xy -8.89 1.27)
+					(xy 5.08 -3.81) (xy 5.08 -2.54) (xy 3.81 1.27)
 				)
 				(stroke
 					(width 0)
@@ -5072,43 +4740,8 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 5.842 0) (xy 8.128 0) (xy 7.62 0.508)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 6.985 0)
-				(radius 1.4224)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 8.128 0) (xy 7.62 -0.508)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(pin passive line
-				(at -12.7 13.97 0)
+			(pin bidirectional line
+				(at -6.35 7.62 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -5117,7 +4750,7 @@
 						)
 					)
 				)
-				(number "12"
+				(number "0V"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5125,8 +4758,26 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -12.7 11.43 0)
+			(pin bidirectional line
+				(at -3.81 7.62 270)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 0 7.62 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -5143,8 +4794,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -12.7 7.62 0)
+			(pin output line
+				(at 0 -7.62 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -5153,7 +4804,7 @@
 						)
 					)
 				)
-				(number "22"
+				(number "12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5161,8 +4812,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -12.7 5.08 0)
+			(pin bidirectional line
+				(at 2.54 7.62 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -5179,8 +4830,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -12.7 1.27 0)
+			(pin output line
+				(at 2.54 -7.62 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -5189,7 +4840,7 @@
 						)
 					)
 				)
-				(number "32"
+				(number "22"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5197,8 +4848,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -12.7 -1.27 0)
+			(pin bidirectional line
+				(at 5.08 7.62 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -5207,7 +4858,7 @@
 						)
 					)
 				)
-				(number "31"
+				(number "13"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5215,8 +4866,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -12.7 -5.08 0)
+			(pin output line
+				(at 5.08 -7.62 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -5225,7 +4876,7 @@
 						)
 					)
 				)
-				(number "42"
+				(number "14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5233,8 +4884,223 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -12.7 -7.62 0)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Safety Switch - RFID Non-Contact 2NC"
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "S"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Safety Switch - RFID Non-Contact 2NC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Actuator PN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "safety, switch, RFID, non-contact, NC, normally closed, dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Safety Switch - RFID Non-Contact 2NC_1_1"
+			(rectangle
+				(start -6.985 3.81)
+				(end 3.81 -3.81)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.715 2.54) (xy -5.715 1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 3.175) (xy -6.35 1.905) (xy -5.08 0.635) (xy -3.81 1.905) (xy -5.08 3.175)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -4.445 2.54) (xy -4.445 1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -5.08 -3.175)
+				(mid -5.7376 -1.5875)
+				(end -5.08 0)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -3.81 -1.905)
+				(mid -3.9415 -1.5875)
+				(end -3.81 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.445 -2.54)
+				(mid -4.8395 -1.5875)
+				(end -4.445 -0.635)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 3.81) (xy 0 0.635) (xy -1.27 0.635)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -2.54) (xy -1.27 1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.905 -0.635) (xy -2.54 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type dot)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 3.81) (xy 2.54 0.635) (xy 1.27 0.635)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -3.81) (xy 2.54 -2.54) (xy 1.27 1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin bidirectional line
+				(at -6.35 7.62 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -5243,7 +5109,7 @@
 						)
 					)
 				)
-				(number "41"
+				(number "0V"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5251,8 +5117,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -12.7 -11.43 0)
+			(pin bidirectional line
+				(at -3.81 7.62 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -5261,7 +5127,7 @@
 						)
 					)
 				)
-				(number "E1"
+				(number "+V"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5269,8 +5135,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -12.7 -13.97 0)
+			(pin bidirectional line
+				(at 0 7.62 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -5279,7 +5145,444 @@
 						)
 					)
 				)
-				(number "E2"
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 0 -7.62 90)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 2.54 7.62 270)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 2.54 -7.62 90)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Safety Switch - RFID Non-Contact 2NC 1NO"
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "S"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Safety Switch - RFID Non-Contact 2NC 1NO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Actuator PN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "safety, switch, RFID, non-contact, monitor, NC, NO, normall open, normally closed, dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Safety Switch - RFID Non-Contact 2NC 1NO_1_1"
+			(rectangle
+				(start -6.985 3.81)
+				(end 6.35 -3.81)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.715 2.54) (xy -5.715 1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 3.175) (xy -6.35 1.905) (xy -5.08 0.635) (xy -3.81 1.905) (xy -5.08 3.175)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -4.445 2.54) (xy -4.445 1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -5.08 -3.175)
+				(mid -5.7376 -1.5875)
+				(end -5.08 0)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -3.81 -1.905)
+				(mid -3.9415 -1.5875)
+				(end -3.81 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.445 -2.54)
+				(mid -4.8395 -1.5875)
+				(end -4.445 -0.635)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 3.81) (xy 0 0.635) (xy -1.27 0.635)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -2.54) (xy -1.27 1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 3.81) (xy 2.54 0.635) (xy 1.27 0.635)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -3.81) (xy 2.54 -2.54) (xy 1.27 1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.445 -0.635) (xy -2.54 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type dot)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 3.81) (xy 5.08 1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -3.81) (xy 5.08 -2.54) (xy 3.81 1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin bidirectional line
+				(at -6.35 7.62 270)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "0V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -3.81 7.62 270)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 0 7.62 270)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 0 -7.62 90)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 2.54 7.62 270)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 2.54 -7.62 90)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 5.08 7.62 270)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 5.08 -7.62 90)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
 					(effects
 						(font
 							(size 1.27 1.27)
