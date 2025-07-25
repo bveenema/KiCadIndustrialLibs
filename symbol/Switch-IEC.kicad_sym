@@ -380,6 +380,14 @@
 				(hide yes)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "button, switch, push button, NC, normally closed, maintained, manual button, indicator, lamp, light, led"
 			(at 0 0 0)
 			(effects
@@ -797,6 +805,14 @@
 				(hide yes)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "button, switch, push button, NC, normally closed, spring return, manual button, indicator, lamp, light, led"
 			(at 0 0 0)
 			(effects
@@ -1202,6 +1218,14 @@
 				(hide yes)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "button, switch, push button, NO, normally open, maintained, manual button, indicator, lamp, light, led"
 			(at 0 0 0)
 			(effects
@@ -1593,6 +1617,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "ki_keywords" "button, switch, push button, NO, normally open, spring return, manual button, indicator, lamp, light, led"
@@ -2534,6 +2566,14 @@
 				(hide yes)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "button, switch, pull button, NC, normally closed, maintained, indicator, lamp, light, led"
 			(at 0 0 0)
 			(effects
@@ -2951,6 +2991,14 @@
 				(hide yes)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "button, switch, pull button, NC, normally closed, spring return, indicator, lamp, light, led"
 			(at 0 0 0)
 			(effects
@@ -3356,6 +3404,14 @@
 				(hide yes)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "button, switch, pull button, NO, normally open, maintained, indicator, lamp, light, led"
 			(at 0 0 0)
 			(effects
@@ -3747,6 +3803,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "ki_keywords" "button, switch, pull button, NO, normally open, spring return, indicator, lamp, light, led"
@@ -4579,6 +4643,14 @@
 				(hide yes)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "button, switch, push button, NC, normally closed, spring return, indicator, lamp, light, led"
 			(at 0 0 0)
 			(effects
@@ -4984,6 +5056,14 @@
 				(hide yes)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "button, switch, push button, NO, normally open, maintained, indicator, lamp, light, led"
 			(at 0 0 0)
 			(effects
@@ -5375,6 +5455,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "ki_keywords" "button, switch, push button, NO, normally open, spring return, indicator, lamp, light, led"
@@ -5864,6 +5952,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "ki_keywords" "button, switch, push button, NO, NC, normally open, normally closed, maintained, indicator, lamp, light, led"
@@ -6427,6 +6523,14 @@
 				(hide yes)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "button, switch, push button, NO, NC, normally open, normally closed, spring return, indicator, lamp, light, led"
 			(at 0 0 0)
 			(effects
@@ -6904,6 +7008,14 @@
 				(hide yes)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "button, switch, rotary, selector, hinge, NC, normally closed, maintained, indicator, lamp, light, led"
 			(at 0 0 0)
 			(effects
@@ -7321,6 +7433,14 @@
 				(hide yes)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "button, switch, rotary, selector, hinge, NC, normally closed, spring return, indicator, lamp, light, led"
 			(at 0 0 0)
 			(effects
@@ -7726,6 +7846,14 @@
 				(hide yes)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "button, switch, rotary, selector, hinge, NO, normally open, maintained, indicator, lamp, light, led"
 			(at 0 0 0)
 			(effects
@@ -8117,6 +8245,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "ki_keywords" "button, switch, rotary, selector, hinge, NO, normally open, spring return, indicator, lamp, light, led"
