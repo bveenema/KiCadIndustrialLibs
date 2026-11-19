@@ -13,6 +13,7 @@ severity:
   pin-number-visible: error
   pin-end-on-body: error
   pin-bidirectional: error
+  arc-radius: error
 
 # Per-file or per-symbol suppressions. reason is required.
 # Do not add Transformer-IEC here. That library has no exceptions.

@@ -5,7 +5,8 @@ Checks .kicad_sym libraries for the symbol rules used on new IEC parts:
 reference and value centered at 0,0; keywords filled in; descriptions that
 do not mention where a symbol came from; pins on a 200 mil (5.08 mm) grid,
 150 mil (3.81 mm) long, bidirectional, with numbers shown and the inner end
-on the body; manufacturer parts extend a generic symbol in the same library.
+on the body; arcs at the 0.635 mm house curl; manufacturer parts extend a
+generic symbol in the same library.
 
 Existing violations are listed in tools/kicad-sym-lint-baseline.txt and do
 not fail the run. symbol/Transformer-IEC.kicad_sym is never grandfathered
@@ -30,6 +31,9 @@ except ImportError:
 GRID = 5.08  # 200 mil
 PIN_STD = 3.81  # 150 mil
 PIN_IO = 7.62  # 300 mil, PLC and panel IO cards
+# Curl on the AC coil, the contactor coil, and the motor sine marks.
+CURL_R = 0.635
+CURL_TOL = 0.02
 EPS = 0.02
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -46,6 +50,7 @@ RULES = (
     "pin-number-visible",
     "pin-end-on-body",
     "pin-bidirectional",
+    "arc-radius",
 )
 
 MESSAGES = {
@@ -59,6 +64,7 @@ MESSAGES = {
     "pin-number-visible": "Show pin numbers. Do not hide pin_numbers.",
     "pin-end-on-body": "The inner end of this pin does not meet the symbol body.",
     "pin-bidirectional": "Use bidirectional pins rather than passive, input, or output.",
+    "arc-radius": "Draw curls at 0.635 mm. That is the radius on the AC coil and the contactor coil.",
     "suppress-missing-reason": "A kicad-sym-lint suppression has no reason.",
 }
 
@@ -335,6 +341,20 @@ def dist_point_seg(px, py, a, b):
     return math.hypot(px - (ax + t * dx), py - (ay + t * dy))
 
 
+def circle_radius(start, mid, end):
+    """Radius of the circle through three points. None if they are colinear."""
+    (ax, ay), (bx, by), (cx, cy) = start, mid, end
+    d = 2 * (ax * (by - cy) + bx * (cy - ay) + cx * (ay - by))
+    if abs(d) < 1e-9:
+        return None
+    a2 = ax * ax + ay * ay
+    b2 = bx * bx + by * by
+    c2 = cx * cx + cy * cy
+    ux = (a2 * (by - cy) + b2 * (cy - ay) + c2 * (ay - by)) / d
+    uy = (a2 * (cx - bx) + b2 * (ax - cx) + c2 * (bx - ax)) / d
+    return math.hypot(ax - ux, ay - uy)
+
+
 def arc_samples(start, mid, end, steps=16):
     """Approximate a KiCad three-point arc. KiCad arcs are circular."""
     (x1, y1), (x2, y2), (x3, y3) = start, mid, end
@@ -531,6 +551,19 @@ def check_symbol(path, symbol, where_file, findings):
         inner = pin_inner(x, y, plen, angle)
         if prims and not near_body(inner, prims):
             findings.append(Finding("pin-end-on-body", where_file, tag))
+
+    # One finding per symbol. A symbol that already has some other radius is
+    # grandfathered as a whole. Transformer-IEC is not grandfathered, so every
+    # arc in it has to be the house curl. Body size is not checked: a 3-phase
+    # row is wider than a coil on purpose, and a PLC body is large on purpose.
+    for prim in prims:
+        if prim[0] != "arc":
+            continue
+        radius = circle_radius(prim[1], prim[2], prim[3])
+        if radius is None or abs(radius - CURL_R) <= CURL_TOL:
+            continue
+        findings.append(Finding("arc-radius", where_file, name))
+        break
 
 
 def check_parents(path, symbols, where_file, findings):

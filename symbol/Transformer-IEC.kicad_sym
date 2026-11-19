@@ -64,7 +64,7 @@
 		(symbol "Transformer 1P_0_1"
 			(polyline
 				(pts
-					(xy -5.08 11.43) (xy -5.08 6.35)
+					(xy 0 6.35) (xy 0 1.905)
 				)
 				(stroke
 					(width 0)
@@ -75,9 +75,9 @@
 				)
 			)
 			(arc
-				(start -5.08 6.35)
-				(mid -3.81 5.08)
-				(end -2.54 6.35)
+				(start 0 1.905)
+				(mid 0.635 1.27)
+				(end 1.27 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -87,9 +87,9 @@
 				)
 			)
 			(arc
-				(start -2.54 6.35)
-				(mid -1.27 5.08)
-				(end 0 6.35)
+				(start 1.27 1.905)
+				(mid 1.905 1.27)
+				(end 2.54 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -99,9 +99,9 @@
 				)
 			)
 			(arc
-				(start 0 6.35)
-				(mid 1.27 5.08)
-				(end 2.54 6.35)
+				(start 2.54 1.905)
+				(mid 3.175 1.27)
+				(end 3.81 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -111,9 +111,9 @@
 				)
 			)
 			(arc
-				(start 2.54 6.35)
-				(mid 3.81 5.08)
-				(end 5.08 6.35)
+				(start 3.81 1.905)
+				(mid 4.445 1.27)
+				(end 5.08 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -124,7 +124,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.08 6.35) (xy 5.08 11.43)
+					(xy 5.08 1.905) (xy 5.08 6.35)
 				)
 				(stroke
 					(width 0)
@@ -136,7 +136,7 @@
 			)
 			(polyline
 				(pts
-					(xy -5.08 -11.43) (xy -5.08 -6.35)
+					(xy 0 -6.35) (xy 0 -1.905)
 				)
 				(stroke
 					(width 0)
@@ -147,9 +147,9 @@
 				)
 			)
 			(arc
-				(start -5.08 -6.35)
-				(mid -3.81 -5.08)
-				(end -2.54 -6.35)
+				(start 0 -1.905)
+				(mid 0.635 -1.27)
+				(end 1.27 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -159,9 +159,9 @@
 				)
 			)
 			(arc
-				(start -2.54 -6.35)
-				(mid -1.27 -5.08)
-				(end 0 -6.35)
+				(start 1.27 -1.905)
+				(mid 1.905 -1.27)
+				(end 2.54 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -171,9 +171,9 @@
 				)
 			)
 			(arc
-				(start 0 -6.35)
-				(mid 1.27 -5.08)
-				(end 2.54 -6.35)
+				(start 2.54 -1.905)
+				(mid 3.175 -1.27)
+				(end 3.81 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -183,9 +183,9 @@
 				)
 			)
 			(arc
-				(start 2.54 -6.35)
-				(mid 3.81 -5.08)
-				(end 5.08 -6.35)
+				(start 3.81 -1.905)
+				(mid 4.445 -1.27)
+				(end 5.08 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -196,7 +196,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.08 -6.35) (xy 5.08 -11.43)
+					(xy 5.08 -1.905) (xy 5.08 -6.35)
 				)
 				(stroke
 					(width 0)
@@ -209,7 +209,7 @@
 		)
 		(symbol "Transformer 1P_1_1"
 			(pin bidirectional line
-				(at -5.08 15.24 270)
+				(at 0 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -227,7 +227,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 5.08 15.24 270)
+				(at 5.08 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -245,7 +245,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -5.08 -15.24 90)
+				(at 0 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -263,7 +263,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 5.08 -15.24 90)
+				(at 5.08 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -345,7 +345,7 @@
 		(symbol "Transformer 3P_0_1"
 			(polyline
 				(pts
-					(xy -15.24 11.43) (xy -15.24 6.35)
+					(xy -5.08 6.35) (xy -5.08 1.905)
 				)
 				(stroke
 					(width 0)
@@ -357,7 +357,7 @@
 			)
 			(polyline
 				(pts
-					(xy -5.08 11.43) (xy -5.08 6.35)
+					(xy 0 6.35) (xy 0 1.905)
 				)
 				(stroke
 					(width 0)
@@ -369,7 +369,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.08 11.43) (xy 5.08 6.35)
+					(xy 5.08 6.35) (xy 5.08 1.905)
 				)
 				(stroke
 					(width 0)
@@ -381,7 +381,7 @@
 			)
 			(polyline
 				(pts
-					(xy 15.24 11.43) (xy 15.24 6.35)
+					(xy 10.16 6.35) (xy 10.16 1.905)
 				)
 				(stroke
 					(width 0)
@@ -392,9 +392,9 @@
 				)
 			)
 			(arc
-				(start -15.24 6.35)
-				(mid -13.97 5.08)
-				(end -12.7 6.35)
+				(start -5.08 1.905)
+				(mid -4.445 1.27)
+				(end -3.81 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -404,9 +404,9 @@
 				)
 			)
 			(arc
-				(start -12.7 6.35)
-				(mid -11.43 5.08)
-				(end -10.16 6.35)
+				(start -3.81 1.905)
+				(mid -3.175 1.27)
+				(end -2.54 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -416,9 +416,9 @@
 				)
 			)
 			(arc
-				(start -10.16 6.35)
-				(mid -8.89 5.08)
-				(end -7.62 6.35)
+				(start -2.54 1.905)
+				(mid -1.905 1.27)
+				(end -1.27 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -428,9 +428,9 @@
 				)
 			)
 			(arc
-				(start -7.62 6.35)
-				(mid -6.35 5.08)
-				(end -5.08 6.35)
+				(start -1.27 1.905)
+				(mid -0.635 1.27)
+				(end 0 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -440,9 +440,9 @@
 				)
 			)
 			(arc
-				(start -5.08 6.35)
-				(mid -3.81 5.08)
-				(end -2.54 6.35)
+				(start 0 1.905)
+				(mid 0.635 1.27)
+				(end 1.27 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -452,9 +452,9 @@
 				)
 			)
 			(arc
-				(start -2.54 6.35)
-				(mid -1.27 5.08)
-				(end 0 6.35)
+				(start 1.27 1.905)
+				(mid 1.905 1.27)
+				(end 2.54 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -464,9 +464,9 @@
 				)
 			)
 			(arc
-				(start 0 6.35)
-				(mid 1.27 5.08)
-				(end 2.54 6.35)
+				(start 2.54 1.905)
+				(mid 3.175 1.27)
+				(end 3.81 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -476,9 +476,9 @@
 				)
 			)
 			(arc
-				(start 2.54 6.35)
-				(mid 3.81 5.08)
-				(end 5.08 6.35)
+				(start 3.81 1.905)
+				(mid 4.445 1.27)
+				(end 5.08 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -488,9 +488,9 @@
 				)
 			)
 			(arc
-				(start 5.08 6.35)
-				(mid 6.35 5.08)
-				(end 7.62 6.35)
+				(start 5.08 1.905)
+				(mid 5.715 1.27)
+				(end 6.35 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -500,9 +500,9 @@
 				)
 			)
 			(arc
-				(start 7.62 6.35)
-				(mid 8.89 5.08)
-				(end 10.16 6.35)
+				(start 6.35 1.905)
+				(mid 6.985 1.27)
+				(end 7.62 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -512,9 +512,9 @@
 				)
 			)
 			(arc
-				(start 10.16 6.35)
-				(mid 11.43 5.08)
-				(end 12.7 6.35)
+				(start 7.62 1.905)
+				(mid 8.255 1.27)
+				(end 8.89 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -524,9 +524,9 @@
 				)
 			)
 			(arc
-				(start 12.7 6.35)
-				(mid 13.97 5.08)
-				(end 15.24 6.35)
+				(start 8.89 1.905)
+				(mid 9.525 1.27)
+				(end 10.16 1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -537,19 +537,7 @@
 			)
 			(polyline
 				(pts
-					(xy -15.24 -11.43) (xy -15.24 -6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.08 -11.43) (xy -5.08 -6.35)
+					(xy -5.08 -6.35) (xy -5.08 -1.905)
 				)
 				(stroke
 					(width 0)
@@ -561,7 +549,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.08 -11.43) (xy 5.08 -6.35)
+					(xy 0 -6.35) (xy 0 -1.905)
 				)
 				(stroke
 					(width 0)
@@ -573,7 +561,19 @@
 			)
 			(polyline
 				(pts
-					(xy 15.24 -11.43) (xy 15.24 -6.35)
+					(xy 5.08 -6.35) (xy 5.08 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 -6.35) (xy 10.16 -1.905)
 				)
 				(stroke
 					(width 0)
@@ -584,9 +584,9 @@
 				)
 			)
 			(arc
-				(start -15.24 -6.35)
-				(mid -13.97 -5.08)
-				(end -12.7 -6.35)
+				(start -5.08 -1.905)
+				(mid -4.445 -1.27)
+				(end -3.81 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -596,9 +596,9 @@
 				)
 			)
 			(arc
-				(start -12.7 -6.35)
-				(mid -11.43 -5.08)
-				(end -10.16 -6.35)
+				(start -3.81 -1.905)
+				(mid -3.175 -1.27)
+				(end -2.54 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -608,9 +608,9 @@
 				)
 			)
 			(arc
-				(start -10.16 -6.35)
-				(mid -8.89 -5.08)
-				(end -7.62 -6.35)
+				(start -2.54 -1.905)
+				(mid -1.905 -1.27)
+				(end -1.27 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -620,9 +620,9 @@
 				)
 			)
 			(arc
-				(start -7.62 -6.35)
-				(mid -6.35 -5.08)
-				(end -5.08 -6.35)
+				(start -1.27 -1.905)
+				(mid -0.635 -1.27)
+				(end 0 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -632,9 +632,9 @@
 				)
 			)
 			(arc
-				(start -5.08 -6.35)
-				(mid -3.81 -5.08)
-				(end -2.54 -6.35)
+				(start 0 -1.905)
+				(mid 0.635 -1.27)
+				(end 1.27 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -644,9 +644,9 @@
 				)
 			)
 			(arc
-				(start -2.54 -6.35)
-				(mid -1.27 -5.08)
-				(end 0 -6.35)
+				(start 1.27 -1.905)
+				(mid 1.905 -1.27)
+				(end 2.54 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -656,9 +656,9 @@
 				)
 			)
 			(arc
-				(start 0 -6.35)
-				(mid 1.27 -5.08)
-				(end 2.54 -6.35)
+				(start 2.54 -1.905)
+				(mid 3.175 -1.27)
+				(end 3.81 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -668,9 +668,9 @@
 				)
 			)
 			(arc
-				(start 2.54 -6.35)
-				(mid 3.81 -5.08)
-				(end 5.08 -6.35)
+				(start 3.81 -1.905)
+				(mid 4.445 -1.27)
+				(end 5.08 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -680,9 +680,9 @@
 				)
 			)
 			(arc
-				(start 5.08 -6.35)
-				(mid 6.35 -5.08)
-				(end 7.62 -6.35)
+				(start 5.08 -1.905)
+				(mid 5.715 -1.27)
+				(end 6.35 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -692,9 +692,9 @@
 				)
 			)
 			(arc
-				(start 7.62 -6.35)
-				(mid 8.89 -5.08)
-				(end 10.16 -6.35)
+				(start 6.35 -1.905)
+				(mid 6.985 -1.27)
+				(end 7.62 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -704,9 +704,9 @@
 				)
 			)
 			(arc
-				(start 10.16 -6.35)
-				(mid 11.43 -5.08)
-				(end 12.7 -6.35)
+				(start 7.62 -1.905)
+				(mid 8.255 -1.27)
+				(end 8.89 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -716,9 +716,9 @@
 				)
 			)
 			(arc
-				(start 12.7 -6.35)
-				(mid 13.97 -5.08)
-				(end 15.24 -6.35)
+				(start 8.89 -1.905)
+				(mid 9.525 -1.27)
+				(end 10.16 -1.905)
 				(stroke
 					(width 0)
 					(type default)
@@ -730,7 +730,7 @@
 		)
 		(symbol "Transformer 3P_1_1"
 			(pin bidirectional line
-				(at -15.24 15.24 270)
+				(at -5.08 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -748,7 +748,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 -15.24 90)
+				(at -5.08 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -766,7 +766,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -5.08 15.24 270)
+				(at 0 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -784,7 +784,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -5.08 -15.24 90)
+				(at 0 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -802,7 +802,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 5.08 15.24 270)
+				(at 5.08 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -820,7 +820,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 5.08 -15.24 90)
+				(at 5.08 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -902,7 +902,7 @@
 		(symbol "Transformer 3P Bank_0_1"
 			(polyline
 				(pts
-					(xy -10.16 11.43) (xy -10.16 6.35)
+					(xy 0 6.35) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -913,9 +913,9 @@
 				)
 			)
 			(arc
-				(start -10.16 6.35)
-				(mid -8.89 5.08)
-				(end -7.62 6.35)
+				(start 0 2.54)
+				(mid 0.635 1.905)
+				(end 1.27 2.54)
 				(stroke
 					(width 0)
 					(type default)
@@ -925,9 +925,9 @@
 				)
 			)
 			(arc
-				(start -7.62 6.35)
-				(mid -6.35 5.08)
-				(end -5.08 6.35)
+				(start 1.27 2.54)
+				(mid 1.905 1.905)
+				(end 2.54 2.54)
 				(stroke
 					(width 0)
 					(type default)
@@ -937,9 +937,9 @@
 				)
 			)
 			(arc
-				(start -5.08 6.35)
-				(mid -3.81 5.08)
-				(end -2.54 6.35)
+				(start 2.54 2.54)
+				(mid 3.175 1.905)
+				(end 3.81 2.54)
 				(stroke
 					(width 0)
 					(type default)
@@ -950,247 +950,7 @@
 			)
 			(polyline
 				(pts
-					(xy -10.16 -11.43) (xy -10.16 -6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -10.16 -6.35)
-				(mid -8.89 -5.08)
-				(end -7.62 -6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -7.62 -6.35)
-				(mid -6.35 -5.08)
-				(end -5.08 -6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -5.08 -6.35)
-				(mid -3.81 -5.08)
-				(end -2.54 -6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 11.43) (xy 0 6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 0 6.35)
-				(mid 1.27 5.08)
-				(end 2.54 6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 2.54 6.35)
-				(mid 3.81 5.08)
-				(end 5.08 6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 5.08 6.35)
-				(mid 6.35 5.08)
-				(end 7.62 6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -11.43) (xy 0 -6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 0 -6.35)
-				(mid 1.27 -5.08)
-				(end 2.54 -6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 2.54 -6.35)
-				(mid 3.81 -5.08)
-				(end 5.08 -6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 5.08 -6.35)
-				(mid 6.35 -5.08)
-				(end 7.62 -6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 11.43) (xy 10.16 6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 10.16 6.35)
-				(mid 11.43 5.08)
-				(end 12.7 6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 12.7 6.35)
-				(mid 13.97 5.08)
-				(end 15.24 6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 15.24 6.35)
-				(mid 16.51 5.08)
-				(end 17.78 6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 -11.43) (xy 10.16 -6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 10.16 -6.35)
-				(mid 11.43 -5.08)
-				(end 12.7 -6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 12.7 -6.35)
-				(mid 13.97 -5.08)
-				(end 15.24 -6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 15.24 -6.35)
-				(mid 16.51 -5.08)
-				(end 17.78 -6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -10.16 7.62) (xy 17.78 7.62)
+					(xy 3.81 2.54) (xy 3.81 3.81)
 				)
 				(stroke
 					(width 0)
@@ -1202,7 +962,343 @@
 			)
 			(polyline
 				(pts
-					(xy -10.16 -7.62) (xy 17.78 -7.62)
+					(xy 0 -6.35) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 -2.54)
+				(mid 0.635 -1.905)
+				(end 1.27 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 1.27 -2.54)
+				(mid 1.905 -1.905)
+				(end 2.54 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 2.54 -2.54)
+				(mid 3.175 -1.905)
+				(end 3.81 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 6.35) (xy 5.08 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 5.08 2.54)
+				(mid 5.715 1.905)
+				(end 6.35 2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 6.35 2.54)
+				(mid 6.985 1.905)
+				(end 7.62 2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 7.62 2.54)
+				(mid 8.255 1.905)
+				(end 8.89 2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.89 2.54) (xy 8.89 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -6.35) (xy 5.08 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 5.08 -2.54)
+				(mid 5.715 -1.905)
+				(end 6.35 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 6.35 -2.54)
+				(mid 6.985 -1.905)
+				(end 7.62 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 7.62 -2.54)
+				(mid 8.255 -1.905)
+				(end 8.89 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 6.35) (xy 10.16 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 10.16 2.54)
+				(mid 10.795 1.905)
+				(end 11.43 2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 11.43 2.54)
+				(mid 12.065 1.905)
+				(end 12.7 2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 12.7 2.54)
+				(mid 13.335 1.905)
+				(end 13.97 2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 13.97 2.54) (xy 13.97 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 -6.35) (xy 10.16 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 10.16 -2.54)
+				(mid 10.795 -1.905)
+				(end 11.43 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 11.43 -2.54)
+				(mid 12.065 -1.905)
+				(end 12.7 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 12.7 -2.54)
+				(mid 13.335 -1.905)
+				(end 13.97 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.81 3.81) (xy 13.97 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 13.97 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.81 -2.54) (xy 3.81 -3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.81 -3.175) (xy 5.08 -3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.89 -2.54) (xy 8.89 -3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.89 -3.175) (xy 10.16 -3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 13.97 -2.54) (xy 13.97 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -1215,7 +1311,7 @@
 		)
 		(symbol "Transformer 3P Bank_1_1"
 			(pin bidirectional line
-				(at -10.16 15.24 270)
+				(at 0 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1233,7 +1329,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -10.16 -15.24 90)
+				(at 0 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1251,7 +1347,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 0 15.24 270)
+				(at 5.08 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1269,7 +1365,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 0 -15.24 90)
+				(at 5.08 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1287,7 +1383,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 15.24 270)
+				(at 10.16 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1305,7 +1401,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -15.24 90)
+				(at 10.16 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1387,7 +1483,7 @@
 		(symbol "AutoTransformer 1P_0_1"
 			(polyline
 				(pts
-					(xy -15.24 11.43) (xy -15.24 -11.43)
+					(xy 0 6.35) (xy 0 -6.35)
 				)
 				(stroke
 					(width 0)
@@ -1399,8 +1495,104 @@
 			)
 			(polyline
 				(pts
-					(xy -15.24 6.35) (xy -5.08 6.35)
+					(xy 10.16 6.35) (xy 10.16 -2.54)
 				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 -2.54)
+				(mid 0.635 -3.175)
+				(end 1.27 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 1.27 -2.54)
+				(mid 1.905 -3.175)
+				(end 2.54 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 2.54 -2.54)
+				(mid 3.175 -3.175)
+				(end 3.81 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 3.81 -2.54)
+				(mid 4.445 -3.175)
+				(end 5.08 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 5.08 -2.54)
+				(mid 5.715 -3.175)
+				(end 6.35 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 6.35 -2.54)
+				(mid 6.985 -3.175)
+				(end 7.62 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 7.62 -2.54)
+				(mid 8.255 -3.175)
+				(end 8.89 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 8.89 -2.54)
+				(mid 9.525 -3.175)
+				(end 10.16 -2.54)
 				(stroke
 					(width 0)
 					(type default)
@@ -1411,67 +1603,7 @@
 			)
 			(polyline
 				(pts
-					(xy 10.16 11.43) (xy 10.16 6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -5.08 6.35)
-				(mid -3.175 4.445)
-				(end -1.27 6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -1.27 6.35)
-				(mid 0.635 4.445)
-				(end 2.54 6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 2.54 6.35)
-				(mid 4.445 4.445)
-				(end 6.35 6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 6.35 6.35)
-				(mid 8.255 4.445)
-				(end 10.16 6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.08 6.35) (xy -5.08 -11.43)
+					(xy 5.08 -2.54) (xy 5.08 -6.35)
 				)
 				(stroke
 					(width 0)
@@ -1484,7 +1616,7 @@
 		)
 		(symbol "AutoTransformer 1P_1_1"
 			(pin bidirectional line
-				(at -15.24 15.24 270)
+				(at 0 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1502,7 +1634,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 15.24 270)
+				(at 10.16 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1520,7 +1652,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 -15.24 90)
+				(at 0 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1538,7 +1670,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -5.08 -15.24 90)
+				(at 5.08 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1620,7 +1752,7 @@
 		(symbol "AutoTransformer 1P Voltage Regulation_0_1"
 			(polyline
 				(pts
-					(xy -15.24 11.43) (xy -15.24 -11.43)
+					(xy 0 6.35) (xy 0 -6.35)
 				)
 				(stroke
 					(width 0)
@@ -1632,19 +1764,7 @@
 			)
 			(polyline
 				(pts
-					(xy -15.24 6.35) (xy -5.08 6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 11.43) (xy 10.16 6.35)
+					(xy 10.16 6.35) (xy 10.16 -2.54)
 				)
 				(stroke
 					(width 0)
@@ -1655,9 +1775,9 @@
 				)
 			)
 			(arc
-				(start -5.08 6.35)
-				(mid -3.175 4.445)
-				(end -1.27 6.35)
+				(start 0 -2.54)
+				(mid 0.635 -3.175)
+				(end 1.27 -2.54)
 				(stroke
 					(width 0)
 					(type default)
@@ -1667,9 +1787,9 @@
 				)
 			)
 			(arc
-				(start -1.27 6.35)
-				(mid 0.635 4.445)
-				(end 2.54 6.35)
+				(start 1.27 -2.54)
+				(mid 1.905 -3.175)
+				(end 2.54 -2.54)
 				(stroke
 					(width 0)
 					(type default)
@@ -1679,9 +1799,9 @@
 				)
 			)
 			(arc
-				(start 2.54 6.35)
-				(mid 4.445 4.445)
-				(end 6.35 6.35)
+				(start 2.54 -2.54)
+				(mid 3.175 -3.175)
+				(end 3.81 -2.54)
 				(stroke
 					(width 0)
 					(type default)
@@ -1691,9 +1811,57 @@
 				)
 			)
 			(arc
-				(start 6.35 6.35)
-				(mid 8.255 4.445)
-				(end 10.16 6.35)
+				(start 3.81 -2.54)
+				(mid 4.445 -3.175)
+				(end 5.08 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 5.08 -2.54)
+				(mid 5.715 -3.175)
+				(end 6.35 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 6.35 -2.54)
+				(mid 6.985 -3.175)
+				(end 7.62 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 7.62 -2.54)
+				(mid 8.255 -3.175)
+				(end 8.89 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 8.89 -2.54)
+				(mid 9.525 -3.175)
+				(end 10.16 -2.54)
 				(stroke
 					(width 0)
 					(type default)
@@ -1704,7 +1872,7 @@
 			)
 			(polyline
 				(pts
-					(xy -5.08 6.35) (xy -5.08 -11.43)
+					(xy 5.08 -2.54) (xy 5.08 -6.35)
 				)
 				(stroke
 					(width 0)
@@ -1716,7 +1884,7 @@
 			)
 			(polyline
 				(pts
-					(xy -3.88 4.15) (xy 9.16 7.95)
+					(xy 1.27 -3.81) (xy 7.62 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -1728,7 +1896,7 @@
 			)
 			(polyline
 				(pts
-					(xy 9.16 7.95) (xy 7.126 8.1385) (xy 7.5457 6.6984) (xy 9.16 7.95)
+					(xy 7.62 -1.27) (xy 6.2737 -1.3239) (xy 6.608 -2.1595) (xy 7.62 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -1741,7 +1909,7 @@
 		)
 		(symbol "AutoTransformer 1P Voltage Regulation_1_1"
 			(pin bidirectional line
-				(at -15.24 15.24 270)
+				(at 0 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1759,7 +1927,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 15.24 270)
+				(at 10.16 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1777,7 +1945,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 -15.24 90)
+				(at 0 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1795,7 +1963,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -5.08 -15.24 90)
+				(at 5.08 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -1877,7 +2045,7 @@
 		(symbol "AutoTransformer 3P_0_1"
 			(polyline
 				(pts
-					(xy -15.24 11.43) (xy -15.24 10.16)
+					(xy -10.16 6.35) (xy -10.16 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -1888,9 +2056,9 @@
 				)
 			)
 			(arc
-				(start -15.24 10.16)
-				(mid -13.97 8.89)
-				(end -15.24 7.62)
+				(start -10.16 -1.27)
+				(mid -9.525 -1.905)
+				(end -10.16 -2.54)
 				(stroke
 					(width 0)
 					(type default)
@@ -1900,9 +2068,9 @@
 				)
 			)
 			(arc
-				(start -15.24 7.62)
-				(mid -13.97 6.35)
-				(end -15.24 5.08)
+				(start -10.16 -2.54)
+				(mid -9.525 -3.175)
+				(end -10.16 -3.81)
 				(stroke
 					(width 0)
 					(type default)
@@ -1912,57 +2080,9 @@
 				)
 			)
 			(arc
-				(start -15.24 5.08)
-				(mid -13.97 3.81)
-				(end -15.24 2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -15.24 2.54) (xy -15.24 -11.43)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -25.4 2.54) (xy -15.24 2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -25.4 2.54) (xy -25.4 -11.43)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.08 11.43) (xy 5.08 10.16)
-				)
+				(start -10.16 -3.81)
+				(mid -9.525 -4.445)
+				(end -10.16 -5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -1972,33 +2092,9 @@
 				)
 			)
 			(arc
-				(start 5.08 10.16)
-				(mid 6.35 8.89)
-				(end 5.08 7.62)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 5.08 7.62)
-				(mid 6.35 6.35)
-				(end 5.08 5.08)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 5.08 5.08)
-				(mid 6.35 3.81)
-				(end 5.08 2.54)
+				(start -10.16 -5.08)
+				(mid -9.525 -5.715)
+				(end -10.16 -6.35)
 				(stroke
 					(width 0)
 					(type default)
@@ -2009,7 +2105,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.08 2.54) (xy 5.08 -11.43)
+					(xy -10.16 -6.35) (xy -10.16 -6.35)
 				)
 				(stroke
 					(width 0)
@@ -2021,7 +2117,7 @@
 			)
 			(polyline
 				(pts
-					(xy -5.08 2.54) (xy 5.08 2.54)
+					(xy -15.24 -3.81) (xy -10.16 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -2033,7 +2129,7 @@
 			)
 			(polyline
 				(pts
-					(xy -5.08 2.54) (xy -5.08 -11.43)
+					(xy -15.24 -3.81) (xy -15.24 -6.35)
 				)
 				(stroke
 					(width 0)
@@ -2045,7 +2141,7 @@
 			)
 			(polyline
 				(pts
-					(xy 25.4 11.43) (xy 25.4 10.16)
+					(xy 0 6.35) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -2056,9 +2152,9 @@
 				)
 			)
 			(arc
-				(start 25.4 10.16)
-				(mid 26.67 8.89)
-				(end 25.4 7.62)
+				(start 0 -1.27)
+				(mid 0.635 -1.905)
+				(end 0 -2.54)
 				(stroke
 					(width 0)
 					(type default)
@@ -2068,9 +2164,9 @@
 				)
 			)
 			(arc
-				(start 25.4 7.62)
-				(mid 26.67 6.35)
-				(end 25.4 5.08)
+				(start 0 -2.54)
+				(mid 0.635 -3.175)
+				(end 0 -3.81)
 				(stroke
 					(width 0)
 					(type default)
@@ -2080,9 +2176,21 @@
 				)
 			)
 			(arc
-				(start 25.4 5.08)
-				(mid 26.67 3.81)
-				(end 25.4 2.54)
+				(start 0 -3.81)
+				(mid 0.635 -4.445)
+				(end 0 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 -5.08)
+				(mid 0.635 -5.715)
+				(end 0 -6.35)
 				(stroke
 					(width 0)
 					(type default)
@@ -2093,7 +2201,7 @@
 			)
 			(polyline
 				(pts
-					(xy 25.4 2.54) (xy 25.4 -11.43)
+					(xy 0 -6.35) (xy 0 -6.35)
 				)
 				(stroke
 					(width 0)
@@ -2105,7 +2213,7 @@
 			)
 			(polyline
 				(pts
-					(xy 15.24 2.54) (xy 25.4 2.54)
+					(xy -5.08 -3.81) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -2117,7 +2225,103 @@
 			)
 			(polyline
 				(pts
-					(xy 15.24 2.54) (xy 15.24 -11.43)
+					(xy -5.08 -3.81) (xy -5.08 -6.35)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 6.35) (xy 10.16 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 10.16 -1.27)
+				(mid 10.795 -1.905)
+				(end 10.16 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 10.16 -2.54)
+				(mid 10.795 -3.175)
+				(end 10.16 -3.81)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 10.16 -3.81)
+				(mid 10.795 -4.445)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 10.16 -5.08)
+				(mid 10.795 -5.715)
+				(end 10.16 -6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 -6.35) (xy 10.16 -6.35)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -3.81) (xy 10.16 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -3.81) (xy 5.08 -6.35)
 				)
 				(stroke
 					(width 0)
@@ -2130,7 +2334,7 @@
 		)
 		(symbol "AutoTransformer 3P_1_1"
 			(pin bidirectional line
-				(at -15.24 15.24 270)
+				(at -10.16 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -2148,7 +2352,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 -15.24 90)
+				(at -15.24 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -2166,7 +2370,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 -15.24 90)
+				(at -10.16 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -2184,7 +2388,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 5.08 15.24 270)
+				(at 0 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -2202,7 +2406,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -5.08 -15.24 90)
+				(at -5.08 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -2220,7 +2424,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 5.08 -15.24 90)
+				(at 0 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -2238,7 +2442,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 15.24 270)
+				(at 10.16 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -2256,7 +2460,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 -15.24 90)
+				(at 5.08 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -2274,7 +2478,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -15.24 90)
+				(at 10.16 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -2356,7 +2560,7 @@
 		(symbol "Current Transformer_0_1"
 			(polyline
 				(pts
-					(xy 6.35 5.08) (xy 0 5.08)
+					(xy 6.35 10.16) (xy 0 10.16)
 				)
 				(stroke
 					(width 0)
@@ -2368,7 +2572,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.35 -5.08) (xy 0 -5.08)
+					(xy 6.35 5.08) (xy 0 5.08)
 				)
 				(stroke
 					(width 0)
@@ -2379,9 +2583,9 @@
 				)
 			)
 			(arc
-				(start 0 5.08)
-				(mid -2.54 2.54)
-				(end 0 0)
+				(start 0 10.16)
+				(mid -0.635 9.525)
+				(end 0 8.89)
 				(stroke
 					(width 0)
 					(type default)
@@ -2391,9 +2595,33 @@
 				)
 			)
 			(arc
-				(start 0 0)
-				(mid -2.54 -2.54)
-				(end 0 -5.08)
+				(start 0 8.89)
+				(mid -0.635 8.255)
+				(end 0 7.62)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 7.62)
+				(mid -0.635 6.985)
+				(end 0 6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 6.35)
+				(mid -0.635 5.715)
+				(end 0 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -2405,7 +2633,7 @@
 		)
 		(symbol "Current Transformer_1_1"
 			(pin bidirectional line
-				(at 10.16 5.08 180)
+				(at 10.16 10.16 180)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -2423,7 +2651,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -5.08 180)
+				(at 10.16 5.08 180)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -2505,7 +2733,7 @@
 		(symbol "Current Transformer 1 Core 2 Windings_0_1"
 			(polyline
 				(pts
-					(xy 6.35 15.24) (xy 0 15.24)
+					(xy 6.35 10.16) (xy 0 10.16)
 				)
 				(stroke
 					(width 0)
@@ -2528,9 +2756,9 @@
 				)
 			)
 			(arc
-				(start 0 15.24)
-				(mid -2.54 12.7)
-				(end 0 10.16)
+				(start 0 10.16)
+				(mid -0.635 9.525)
+				(end 0 8.89)
 				(stroke
 					(width 0)
 					(type default)
@@ -2540,8 +2768,32 @@
 				)
 			)
 			(arc
-				(start 0 10.16)
-				(mid -2.54 7.62)
+				(start 0 8.89)
+				(mid -0.635 8.255)
+				(end 0 7.62)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 7.62)
+				(mid -0.635 6.985)
+				(end 0 6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 6.35)
+				(mid -0.635 5.715)
 				(end 0 5.08)
 				(stroke
 					(width 0)
@@ -2565,7 +2817,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.35 -15.24) (xy 0 -15.24)
+					(xy 6.35 -10.16) (xy 0 -10.16)
 				)
 				(stroke
 					(width 0)
@@ -2577,8 +2829,8 @@
 			)
 			(arc
 				(start 0 -5.08)
-				(mid -2.54 -7.62)
-				(end 0 -10.16)
+				(mid -0.635 -5.715)
+				(end 0 -6.35)
 				(stroke
 					(width 0)
 					(type default)
@@ -2588,9 +2840,33 @@
 				)
 			)
 			(arc
-				(start 0 -10.16)
-				(mid -2.54 -12.7)
-				(end 0 -15.24)
+				(start 0 -6.35)
+				(mid -0.635 -6.985)
+				(end 0 -7.62)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 -7.62)
+				(mid -0.635 -8.255)
+				(end 0 -8.89)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 -8.89)
+				(mid -0.635 -9.525)
+				(end 0 -10.16)
 				(stroke
 					(width 0)
 					(type default)
@@ -2601,7 +2877,7 @@
 			)
 			(polyline
 				(pts
-					(xy -3.81 15.24) (xy -3.81 -15.24)
+					(xy -1.27 10.16) (xy -1.27 -10.16)
 				)
 				(stroke
 					(width 0)
@@ -2614,7 +2890,7 @@
 		)
 		(symbol "Current Transformer 1 Core 2 Windings_1_1"
 			(pin bidirectional line
-				(at 10.16 15.24 180)
+				(at 10.16 10.16 180)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -2668,7 +2944,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -15.24 180)
+				(at 10.16 -10.16 180)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -2750,7 +3026,7 @@
 		(symbol "Current Transformer 2 Cores 2 Windings_0_1"
 			(polyline
 				(pts
-					(xy 6.35 15.24) (xy 0 15.24)
+					(xy 6.35 10.16) (xy 0 10.16)
 				)
 				(stroke
 					(width 0)
@@ -2773,9 +3049,9 @@
 				)
 			)
 			(arc
-				(start 0 15.24)
-				(mid -2.54 12.7)
-				(end 0 10.16)
+				(start 0 10.16)
+				(mid -0.635 9.525)
+				(end 0 8.89)
 				(stroke
 					(width 0)
 					(type default)
@@ -2785,8 +3061,32 @@
 				)
 			)
 			(arc
-				(start 0 10.16)
-				(mid -2.54 7.62)
+				(start 0 8.89)
+				(mid -0.635 8.255)
+				(end 0 7.62)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 7.62)
+				(mid -0.635 6.985)
+				(end 0 6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 6.35)
+				(mid -0.635 5.715)
 				(end 0 5.08)
 				(stroke
 					(width 0)
@@ -2810,7 +3110,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.35 -15.24) (xy 0 -15.24)
+					(xy 6.35 -10.16) (xy 0 -10.16)
 				)
 				(stroke
 					(width 0)
@@ -2822,8 +3122,8 @@
 			)
 			(arc
 				(start 0 -5.08)
-				(mid -2.54 -7.62)
-				(end 0 -10.16)
+				(mid -0.635 -5.715)
+				(end 0 -6.35)
 				(stroke
 					(width 0)
 					(type default)
@@ -2833,9 +3133,33 @@
 				)
 			)
 			(arc
-				(start 0 -10.16)
-				(mid -2.54 -12.7)
-				(end 0 -15.24)
+				(start 0 -6.35)
+				(mid -0.635 -6.985)
+				(end 0 -7.62)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 -7.62)
+				(mid -0.635 -8.255)
+				(end 0 -8.89)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 -8.89)
+				(mid -0.635 -9.525)
+				(end 0 -10.16)
 				(stroke
 					(width 0)
 					(type default)
@@ -2846,7 +3170,7 @@
 			)
 			(polyline
 				(pts
-					(xy -3.81 15.24) (xy -3.81 5.08)
+					(xy -1.27 10.16) (xy -1.27 5.08)
 				)
 				(stroke
 					(width 0)
@@ -2858,7 +3182,7 @@
 			)
 			(polyline
 				(pts
-					(xy -3.81 -5.08) (xy -3.81 -15.24)
+					(xy -1.27 -5.08) (xy -1.27 -10.16)
 				)
 				(stroke
 					(width 0)
@@ -2871,7 +3195,7 @@
 		)
 		(symbol "Current Transformer 2 Cores 2 Windings_1_1"
 			(pin bidirectional line
-				(at 10.16 15.24 180)
+				(at 10.16 10.16 180)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -2925,7 +3249,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -15.24 180)
+				(at 10.16 -10.16 180)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -3006,9 +3330,9 @@
 		)
 		(symbol "Control Transformer 1P_0_1"
 			(arc
-				(start -40.64 7.62)
-				(mid -39.37 6.35)
-				(end -38.1 7.62)
+				(start -20.32 5.08)
+				(mid -19.685 4.445)
+				(end -19.05 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3018,9 +3342,9 @@
 				)
 			)
 			(arc
-				(start -38.1 7.62)
-				(mid -36.83 6.35)
-				(end -35.56 7.62)
+				(start -19.05 5.08)
+				(mid -18.415 4.445)
+				(end -17.78 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3030,9 +3354,9 @@
 				)
 			)
 			(arc
-				(start -35.56 7.62)
-				(mid -34.29 6.35)
-				(end -33.02 7.62)
+				(start -17.78 5.08)
+				(mid -17.145 4.445)
+				(end -16.51 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3042,9 +3366,9 @@
 				)
 			)
 			(arc
-				(start -33.02 7.62)
-				(mid -31.75 6.35)
-				(end -30.48 7.62)
+				(start -16.51 5.08)
+				(mid -15.875 4.445)
+				(end -15.24 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3054,9 +3378,9 @@
 				)
 			)
 			(arc
-				(start -30.48 7.62)
-				(mid -29.21 6.35)
-				(end -27.94 7.62)
+				(start -15.24 5.08)
+				(mid -14.605 4.445)
+				(end -13.97 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3066,9 +3390,9 @@
 				)
 			)
 			(arc
-				(start -27.94 7.62)
-				(mid -26.67 6.35)
-				(end -25.4 7.62)
+				(start -13.97 5.08)
+				(mid -13.335 4.445)
+				(end -12.7 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3078,9 +3402,9 @@
 				)
 			)
 			(arc
-				(start -25.4 7.62)
-				(mid -24.13 6.35)
-				(end -22.86 7.62)
+				(start -12.7 5.08)
+				(mid -12.065 4.445)
+				(end -11.43 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3090,9 +3414,9 @@
 				)
 			)
 			(arc
-				(start -22.86 7.62)
-				(mid -21.59 6.35)
-				(end -20.32 7.62)
+				(start -11.43 5.08)
+				(mid -10.795 4.445)
+				(end -10.16 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3102,9 +3426,9 @@
 				)
 			)
 			(arc
-				(start 0 7.62)
-				(mid 1.27 6.35)
-				(end 2.54 7.62)
+				(start 0 5.08)
+				(mid 0.635 4.445)
+				(end 1.27 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3114,9 +3438,9 @@
 				)
 			)
 			(arc
-				(start 2.54 7.62)
-				(mid 3.81 6.35)
-				(end 5.08 7.62)
+				(start 1.27 5.08)
+				(mid 1.905 4.445)
+				(end 2.54 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3126,9 +3450,9 @@
 				)
 			)
 			(arc
-				(start 5.08 7.62)
-				(mid 6.35 6.35)
-				(end 7.62 7.62)
+				(start 2.54 5.08)
+				(mid 3.175 4.445)
+				(end 3.81 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3138,9 +3462,9 @@
 				)
 			)
 			(arc
-				(start 7.62 7.62)
-				(mid 8.89 6.35)
-				(end 10.16 7.62)
+				(start 3.81 5.08)
+				(mid 4.445 4.445)
+				(end 5.08 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3150,9 +3474,9 @@
 				)
 			)
 			(arc
-				(start 10.16 7.62)
-				(mid 11.43 6.35)
-				(end 12.7 7.62)
+				(start 5.08 5.08)
+				(mid 5.715 4.445)
+				(end 6.35 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3162,9 +3486,9 @@
 				)
 			)
 			(arc
-				(start 12.7 7.62)
-				(mid 13.97 6.35)
-				(end 15.24 7.62)
+				(start 6.35 5.08)
+				(mid 6.985 4.445)
+				(end 7.62 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3174,9 +3498,9 @@
 				)
 			)
 			(arc
-				(start 15.24 7.62)
-				(mid 16.51 6.35)
-				(end 17.78 7.62)
+				(start 7.62 5.08)
+				(mid 8.255 4.445)
+				(end 8.89 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3186,9 +3510,9 @@
 				)
 			)
 			(arc
-				(start 17.78 7.62)
-				(mid 19.05 6.35)
-				(end 20.32 7.62)
+				(start 8.89 5.08)
+				(mid 9.525 4.445)
+				(end 10.16 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3198,9 +3522,9 @@
 				)
 			)
 			(arc
-				(start 20.32 7.62)
-				(mid 21.59 6.35)
-				(end 22.86 7.62)
+				(start 10.16 5.08)
+				(mid 10.795 4.445)
+				(end 11.43 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3210,9 +3534,9 @@
 				)
 			)
 			(arc
-				(start 22.86 7.62)
-				(mid 24.13 6.35)
-				(end 25.4 7.62)
+				(start 11.43 5.08)
+				(mid 12.065 4.445)
+				(end 12.7 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3222,9 +3546,9 @@
 				)
 			)
 			(arc
-				(start 25.4 7.62)
-				(mid 26.67 6.35)
-				(end 27.94 7.62)
+				(start 12.7 5.08)
+				(mid 13.335 4.445)
+				(end 13.97 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3234,9 +3558,9 @@
 				)
 			)
 			(arc
-				(start 27.94 7.62)
-				(mid 29.21 6.35)
-				(end 30.48 7.62)
+				(start 13.97 5.08)
+				(mid 14.605 4.445)
+				(end 15.24 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3246,9 +3570,9 @@
 				)
 			)
 			(arc
-				(start 30.48 7.62)
-				(mid 31.75 6.35)
-				(end 33.02 7.62)
+				(start 15.24 5.08)
+				(mid 15.875 4.445)
+				(end 16.51 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3258,9 +3582,9 @@
 				)
 			)
 			(arc
-				(start 33.02 7.62)
-				(mid 34.29 6.35)
-				(end 35.56 7.62)
+				(start 16.51 5.08)
+				(mid 17.145 4.445)
+				(end 17.78 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3270,9 +3594,9 @@
 				)
 			)
 			(arc
-				(start 35.56 7.62)
-				(mid 36.83 6.35)
-				(end 38.1 7.62)
+				(start 17.78 5.08)
+				(mid 18.415 4.445)
+				(end 19.05 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3282,9 +3606,9 @@
 				)
 			)
 			(arc
-				(start 38.1 7.62)
-				(mid 39.37 6.35)
-				(end 40.64 7.62)
+				(start 19.05 5.08)
+				(mid 19.685 4.445)
+				(end 20.32 5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3295,19 +3619,7 @@
 			)
 			(polyline
 				(pts
-					(xy -40.64 11.43) (xy -40.64 7.62)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -30.48 11.43) (xy -30.48 7.62)
+					(xy -20.32 6.35) (xy -20.32 5.08)
 				)
 				(stroke
 					(width 0)
@@ -3319,7 +3631,7 @@
 			)
 			(polyline
 				(pts
-					(xy -20.32 11.43) (xy -20.32 7.62)
+					(xy -15.24 6.35) (xy -15.24 5.08)
 				)
 				(stroke
 					(width 0)
@@ -3331,7 +3643,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 11.43) (xy 0 7.62)
+					(xy -10.16 6.35) (xy -10.16 5.08)
 				)
 				(stroke
 					(width 0)
@@ -3343,7 +3655,7 @@
 			)
 			(polyline
 				(pts
-					(xy 10.16 11.43) (xy 10.16 7.62)
+					(xy 0 6.35) (xy 0 5.08)
 				)
 				(stroke
 					(width 0)
@@ -3355,7 +3667,7 @@
 			)
 			(polyline
 				(pts
-					(xy 20.32 11.43) (xy 20.32 7.62)
+					(xy 5.08 6.35) (xy 5.08 5.08)
 				)
 				(stroke
 					(width 0)
@@ -3367,7 +3679,7 @@
 			)
 			(polyline
 				(pts
-					(xy 30.48 11.43) (xy 30.48 7.62)
+					(xy 10.16 6.35) (xy 10.16 5.08)
 				)
 				(stroke
 					(width 0)
@@ -3379,7 +3691,7 @@
 			)
 			(polyline
 				(pts
-					(xy 40.64 11.43) (xy 40.64 7.62)
+					(xy 15.24 6.35) (xy 15.24 5.08)
 				)
 				(stroke
 					(width 0)
@@ -3391,7 +3703,7 @@
 			)
 			(polyline
 				(pts
-					(xy -15.24 -11.43) (xy -15.24 -6.35)
+					(xy 20.32 6.35) (xy 20.32 5.08)
 				)
 				(stroke
 					(width 0)
@@ -3403,7 +3715,19 @@
 			)
 			(polyline
 				(pts
-					(xy -5.08 -11.43) (xy -5.08 -6.35)
+					(xy -10.16 -6.35) (xy -10.16 -5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -6.35) (xy -5.08 -5.08)
 				)
 				(stroke
 					(width 0)
@@ -3414,9 +3738,9 @@
 				)
 			)
 			(arc
-				(start -15.24 -6.35)
-				(mid -13.97 -5.08)
-				(end -12.7 -6.35)
+				(start -10.16 -5.08)
+				(mid -9.525 -4.445)
+				(end -8.89 -5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3426,9 +3750,9 @@
 				)
 			)
 			(arc
-				(start -12.7 -6.35)
-				(mid -11.43 -5.08)
-				(end -10.16 -6.35)
+				(start -8.89 -5.08)
+				(mid -8.255 -4.445)
+				(end -7.62 -5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3438,9 +3762,9 @@
 				)
 			)
 			(arc
-				(start -10.16 -6.35)
-				(mid -8.89 -5.08)
-				(end -7.62 -6.35)
+				(start -7.62 -5.08)
+				(mid -6.985 -4.445)
+				(end -6.35 -5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3450,9 +3774,9 @@
 				)
 			)
 			(arc
-				(start -7.62 -6.35)
-				(mid -6.35 -5.08)
-				(end -5.08 -6.35)
+				(start -6.35 -5.08)
+				(mid -5.715 -4.445)
+				(end -5.08 -5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3463,7 +3787,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.08 -11.43) (xy 5.08 -6.35)
+					(xy 5.08 -6.35) (xy 5.08 -5.08)
 				)
 				(stroke
 					(width 0)
@@ -3475,7 +3799,7 @@
 			)
 			(polyline
 				(pts
-					(xy 15.24 -11.43) (xy 15.24 -6.35)
+					(xy 10.16 -6.35) (xy 10.16 -5.08)
 				)
 				(stroke
 					(width 0)
@@ -3486,9 +3810,9 @@
 				)
 			)
 			(arc
-				(start 5.08 -6.35)
-				(mid 6.35 -5.08)
-				(end 7.62 -6.35)
+				(start 5.08 -5.08)
+				(mid 5.715 -4.445)
+				(end 6.35 -5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3498,9 +3822,9 @@
 				)
 			)
 			(arc
-				(start 7.62 -6.35)
-				(mid 8.89 -5.08)
-				(end 10.16 -6.35)
+				(start 6.35 -5.08)
+				(mid 6.985 -4.445)
+				(end 7.62 -5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3510,9 +3834,9 @@
 				)
 			)
 			(arc
-				(start 10.16 -6.35)
-				(mid 11.43 -5.08)
-				(end 12.7 -6.35)
+				(start 7.62 -5.08)
+				(mid 8.255 -4.445)
+				(end 8.89 -5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3522,9 +3846,9 @@
 				)
 			)
 			(arc
-				(start 12.7 -6.35)
-				(mid 13.97 -5.08)
-				(end 15.24 -6.35)
+				(start 8.89 -5.08)
+				(mid 9.525 -4.445)
+				(end 10.16 -5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -3535,7 +3859,7 @@
 			)
 			(polyline
 				(pts
-					(xy -40.64 5.08) (xy 46.99 5.08)
+					(xy -20.32 2.54) (xy 26.67 2.54)
 				)
 				(stroke
 					(width 0)
@@ -3545,10 +3869,22 @@
 					(type none)
 				)
 			)
+			(polyline
+				(pts
+					(xy 26.67 2.54) (xy 26.67 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 		)
 		(symbol "Control Transformer 1P_1_1"
 			(pin bidirectional line
-				(at -40.64 15.24 270)
+				(at -20.32 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -3566,7 +3902,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.48 15.24 270)
+				(at -15.24 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -3584,7 +3920,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -20.32 15.24 270)
+				(at -10.16 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -3602,7 +3938,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 0 15.24 270)
+				(at 0 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -3620,7 +3956,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 15.24 270)
+				(at 5.08 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -3638,7 +3974,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 20.32 15.24 270)
+				(at 10.16 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -3656,7 +3992,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 30.48 15.24 270)
+				(at 15.24 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -3674,7 +4010,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 40.64 15.24 270)
+				(at 20.32 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -3692,7 +4028,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 -15.24 90)
+				(at -10.16 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -3710,7 +4046,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -5.08 -15.24 90)
+				(at -5.08 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -3728,7 +4064,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 5.08 -15.24 90)
+				(at 5.08 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -3746,7 +4082,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 -15.24 90)
+				(at 10.16 -10.16 90)
 				(length 3.81)
 				(name "~"
 					(effects
@@ -3764,7 +4100,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 50.8 5.08 180)
+				(at 30.48 0 180)
 				(length 3.81)
 				(name "~"
 					(effects
