@@ -36,6 +36,7 @@ ROOT = HERE.parent
 NEW_LIB = "Transformer-IEC.kicad_sym"
 
 RULES = (
+    "parse",
     "field-center",
     "pin-grid",
     "pin-length",
@@ -48,6 +49,7 @@ RULES = (
 )
 
 MESSAGES = {
+    "parse": "This library is not valid KiCad s-expression and was not checked.",
     "field-center": "Put Reference and Value at 0,0.",
     "pin-grid": "Move this pin onto the 5.08 mm (200 mil) grid.",
     "pin-length": "Pin length must be 3.81 mm (150 mil). PLC and panel IO symbols may use 7.62 mm (300 mil).",
@@ -553,7 +555,7 @@ def check_file(path, findings):
     try:
         tree = parse(text)
     except ValueError:
-        findings.append(Finding("field-center", where, path.name))
+        findings.append(Finding("parse", where, path.name))
         return
     symbols = top_symbols(tree)
     for symbol in symbols:
@@ -561,16 +563,35 @@ def check_file(path, findings):
     check_parents(path, symbols, where, findings)
 
 
+def where_symbol(where):
+    return where.split("#", 1)[0]
+
+
+def file_matches(wanted, path):
+    wanted = str(wanted).replace("\\", "/").lstrip("./")
+    path = str(path).replace("\\", "/")
+    return path == wanted or path.endswith("/" + wanted)
+
+
+def symbol_matches(wanted, where):
+    return where_symbol(where) == wanted
+
+
 def suppressed(finding, file_text, spans, yaml_suppress):
+    # A broken file is always an error. Severity, baseline, and suppressions
+    # cannot hide it.
+    if finding.rule == "parse":
+        return None
     if locked(Path(finding.path)):
         return None
     for item in yaml_suppress:
         if item.get("rule") != finding.rule:
             continue
-        if item.get("file") and item["file"] not in finding.path:
+        wanted_file = item.get("file")
+        if wanted_file and not file_matches(wanted_file, finding.path):
             continue
-        symbol = item.get("symbol")
-        if symbol and symbol not in finding.where:
+        wanted_symbol = item.get("symbol")
+        if wanted_symbol and not symbol_matches(wanted_symbol, finding.where):
             continue
         if not reason_ok(item.get("reason", "")):
             return "missing"
@@ -583,7 +604,7 @@ def suppressed(finding, file_text, spans, yaml_suppress):
             if start <= pos < end:
                 owner = name
                 break
-        if owner and owner not in finding.where:
+        if owner and not symbol_matches(owner, finding.where):
             continue
         if not reason_ok(reason):
             return "missing"
@@ -632,6 +653,8 @@ def main():
             "# symbol/Transformer-IEC.kicad_sym is not listed and is not grandfathered.",
         ]
         for finding in findings:
+            if finding.rule == "parse":
+                continue
             if severity.get(finding.rule, "error") == "off":
                 continue
             if finding.path.endswith(NEW_LIB):
@@ -646,7 +669,7 @@ def main():
     warned = 0
     kept = 0
     for finding in findings:
-        level = severity.get(finding.rule, "error")
+        level = "error" if finding.rule == "parse" else severity.get(finding.rule, "error")
         if level == "off":
             continue
         path = ROOT / finding.path if not Path(finding.path).is_absolute() else Path(finding.path)
@@ -661,7 +684,7 @@ def main():
             continue
         if how:
             continue
-        if finding.key() in baseline and not finding.path.endswith(NEW_LIB):
+        if finding.rule != "parse" and finding.key() in baseline and not finding.path.endswith(NEW_LIB):
             kept += 1
             continue
         print(f"{level}\t{finding.format()}", file=sys.stderr)

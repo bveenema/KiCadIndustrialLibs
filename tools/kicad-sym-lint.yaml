@@ -2,6 +2,8 @@
 # warn prints and does not fail. off skips the rule.
 # symbol/Transformer-IEC.kicad_sym is never grandfathered and cannot be suppressed.
 severity:
+  # parse is always an error. The linter ignores off, warn, baseline, and suppress for it.
+  parse: error
   field-center: error
   pin-grid: error
   pin-length: error
