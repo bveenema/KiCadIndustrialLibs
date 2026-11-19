@@ -1,0 +1,17 @@
+# Severity for tools/kicad_sym_lint.py. error blocks pre-commit and CI.
+# warn prints and does not fail. off skips the rule.
+# symbol/Transformer-IEC.kicad_sym is never grandfathered and cannot be suppressed.
+severity:
+  field-center: error
+  pin-grid: error
+  pin-length: error
+  keywords: error
+  description: error
+  extends-parent: error
+  pin-number-visible: error
+  pin-end-on-body: error
+  pin-bidirectional: error
+
+# Per-file or per-symbol suppressions. reason is required.
+# Do not add Transformer-IEC here. That library has no exceptions.
+suppress: []

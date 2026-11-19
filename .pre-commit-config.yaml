@@ -1,0 +1,11 @@
+# Local commits and CI both run `pre-commit run`. CI uses --all-files.
+repos:
+  - repo: local
+    hooks:
+      - id: kicad-sym-lint
+        name: kicad symbol lint
+        entry: python tools/kicad_sym_lint.py
+        language: python
+        additional_dependencies: [pyyaml]
+        files: \.kicad_sym$
+        pass_filenames: true
