@@ -4,7 +4,8 @@
 
 - Redraw `Transformer-IEC` at the house curl. The winding radius is 0.635 mm, the same curl as the AC coil and the contactor coil. Mapping the Radica 20-unit terminal pitch onto the 5.08 mm grid produces that radius. Bodies that were about twice the contactor are now the same height as `Contactor_3P_AC`.
   `AutoTransformer 1P` follows the Radica path: a straight 1N/2N trunk, a straight 1L leg, and low humps between them, with 2L leaving from between the humps. The tap is halfway across the winding, so the winding is two grid steps wide and has eight curls. The current transformer uses four curls so the C meets leads one grid step apart.
-- Add `docs/symbol-guidelines.md` with the measured house dimensions, the scale-and-draw process, and the required side-by-side render. `tools/kicad_sym_lint.py` now rejects an arc that is not the 0.635 mm curl. Older libraries stay on the baseline. A body-size budget is not linted.
+- Add `docs/symbol-guidelines.md` with the measured house dimensions, the scale-and-draw process, and the required side-by-side render. A body-size budget is not linted.
+- `arc-radius` checks a winding curl only: two or more equal semicircles whose ends meet on a straight line. The default radius is 0.635 mm. 0.508 mm is also approved, for the tight curl measured on cable pigtail tails. Another size needs a `ki_winding_curl` property with a reason. The 105 baseline lines from the earlier every-arc check are removed.
 - Add `symbol/Transformer-IEC.kicad_sym`.
   Generic symbols, drawn to the Radica IEC figures: Transformer 1P, Transformer 3P, Transformer 3P Bank, AutoTransformer 1P, AutoTransformer 1P Voltage Regulation, AutoTransformer 3P, Current Transformer, Current Transformer 1 Core 2 Windings, Current Transformer 2 Cores 2 Windings.
   Reference prefix is `T` for every symbol, including current transformers. That is the IEC 81346-2 class letter for transformers. Radica labels the same symbols `T1`.

@@ -5,8 +5,9 @@ Checks .kicad_sym libraries for the symbol rules used on new IEC parts:
 reference and value centered at 0,0; keywords filled in; descriptions that
 do not mention where a symbol came from; pins on a 200 mil (5.08 mm) grid,
 150 mil (3.81 mm) long, bidirectional, with numbers shown and the inner end
-on the body; arcs at the 0.635 mm house curl; manufacturer parts extend a
-generic symbol in the same library.
+on the body; winding curls at an approved radius; manufacturer parts
+extend a generic symbol in the same library. A winding curl is a run of
+semicircles chained on a straight line. Other arcs are not checked.
 
 Existing violations are listed in tools/kicad-sym-lint-baseline.txt and do
 not fail the run. symbol/Transformer-IEC.kicad_sym is never grandfathered
@@ -31,9 +32,26 @@ except ImportError:
 GRID = 5.08  # 200 mil
 PIN_STD = 3.81  # 150 mil
 PIN_IO = 7.62  # 300 mil, PLC and panel IO cards
-# Curl on the AC coil, the contactor coil, and the motor sine marks.
+# Default winding curl. Transformer windings and the two-hump coil on the
+# PowerEntryModule symbols are this radius.
 CURL_R = 0.635
 CURL_TOL = 0.02
+# Endpoints this close are the same point. A 0.254 mm pigtail gap is not a join.
+JOIN_TOL = 0.05
+# How far an endpoint may sit off the straight baseline of a run.
+LINE_TOL = 0.05
+# |chord - 2r| for an arc to count as a semicircle.
+CHORD_TOL = 0.05
+# Other winding-curl radii measured in symbol/. 0.508 mm is 20 mil, the
+# semicircle on cable pigtail tails (CablesConnectors Pigtail_* and the
+# AutomationDirect M12 cable symbols). Those drawings leave a 0.254 mm gap,
+# so the rule does not call them a winding. A winding that does chain at
+# this radius is the tight curl those symbols already use. No larger chained
+# winding radius is present in the libraries.
+APPROVED_WINDING_CURLS = (0.508,)
+WINDING_CURL_RE = re.compile(
+    r"^\s*([0-9]*\.?[0-9]+)\s+reason:\s*(\S.*?)\s*$"
+)
 EPS = 0.02
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -64,7 +82,7 @@ MESSAGES = {
     "pin-number-visible": "Show pin numbers. Do not hide pin_numbers.",
     "pin-end-on-body": "The inner end of this pin does not meet the symbol body.",
     "pin-bidirectional": "Use bidirectional pins rather than passive, input, or output.",
-    "arc-radius": "Draw curls at 0.635 mm. That is the radius on the AC coil and the contactor coil.",
+    "arc-radius": "This winding curl is not an approved radius. The default is 0.635 mm. Set ki_winding_curl with a reason to allow another size on this symbol.",
     "suppress-missing-reason": "A kicad-sym-lint suppression has no reason.",
 }
 
@@ -355,6 +373,141 @@ def circle_radius(start, mid, end):
     return math.hypot(ax - ux, ay - uy)
 
 
+def same_point(a, b, tol=JOIN_TOL):
+    return math.hypot(a[0] - b[0], a[1] - b[1]) <= tol
+
+
+def semicircle_radius(start, mid, end):
+    """Radius if this arc is a semicircle, else None.
+
+    The ends are a diameter when the chord equals twice the radius of the
+    circle through start, mid, and end.
+    """
+    radius = circle_radius(start, mid, end)
+    if radius is None or radius < 1e-6:
+        return None
+    chord = math.hypot(end[0] - start[0], end[1] - start[1])
+    if abs(chord - 2 * radius) > CHORD_TOL:
+        return None
+    return radius
+
+
+def points_on_line(points, tol=LINE_TOL):
+    """Every point is within tol of the line through the two farthest points."""
+    far = 0.0
+    ends = None
+    for i, a in enumerate(points):
+        for b in points[i + 1:]:
+            dist = math.hypot(a[0] - b[0], a[1] - b[1])
+            if dist > far:
+                far = dist
+                ends = (a, b, dist)
+    if ends is None or ends[2] < 1e-9:
+        return True
+    a, b, dist = ends
+    dx, dy = (b[0] - a[0]) / dist, (b[1] - a[1]) / dist
+    for point in points:
+        off = abs((point[0] - a[0]) * (-dy) + (point[1] - a[1]) * dx)
+        if off > tol:
+            return False
+    return True
+
+
+def winding_curl_runs(arcs):
+    """Radii of winding curls among arc primitives.
+
+    A winding curl is a chain of 2 or more equal-radius semicircles whose
+    endpoints meet and lie on one straight line. A repeated copy of the same
+    semicircle is not a second curl. arcs are ("arc", start, mid, end).
+    """
+    humps = []
+    for prim in arcs:
+        if prim[0] != "arc":
+            continue
+        radius = semicircle_radius(prim[1], prim[2], prim[3])
+        if radius is None:
+            continue
+        ends = (prim[1], prim[3])
+        duplicate = False
+        for prev in humps:
+            if same_point(prev[0], ends[0]) and same_point(prev[1], ends[1]):
+                duplicate = True
+                break
+            if same_point(prev[0], ends[1]) and same_point(prev[1], ends[0]):
+                duplicate = True
+                break
+        if not duplicate:
+            humps.append((ends[0], ends[1], radius))
+    count = len(humps)
+    parent = list(range(count))
+
+    def find(index):
+        while parent[index] != index:
+            parent[index] = parent[parent[index]]
+            index = parent[index]
+        return index
+
+    def union(left, right):
+        left, right = find(left), find(right)
+        if left != right:
+            parent[left] = right
+
+    for i in range(count):
+        for j in range(i + 1, count):
+            if abs(humps[i][2] - humps[j][2]) > CURL_TOL:
+                continue
+            shared = False
+            for a in humps[i][:2]:
+                for b in humps[j][:2]:
+                    if same_point(a, b):
+                        shared = True
+            if not shared:
+                continue
+            if points_on_line([humps[i][0], humps[i][1], humps[j][0], humps[j][1]]):
+                union(i, j)
+    groups = {}
+    for index in range(count):
+        groups.setdefault(find(index), []).append(humps[index])
+    radii = []
+    for group in groups.values():
+        if len(group) < 2:
+            continue
+        radii.append(sum(item[2] for item in group) / len(group))
+    return radii
+
+
+def curl_allowed(radius, exceptions):
+    if abs(radius - CURL_R) <= CURL_TOL:
+        return True
+    for approved in APPROVED_WINDING_CURLS:
+        if abs(radius - approved) <= CURL_TOL:
+            return True
+    for allowed in exceptions:
+        if abs(radius - allowed) <= CURL_TOL:
+            return True
+    return False
+
+
+def winding_curl_exceptions(symbol):
+    """Radii allowed on this symbol by a ki_winding_curl property.
+
+    The property value is "<millimetres> reason: <why>". A missing reason
+    is reported and does not allow the radius.
+    """
+    allowed = []
+    missing = False
+    for prop in kids(symbol, "property"):
+        if len(prop) < 3 or prop[1] != "ki_winding_curl":
+            continue
+        value = prop[2] if isinstance(prop[2], str) else ""
+        match = WINDING_CURL_RE.match(value.strip())
+        if match is None or not reason_ok(match.group(2)):
+            missing = True
+            continue
+        allowed.append(float(match.group(1)))
+    return allowed, missing
+
+
 def arc_samples(start, mid, end, steps=16):
     """Approximate a KiCad three-point arc. KiCad arcs are circular."""
     (x1, y1), (x2, y2), (x3, y3) = start, mid, end
@@ -552,18 +705,20 @@ def check_symbol(path, symbol, where_file, findings):
         if prims and not near_body(inner, prims):
             findings.append(Finding("pin-end-on-body", where_file, tag))
 
-    # One finding per symbol. A symbol that already has some other radius is
-    # grandfathered as a whole. Transformer-IEC is not grandfathered, so every
-    # arc in it has to be the house curl. Body size is not checked: a 3-phase
-    # row is wider than a coil on purpose, and a PLC body is large on purpose.
-    for prim in prims:
-        if prim[0] != "arc":
+    # Only a chained winding curl is checked. A lone semicircle, a sine-wave
+    # arc, a dot, or an arrow is left alone. Body size is not checked.
+    allowed, missing_reason = winding_curl_exceptions(symbol)
+    if missing_reason:
+        findings.append(Finding("suppress-missing-reason", where_file, name + "#winding-curl"))
+    seen = set()
+    for radius in winding_curl_runs(prims):
+        if curl_allowed(radius, allowed):
             continue
-        radius = circle_radius(prim[1], prim[2], prim[3])
-        if radius is None or abs(radius - CURL_R) <= CURL_TOL:
+        key = round(radius, 3)
+        if key in seen:
             continue
-        findings.append(Finding("arc-radius", where_file, name))
-        break
+        seen.add(key)
+        findings.append(Finding("arc-radius", where_file, f"{name}#{key:.3f}"))
 
 
 def check_parents(path, symbols, where_file, findings):

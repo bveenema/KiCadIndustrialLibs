@@ -16,21 +16,29 @@ contactor, Motor-IEC). Stroke width `0` is KiCad's default and renders at
 | Pin length | 3.81 mm (150 mil). 7.62 mm only on PLC and panel IO |
 | Font | 1.27 mm |
 | Stroke | width 0, renders 0.1524 mm |
-| Winding curl radius | 0.635 mm |
-| One curl's width | 1.27 mm. Four curls fill one grid step |
+| Default winding curl | 0.635 mm. Four curls fill one grid step |
+| Tight winding curl | 0.508 mm. The semicircle measured on cable pigtail tails |
 | Contactor terminal dot | circle radius 0.508 mm |
 | Contactor pole pitch | 5.08 mm (L1, L2, L3) |
 | One contactor pole | about 2.5 mm of ink. Circle diameter 1.016 mm, contact blade rises 1.27 mm, and the ink from the bottom of the terminal dot to the blade tip is 2.03 mm |
 | AC coil body | 7.62 mm wide, 3.81 mm tall. Pins are 15.24 mm apart |
 | Contactor_3P_AC poles | about 12.2 mm tall for three poles |
 
-The 0.635 mm curl is the one on `AC Coil`, on the coil unit of
-`Contactor_3P_AC`, and on the motor sine marks. A file may round it to 0.63
-or 0.64. New curls are exactly 0.635 mm.
+0.635 mm is the default winding curl. It is the chained semicircle on the
+transformer windings and on the two-hump coil in the `PowerEntryModule`
+symbols. The sine mark inside `AC Coil` is a smaller arc of the same radius,
+not a winding curl. A file may round 0.635 to 0.63 or 0.64.
+
+0.508 mm (20 mil) is the other measured curl. It is the semicircle on the
+cable pigtail tails in `CablesConnectors` (`Pigtail_*`) and on the
+AutomationDirect M12 cable symbols. Those drawings leave a 0.254 mm gap
+between the semicircles, so they are not themselves a winding curl. A winding
+that does chain at 0.508 mm is using that same tight curl. No larger chained
+winding radius exists in these libraries.
 
 Place a new symbol next to `Contactor_3P_AC` before deciding it is the right
-size. A winding curl that is 1.27 mm in radius is twice the house curl, and
-the symbol will look about twice as big as the contactor.
+size. A winding curl of 1.27 mm radius is twice the default, and the symbol
+will look about twice as big as the contactor.
 
 ## Drawing a symbol
 
@@ -97,13 +105,54 @@ this check. The lint cannot see a picture.
 
 `tools/kicad_sym_lint.py` checks the mechanical rules: fields at 0,0, pin
 grid, pin length, pin type, visible pin numbers, the inner end on the body,
-keywords, descriptions, manufacturer parts that extend a generic, and arc
-radius. An arc has to be 0.635 mm ± 0.02 mm. Severity is in
-`tools/kicad-sym-lint.yaml`.
+keywords, descriptions, manufacturer parts that extend a generic, and the
+radius of a winding curl. Severity is in `tools/kicad-sym-lint.yaml`.
 
-Existing violations are listed in `tools/kicad-sym-lint-baseline.txt`, one
-line per symbol for the arc rule. `symbol/Transformer-IEC.kicad_sym` is not
-in that file and cannot be suppressed.
+A winding curl is a run of 2 or more semicircular arcs of equal radius whose
+endpoints meet and lie on one straight line.
+
+- An arc is a semicircle when the distance between its ends is the diameter:
+  within 0.05 mm of twice the radius of the circle through the arc's start,
+  mid, and end.
+- Two arcs meet when they share an endpoint within 0.05 mm. The same
+  semicircle copied into another unit is one arc, not two.
+- The endpoints of the run lie within 0.05 mm of one straight line. Radii in
+  the run match within 0.02 mm.
+
+A single semicircle, a quarter circle, the sine mark in a coil box, a
+terminal dot, a contact blade, and an arrow are not winding curls. The rule
+does not look at them.
+
+The default radius is 0.635 mm. 0.508 mm is also approved, for the tight
+curl measured on cable pigtail tails. Any other radius on a winding curl is
+an error unless that symbol carries an exception.
+
+Put the exception on the symbol that contains the arcs. One property per
+extra radius. The value is the radius in millimetres, then `reason:` and a
+written reason:
+
+```
+(property "ki_winding_curl" "1.27 reason: the source pitch cannot land on the grid at 0.635 mm"
+	(at 0 0 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+```
+
+The reason is required. The radius has to be the one you drew, within 0.02
+mm. This is an approval of that size on that symbol, including in
+`Transformer-IEC`. A `kicad-sym-lint: suppress` comment does not approve a
+curl, and that library still cannot suppress the rule.
+
+Existing violations of the other rules are listed in
+`tools/kicad-sym-lint-baseline.txt`. `symbol/Transformer-IEC.kicad_sym` is
+not in that file and cannot be suppressed. The earlier arc check flagged
+every non-0.635 arc, including arcs that are not windings. Those baseline
+lines are gone, because the winding-curl definition does not flag them.
 
 These are not lint rules, because they cannot be checked reliably:
 

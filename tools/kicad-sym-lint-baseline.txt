@@ -12,7 +12,6 @@ pin-grid	symbol/Actuators-IEC.kicad_sym	Brake Coil#A2
 description	symbol/Actuators-IEC.kicad_sym	Buzzer
 pin-grid	symbol/Actuators-IEC.kicad_sym	Buzzer#A1
 pin-grid	symbol/Actuators-IEC.kicad_sym	Buzzer#A2
-arc-radius	symbol/Actuators-IEC.kicad_sym	Buzzer
 description	symbol/Actuators-IEC.kicad_sym	Clutch Coil
 pin-grid	symbol/Actuators-IEC.kicad_sym	Clutch Coil#A1
 pin-grid	symbol/Actuators-IEC.kicad_sym	Clutch Coil#A2
@@ -28,7 +27,6 @@ pin-grid	symbol/Actuators-IEC.kicad_sym	High Speed Coil#A2
 description	symbol/Actuators-IEC.kicad_sym	Horn
 pin-grid	symbol/Actuators-IEC.kicad_sym	Horn#A1
 pin-grid	symbol/Actuators-IEC.kicad_sym	Horn#A2
-arc-radius	symbol/Actuators-IEC.kicad_sym	Horn
 description	symbol/Actuators-IEC.kicad_sym	Indicator Coil
 pin-grid	symbol/Actuators-IEC.kicad_sym	Indicator Coil#A1
 pin-grid	symbol/Actuators-IEC.kicad_sym	Indicator Coil#A2
@@ -245,7 +243,6 @@ pin-bidirectional	symbol/CablesConnectors-Amphenol.kicad_sym	Bulkhead_Ethernet_R
 pin-length	symbol/CablesConnectors-Amphenol.kicad_sym	Bulkhead_Ethernet_RightAngle_RDP-5SPFFV-TCU7001#1A
 pin-bidirectional	symbol/CablesConnectors-Amphenol.kicad_sym	Bulkhead_Ethernet_RightAngle_RDP-5SPFFV-TCU7001#1
 pin-length	symbol/CablesConnectors-Amphenol.kicad_sym	Bulkhead_Ethernet_RightAngle_RDP-5SPFFV-TCU7001#1
-arc-radius	symbol/CablesConnectors-Amphenol.kicad_sym	Bulkhead_Ethernet_RightAngle_RDP-5SPFFV-TCU7001
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_7-8-16_Female_.3m_ZP-S1-3FR-0P3M#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_7-8-16_Female_.3m_ZP-S1-3FR-0P3M#Value
 extends-parent	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_7-8-16_Female_.3m_ZP-S1-3FR-0P3M
@@ -265,7 +262,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_7-8-16_Fe
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_7-8-16_Female_.3m_ZP-S1-3FR-0P3M#3
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_7-8-16_Female_.3m_ZP-S1-3FR-0P3M#3
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_7-8-16_Female_.3m_ZP-S1-3FR-0P3M#3
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_7-8-16_Female_.3m_ZP-S1-3FR-0P3M
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x04_Female_0.5m_7231-13501-9710050#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x04_Female_0.5m_7231-13501-9710050#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x04_Female_0.5m_7231-13501-9710050#1A
@@ -290,7 +286,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x04_Fe
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x04_Female_0.5m_7231-13501-9710050#4
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x04_Female_0.5m_7231-13501-9710050#4
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x04_Female_0.5m_7231-13501-9710050#4
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x04_Female_0.5m_7231-13501-9710050
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x04_Male_0.5m_7231-13501-9710050#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x04_Male_0.5m_7231-13501-9710050#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x04_Male_0.5m_7231-13501-9710050#1A
@@ -345,7 +340,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x05_Fe
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x05_Female_0.5m_7231-13521-9720050#5
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x05_Female_0.5m_7231-13521-9720050#5
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x05_Female_0.5m_7231-13521-9720050#5
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x05_Female_0.5m_7231-13521-9720050
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x05_Male_0.5m_7231-13521-9720050#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x05_Male_0.5m_7231-13521-9720050#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x05_Male_0.5m_7231-13521-9720050#1A
@@ -422,7 +416,6 @@ pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x08_Fema
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x08_Female_0.5m_7231-17181-9730050#7
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x08_Female_0.5m_7231-17181-9730050#8
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x08_Female_0.5m_7231-17181-9730050#8
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x08_Female_0.5m_7231-17181-9730050
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x08_Male_0.5m_7000-17162-9820050#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x08_Male_0.5m_7000-17162-9820050#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x08_Male_0.5m_7000-17162-9820050#1A
@@ -496,7 +489,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Cable_M12x04_Femal
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Cable_M12x04_Female_Male_Axial_1m_7000-40021-0240100#4
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Cable_M12x04_Female_Male_Axial_1m_7000-40021-0240100#4
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Cable_M12x04_Female_Male_Axial_1m_7000-40021-0240100#4
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Cable_M12x04_Female_Male_Axial_1m_7000-40021-0240100
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Cable_M12x05_Female_Male_Axial_1m_7000-40041-0250100#Reference
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Cable_M12x05_Female_Male_Axial_1m_7000-40041-0250100#2
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Cable_M12x05_Female_Male_Axial_1m_7000-40041-0250100#2
@@ -530,7 +522,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Cable_M12x05_Femal
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Cable_M12x05_Female_Male_Axial_1m_7000-40041-0250100#5
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Cable_M12x05_Female_Male_Axial_1m_7000-40041-0250100#5
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Cable_M12x05_Female_Male_Axial_1m_7000-40041-0250100#5
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Cable_M12x05_Female_Male_Axial_1m_7000-40041-0250100
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_7-8-16_Female_Axial_D5-13mm_ZP-S1C-4FP-FW#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_7-8-16_Female_Axial_D5-13mm_ZP-S1C-4FP-FW#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_7-8-16_Female_Axial_D5-13mm_ZP-S1C-4FP-FW#1
@@ -551,7 +542,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_7-8-16_F
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_7-8-16_Female_Axial_D5-13mm_ZP-S1C-4FP-FW#4A
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_7-8-16_Female_Axial_D5-13mm_ZP-S1C-4FP-FW#4A
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_7-8-16_Female_Axial_D5-13mm_ZP-S1C-4FP-FW#4A
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_7-8-16_Female_Axial_D5-13mm_ZP-S1C-4FP-FW
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_7-8-16_Male_Axial_D5-13mm_ZP-S1C-4MP-FW#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_7-8-16_Male_Axial_D5-13mm_ZP-S1C-4MP-FW#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_7-8-16_Male_Axial_D5-13mm_ZP-S1C-4MP-FW#1A
@@ -592,7 +582,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_F
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_Female_Axial_D4-6mm_7000-12901-0000000#4A
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_Female_Axial_D4-6mm_7000-12901-0000000#4A
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_Female_Axial_D4-6mm_7000-12901-0000000#4A
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_Female_Axial_D4-6mm_7000-12901-0000000
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_Female_Axial_D4-6mm_7000-12901-0000000_copy#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_Female_Axial_D4-6mm_7000-12901-0000000_copy#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_Female_Axial_D4-6mm_7000-12901-0000000_copy#1
@@ -613,7 +602,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_F
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_Female_Axial_D4-6mm_7000-12901-0000000_copy#4A
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_Female_Axial_D4-6mm_7000-12901-0000000_copy#4A
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_Female_Axial_D4-6mm_7000-12901-0000000_copy#4A
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_Female_Axial_D4-6mm_7000-12901-0000000_copy
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_Male_Axial_D4-6mm_7000-12701-0000000#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_Male_Axial_D4-6mm_7000-12701-0000000#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x04_Male_Axial_D4-6mm_7000-12701-0000000#1A
@@ -659,7 +647,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x05_F
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x05_Female_Axial_D4-6mm_7000-12921-0000000#5A
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x05_Female_Axial_D4-6mm_7000-12921-0000000#5A
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x05_Female_Axial_D4-6mm_7000-12921-0000000#5A
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x05_Female_Axial_D4-6mm_7000-12921-0000000
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x05_Male_Axial_D4-6mm_7000-12721-0000000#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x05_Male_Axial_D4-6mm_7000-12721-0000000#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x05_Male_Axial_D4-6mm_7000-12721-0000000#1A
@@ -723,7 +710,6 @@ pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x08_Fem
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x08_Female_Axial_D6-8mm_7000-17321-0000000#7A
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x08_Female_Axial_D6-8mm_7000-17321-0000000#8A
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x08_Female_Axial_D6-8mm_7000-17321-0000000#8A
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x08_Female_Axial_D6-8mm_7000-17321-0000000
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x08_Male_Axial_D6-8mm_7000-17301-0000000#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x08_Male_Axial_D6-8mm_7000-17301-0000000#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x08_Male_Axial_D6-8mm_7000-17301-0000000#1A
@@ -777,7 +763,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x03_Fe
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x03_Female_Axial_D4-5.1mm_7000-08361-0000000#3A
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x03_Female_Axial_D4-5.1mm_7000-08361-0000000#3A
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x03_Female_Axial_D4-5.1mm_7000-08361-0000000#3A
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x03_Female_Axial_D4-5.1mm_7000-08361-0000000
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x03_Male_Axial_D4-5.1mm_7000-08321-0000000#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x03_Male_Axial_D4-5.1mm_7000-08321-0000000#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x03_Male_Axial_D4-5.1mm_7000-08321-0000000#1A
@@ -813,7 +798,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x04_Fe
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x04_Female_Axial_D4-5.1mm_7000-08381-0000000#4A
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x04_Female_Axial_D4-5.1mm_7000-08381-0000000#4A
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x04_Female_Axial_D4-5.1mm_7000-08381-0000000#4A
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x04_Female_Axial_D4-5.1mm_7000-08381-0000000
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x04_Male_Axial_D4-5.1mm_7000-08341-0000000#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x04_Male_Axial_D4-5.1mm_7000-08341-0000000#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M8x04_Male_Axial_D4-5.1mm_7000-08341-0000000#1A
@@ -851,7 +835,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	PassThru_M12_Ether
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	PassThru_M12_Ethernet_RJ45_Axial_7000-44671-0000000#1
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	PassThru_M12_Ethernet_RJ45_Axial_7000-44671-0000000#1
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	PassThru_M12_Ethernet_RJ45_Axial_7000-44671-0000000#1
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	PassThru_M12_Ethernet_RJ45_Axial_7000-44671-0000000
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x3_Female_Axial_2m_ZP-S1-3FP-2M#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x3_Female_Axial_2m_ZP-S1-3FP-2M#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x3_Female_Axial_2m_ZP-S1-3FP-2M#1A
@@ -872,7 +855,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x3_F
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x3_Female_Axial_2m_ZP-S1-3FP-2M#3
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x3_Female_Axial_2m_ZP-S1-3FP-2M#3
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x3_Female_Axial_2m_ZP-S1-3FP-2M#3
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x3_Female_Axial_2m_ZP-S1-3FP-2M
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x3_Male_Axial_2m_ZP-S1-3MP-2M#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x3_Male_Axial_2m_ZP-S1-3MP-2M#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x3_Male_Axial_2m_ZP-S1-3MP-2M#1A
@@ -919,7 +901,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x4_F
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x4_Female_Axial_2m_ZP-S1C-4FPX-2M#4
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x4_Female_Axial_2m_ZP-S1C-4FPX-2M#4
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x4_Female_Axial_2m_ZP-S1C-4FPX-2M#4
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x4_Female_Axial_2m_ZP-S1C-4FPX-2M
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x4_Male_Axial_2m_ZP-S1C-4MPX-2M#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x4_Male_Axial_2m_ZP-S1C-4MPX-2M#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_7-8-16x4_Male_Axial_2m_ZP-S1C-4MPX-2M#1A
@@ -975,7 +956,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x04_Fem
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x04_Female_Axial_2m_7000-12221-0240200#~
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x04_Female_Axial_2m_7000-12221-0240200#~
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x04_Female_Axial_2m_7000-12221-0240200#~
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x04_Female_Axial_2m_7000-12221-0240200
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x05_Female_Axial_3m_7000-12241-0250300#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x05_Female_Axial_3m_7000-12241-0250300#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x05_Female_Axial_3m_7000-12241-0250300#1A
@@ -1011,7 +991,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x05_Fem
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x05_Female_Axial_3m_7000-12241-0250300#~
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x05_Female_Axial_3m_7000-12241-0250300#~
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x05_Female_Axial_3m_7000-12241-0250300#~
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x05_Female_Axial_3m_7000-12241-0250300
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Female_Axial_3m_7000-17041-2920300#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Female_Axial_3m_7000-17041-2920300#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Female_Axial_3m_7000-17041-2920300#1A
@@ -1116,7 +1095,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Fem
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Female_Axial_3m_7000-17041-2920300#~
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Female_Axial_3m_7000-17041-2920300#~
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Female_Axial_3m_7000-17041-2920300#~
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Female_Axial_3m_7000-17041-2920300
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Female_Axial_3m_7000-17041-2950300#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Female_Axial_3m_7000-17041-2950300#Value
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Female_Axial_3m_7000-17041-2950300#1A
@@ -1170,7 +1148,6 @@ pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Fem
 pin-bidirectional	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Female_Axial_3m_7000-17041-2950300#~
 pin-grid	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Female_Axial_3m_7000-17041-2950300#~
 pin-length	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Female_Axial_3m_7000-17041-2950300#~
-arc-radius	symbol/CablesConnectors-AutomationDirect.kicad_sym	Pigtail_M12x08_Female_Axial_3m_7000-17041-2950300
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_7-8-16_Female_.3m_ZP-S1C-4FR-0P3M-18#Reference
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_7-8-16_Female_.3m_ZP-S1C-4FR-0P3M-18#Value
 field-center	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_7-8-16_Male_0.3m_ZP-S1C-4MR-0P3M-18#Reference
@@ -1425,7 +1402,6 @@ pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Female_Large#11
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Female_Large#12
 pin-grid	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Female_Large#12
 pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Female_Large#12
-arc-radius	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Female_Large
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Female_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Female_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Female_Small#1A
@@ -1494,7 +1470,6 @@ pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Female_Small#7
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Female_Small#8
 pin-grid	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Female_Small#8
 pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Female_Small#8
-arc-radius	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Female_Small
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_12Pos_Male_Large#1A
@@ -1663,7 +1638,6 @@ pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Female_Large#3
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Female_Large#4
 pin-grid	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Female_Large#4
 pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Female_Large#4
-arc-radius	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Female_Large
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Female_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Female_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Female_Small#1A
@@ -1688,7 +1662,6 @@ pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Female_Small#3
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Female_Small#4
 pin-grid	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Female_Small#4
 pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Female_Small#4
-arc-radius	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Female_Small
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_4Pos_Male_Large#1A
@@ -1765,7 +1738,6 @@ pin-grid	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Female_Large#4
 pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Female_Large#4
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Female_Large#5
 pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Female_Large#5
-arc-radius	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Female_Large
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Female_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Female_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Female_Small#1A
@@ -1796,7 +1768,6 @@ pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Female_Small#4
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Female_Small#5
 pin-grid	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Female_Small#5
 pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Female_Small#5
-arc-radius	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Female_Small
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_5Pos_Male_Large#1A
@@ -1903,7 +1874,6 @@ pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Female_Large#7
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Female_Large#8
 pin-grid	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Female_Large#8
 pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Female_Large#8
-arc-radius	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Female_Large
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Female_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Female_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Female_Small#1A
@@ -1950,7 +1920,6 @@ pin-grid	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Female_Small#7
 pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Female_Small#7
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Female_Small#8
 pin-length	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Female_Small#8
-arc-radius	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Female_Small
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Bulkhead_8Pos_Male_Large#1A
@@ -2109,7 +2078,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Female_La
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Female_Large#11
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Female_Large#12
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Female_Large#12
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Female_Large
 field-center	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Female_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Female_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Female_Small#1A
@@ -2172,7 +2140,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Female_Sm
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Female_Small#11
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Female_Small#12
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Female_Small#12
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Female_Small
 field-center	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Large#1A
@@ -2235,7 +2202,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Larg
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Large#11
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Large#12
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Large#12
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Large
 field-center	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Small#1A
@@ -2298,7 +2264,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Smal
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Small#11
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Small#12
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Small#12
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_12pos_Female_Male_Small
 field-center	symbol/CablesConnectors.kicad_sym	Cable_12pos_Male_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_12pos_Male_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_12pos_Male_Male_Large#1A
@@ -2445,7 +2410,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Female_Lar
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Female_Large#3
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Female_Large#4
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Female_Large#4
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Female_Large
 field-center	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Female_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Female_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Female_Small#1A
@@ -2468,7 +2432,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Female_Sma
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Female_Small#3
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Female_Small#4
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Female_Small#4
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Female_Small
 field-center	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Large#1A
@@ -2491,7 +2454,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Large
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Large#3
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Large#4
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Large#4
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Large
 field-center	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Small#1A
@@ -2514,7 +2476,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Small
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Small#3
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Small#4
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Small#4
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_4pos_Female_Male_Small
 field-center	symbol/CablesConnectors.kicad_sym	Cable_4pos_Male_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_4pos_Male_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_4pos_Male_Male_Large#1A
@@ -2586,7 +2547,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Female_Lar
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Female_Large#4
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Female_Large#5
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Female_Large#5
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Female_Large
 field-center	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Female_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Female_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Female_Small#1A
@@ -2614,7 +2574,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Female_Sma
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Female_Small#4
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Female_Small#5
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Female_Small#5
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Female_Small
 field-center	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Large#1A
@@ -2642,7 +2601,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Large
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Large#4
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Large#5
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Large#5
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Large
 field-center	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Small#1A
@@ -2670,7 +2628,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Small
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Small#4
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Small#5
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Small#5
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_5pos_Female_Male_Small
 field-center	symbol/CablesConnectors.kicad_sym	Cable_5pos_Male_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_5pos_Male_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_5pos_Male_Male_Large#1A
@@ -2767,7 +2724,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Female_Lar
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Female_Large#7
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Female_Large#8
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Female_Large#8
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Female_Large
 field-center	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Female_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Female_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Female_Small#1A
@@ -2810,7 +2766,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Female_Sma
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Female_Small#7
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Female_Small#8
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Female_Small#8
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Female_Small
 field-center	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Large#1A
@@ -2853,7 +2808,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Large
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Large#7
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Large#8
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Large#8
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Large
 field-center	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Small#1A
@@ -2896,7 +2850,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Small
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Small#7
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Small#8
 pin-grid	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Small#8
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_8pos_Female_Male_Small
 field-center	symbol/CablesConnectors.kicad_sym	Cable_8pos_Male_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_8pos_Male_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_8pos_Male_Male_Large#1A
@@ -2988,7 +2941,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_Female_Female#1
 pin-length	symbol/CablesConnectors.kicad_sym	Cable_Female_Female#1
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_Female_Female#2
 pin-length	symbol/CablesConnectors.kicad_sym	Cable_Female_Female#2
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_Female_Female
 field-center	symbol/CablesConnectors.kicad_sym	Cable_Female_Male#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_Female_Male#Value
 pin-number-visible	symbol/CablesConnectors.kicad_sym	Cable_Female_Male
@@ -2996,7 +2948,6 @@ pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_Female_Male#2
 pin-length	symbol/CablesConnectors.kicad_sym	Cable_Female_Male#2
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Cable_Female_Male#1
 pin-length	symbol/CablesConnectors.kicad_sym	Cable_Female_Male#1
-arc-radius	symbol/CablesConnectors.kicad_sym	Cable_Female_Male
 field-center	symbol/CablesConnectors.kicad_sym	Cable_Male_Male#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Cable_Male_Male#Value
 pin-number-visible	symbol/CablesConnectors.kicad_sym	Cable_Male_Male
@@ -3026,7 +2977,6 @@ pin-length	symbol/CablesConnectors.kicad_sym	Connector_4pos_Female#3A
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Connector_4pos_Female#4A
 pin-grid	symbol/CablesConnectors.kicad_sym	Connector_4pos_Female#4A
 pin-length	symbol/CablesConnectors.kicad_sym	Connector_4pos_Female#4A
-arc-radius	symbol/CablesConnectors.kicad_sym	Connector_4pos_Female
 field-center	symbol/CablesConnectors.kicad_sym	Connector_4pos_Male#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Connector_4pos_Male#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Connector_4pos_Male#1A
@@ -3070,7 +3020,6 @@ pin-grid	symbol/CablesConnectors.kicad_sym	Connector_5pos_Female#4A
 pin-length	symbol/CablesConnectors.kicad_sym	Connector_5pos_Female#4A
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Connector_5pos_Female#5A
 pin-length	symbol/CablesConnectors.kicad_sym	Connector_5pos_Female#5A
-arc-radius	symbol/CablesConnectors.kicad_sym	Connector_5pos_Female
 field-center	symbol/CablesConnectors.kicad_sym	Connector_5pos_Male#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Connector_5pos_Male#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Connector_5pos_Male#1A
@@ -3376,7 +3325,6 @@ pin-grid	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Female_Large#3
 pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Female_Large#3
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Female_Large#~
 pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Female_Large#~
-arc-radius	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Female_Large
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Female_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Female_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Female_Small#1A
@@ -3418,7 +3366,6 @@ pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Female_Small#3
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Female_Small#~
 pin-grid	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Female_Small#~
 pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Female_Small#~
-arc-radius	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Female_Small
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_3pos_Male_Large#1A
@@ -3554,7 +3501,6 @@ pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Female_Large#~
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Female_Large#~
 pin-grid	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Female_Large#~
 pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Female_Large#~
-arc-radius	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Female_Large
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Female_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Female_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Female_Small#1A
@@ -3608,7 +3554,6 @@ pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Female_Small#4
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Female_Small#~
 pin-grid	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Female_Small#~
 pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Female_Small#~
-arc-radius	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Female_Small
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_4pos_Male_Large#1A
@@ -3777,7 +3722,6 @@ pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Female_Large#~
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Female_Large#~
 pin-grid	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Female_Large#~
 pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Female_Large#~
-arc-radius	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Female_Large
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Female_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Female_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Female_Small#1A
@@ -3843,7 +3787,6 @@ pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Female_Small#5
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Female_Small#~
 pin-grid	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Female_Small#~
 pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Female_Small#~
-arc-radius	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Female_Small
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_5pos_Male_Large#1A
@@ -4072,7 +4015,6 @@ pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Female_Large#~
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Female_Large#~
 pin-grid	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Female_Large#~
 pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Female_Large#~
-arc-radius	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Female_Large
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Female_Small#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Female_Small#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Female_Small#1A
@@ -4174,7 +4116,6 @@ pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Female_Small#8
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Female_Small#~
 pin-grid	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Female_Small#~
 pin-length	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Female_Small#~
-arc-radius	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Female_Small
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Male_Large#Reference
 field-center	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Male_Large#Value
 pin-bidirectional	symbol/CablesConnectors.kicad_sym	Pigtail_8pos_Male_Large#1A
@@ -4437,7 +4378,6 @@ pin-length	symbol/Indication-Banner.kicad_sym	K30-Core_Touch#4
 pin-bidirectional	symbol/Indication-Banner.kicad_sym	K30-Core_Touch#5
 pin-grid	symbol/Indication-Banner.kicad_sym	K30-Core_Touch#5
 pin-length	symbol/Indication-Banner.kicad_sym	K30-Core_Touch#5
-arc-radius	symbol/Indication-Banner.kicad_sym	K30-Core_Touch
 field-center	symbol/Indication-Banner.kicad_sym	K30-Pro_IO-Link#Reference
 field-center	symbol/Indication-Banner.kicad_sym	K30-Pro_IO-Link#Value
 pin-bidirectional	symbol/Indication-Banner.kicad_sym	K30-Pro_IO-Link#1
@@ -4451,7 +4391,6 @@ pin-grid	symbol/Indication-Banner.kicad_sym	K30-Pro_IO-Link#3
 pin-length	symbol/Indication-Banner.kicad_sym	K30-Pro_IO-Link#3
 pin-grid	symbol/Indication-Banner.kicad_sym	K30-Pro_IO-Link#4
 pin-length	symbol/Indication-Banner.kicad_sym	K30-Pro_IO-Link#4
-arc-radius	symbol/Indication-Banner.kicad_sym	K30-Pro_IO-Link
 field-center	symbol/Indication-Banner.kicad_sym	K50_Core_EZ-LIGHT_Off-Green_Latching_NO_K50ALBT2XGHQ#Reference
 field-center	symbol/Indication-Banner.kicad_sym	K50_Core_EZ-LIGHT_Off-Green_Latching_NO_K50ALBT2XGHQ#Value
 pin-bidirectional	symbol/Indication-Banner.kicad_sym	K50_Core_EZ-LIGHT_Off-Green_Latching_NO_K50ALBT2XGHQ#1
@@ -4492,7 +4431,6 @@ pin-length	symbol/Indication-Banner.kicad_sym	K50_Core_EZ-LIGHT_Off-Green_Latchi
 pin-bidirectional	symbol/Indication-Banner.kicad_sym	K50_Core_EZ-LIGHT_Off-Green_Latching_NO_K50ALBT2XGHQ#6
 pin-grid	symbol/Indication-Banner.kicad_sym	K50_Core_EZ-LIGHT_Off-Green_Latching_NO_K50ALBT2XGHQ#6
 pin-length	symbol/Indication-Banner.kicad_sym	K50_Core_EZ-LIGHT_Off-Green_Latching_NO_K50ALBT2XGHQ#6
-arc-radius	symbol/Indication-Banner.kicad_sym	K50_Core_EZ-LIGHT_Off-Green_Latching_NO_K50ALBT2XGHQ
 field-center	symbol/Indication-Banner.kicad_sym	K50_Core_Multipurpose_PNP_NO_K50APT2GRYF2Q#Reference
 field-center	symbol/Indication-Banner.kicad_sym	K50_Core_Multipurpose_PNP_NO_K50APT2GRYF2Q#Value
 pin-grid	symbol/Indication-Banner.kicad_sym	K50_Core_Multipurpose_PNP_NO_K50APT2GRYF2Q#1
@@ -4541,7 +4479,6 @@ pin-length	symbol/Indication-Banner.kicad_sym	K50_Core_Multipurpose_PNP_NO_K50AP
 pin-bidirectional	symbol/Indication-Banner.kicad_sym	K50_Core_Multipurpose_PNP_NO_K50APT2GRYF2Q#6
 pin-grid	symbol/Indication-Banner.kicad_sym	K50_Core_Multipurpose_PNP_NO_K50APT2GRYF2Q#6
 pin-length	symbol/Indication-Banner.kicad_sym	K50_Core_Multipurpose_PNP_NO_K50APT2GRYF2Q#6
-arc-radius	symbol/Indication-Banner.kicad_sym	K50_Core_Multipurpose_PNP_NO_K50APT2GRYF2Q
 field-center	symbol/Indication-Banner.kicad_sym	K50_Pro_Touch#Reference
 field-center	symbol/Indication-Banner.kicad_sym	K50_Pro_Touch#Value
 pin-grid	symbol/Indication-Banner.kicad_sym	K50_Pro_Touch#1
@@ -4590,7 +4527,6 @@ pin-length	symbol/Indication-Banner.kicad_sym	K50_Pro_Touch#7
 pin-bidirectional	symbol/Indication-Banner.kicad_sym	K50_Pro_Touch#8
 pin-grid	symbol/Indication-Banner.kicad_sym	K50_Pro_Touch#8
 pin-length	symbol/Indication-Banner.kicad_sym	K50_Pro_Touch#8
-arc-radius	symbol/Indication-Banner.kicad_sym	K50_Pro_Touch
 field-center	symbol/Indication-Banner.kicad_sym	K50-Core_Touch#Reference
 field-center	symbol/Indication-Banner.kicad_sym	K50-Core_Touch#Value
 field-center	symbol/Indication-Banner.kicad_sym	K50-Pro_IO-Link#Reference
@@ -4634,7 +4570,6 @@ pin-bidirectional	symbol/Indication-StackLight.kicad_sym	Tower Light - MC50#Grn
 pin-grid	symbol/Indication-StackLight.kicad_sym	Tower Light - MC50#Grn
 pin-bidirectional	symbol/Indication-StackLight.kicad_sym	Tower Light - MC50#Org
 pin-grid	symbol/Indication-StackLight.kicad_sym	Tower Light - MC50#Org
-arc-radius	symbol/Indication-StackLight.kicad_sym	Tower Light - MC50
 description	symbol/Indication.kicad_sym	Pilot Light
 pin-grid	symbol/Indication.kicad_sym	Pilot Light#X1
 pin-grid	symbol/Indication.kicad_sym	Pilot Light#X2
@@ -5044,7 +4979,6 @@ pin-bidirectional	symbol/Motor-JVL.kicad_sym	MIS34xCyyExzz85#16
 pin-grid	symbol/Motor-JVL.kicad_sym	MIS34xCyyExzz85#16
 pin-bidirectional	symbol/Motor-JVL.kicad_sym	MIS34xCyyExzz85#17
 pin-grid	symbol/Motor-JVL.kicad_sym	MIS34xCyyExzz85#17
-arc-radius	symbol/Motor-JVL.kicad_sym	MIS34xCyyExzz85
 field-center	symbol/Motor-RoboClaw.kicad_sym	RoboClaw_2x15A#Reference
 field-center	symbol/Motor-RoboClaw.kicad_sym	RoboClaw_2x15A#Value
 extends-parent	symbol/Motor-RoboClaw.kicad_sym	RoboClaw_2x15A
@@ -5164,7 +5098,6 @@ pin-grid	symbol/Motor-Teknic.kicad_sym	ClearPath_MotionControl_CPM-MCxV-xxxxx-xx
 pin-length	symbol/Motor-Teknic.kicad_sym	ClearPath_MotionControl_CPM-MCxV-xxxxx-xxx#7
 pin-grid	symbol/Motor-Teknic.kicad_sym	ClearPath_MotionControl_CPM-MCxV-xxxxx-xxx#8
 pin-length	symbol/Motor-Teknic.kicad_sym	ClearPath_MotionControl_CPM-MCxV-xxxxx-xxx#8
-arc-radius	symbol/Motor-Teknic.kicad_sym	ClearPath_MotionControl_CPM-MCxV-xxxxx-xxx
 field-center	symbol/Network-BrainBox.kicad_sym	Switch_4-Port_Unmanaged_Brainbox-SW-504#Reference
 field-center	symbol/Network-BrainBox.kicad_sym	Switch_4-Port_Unmanaged_Brainbox-SW-504#Value
 extends-parent	symbol/Network-BrainBox.kicad_sym	Switch_4-Port_Unmanaged_Brainbox-SW-504
@@ -5260,7 +5193,6 @@ pin-bidirectional	symbol/Network.kicad_sym	Antenna_Extender#1A
 pin-length	symbol/Network.kicad_sym	Antenna_Extender#1A
 pin-bidirectional	symbol/Network.kicad_sym	Antenna_Extender#1
 pin-length	symbol/Network.kicad_sym	Antenna_Extender#1
-arc-radius	symbol/Network.kicad_sym	Antenna_Extender
 field-center	symbol/Network.kicad_sym	Switch_4-Port_Unmanaged_Generic#Reference
 field-center	symbol/Network.kicad_sym	Switch_4-Port_Unmanaged_Generic#Value
 pin-grid	symbol/Network.kicad_sym	Switch_4-Port_Unmanaged_Generic#P1
@@ -6937,7 +6869,6 @@ pin-length	symbol/PLC-Turck.kicad_sym	TBEN-L4-8IOL#X1-3
 pin-bidirectional	symbol/PLC-Turck.kicad_sym	TBEN-L4-8IOL#X1-4
 pin-grid	symbol/PLC-Turck.kicad_sym	TBEN-L4-8IOL#X1-4
 pin-length	symbol/PLC-Turck.kicad_sym	TBEN-L4-8IOL#X1-4
-arc-radius	symbol/PLC-Turck.kicad_sym	TBEN-L4-8IOL
 field-center	symbol/PLC-Turck.kicad_sym	TBEN-L4-PLC#Reference
 field-center	symbol/PLC-Turck.kicad_sym	TBEN-L4-PLC#Value
 pin-grid	symbol/PLC-Turck.kicad_sym	TBEN-L4-PLC#P2
@@ -7075,7 +7006,6 @@ pin-length	symbol/PLC-Turck.kicad_sym	TBEN-L4-PLC#X1-3
 pin-bidirectional	symbol/PLC-Turck.kicad_sym	TBEN-L4-PLC#X1-4
 pin-grid	symbol/PLC-Turck.kicad_sym	TBEN-L4-PLC#X1-4
 pin-length	symbol/PLC-Turck.kicad_sym	TBEN-L4-PLC#X1-4
-arc-radius	symbol/PLC-Turck.kicad_sym	TBEN-L4-PLC
 field-center	symbol/PLC-Turck.kicad_sym	TBEN-S2-4AI#Reference
 field-center	symbol/PLC-Turck.kicad_sym	TBEN-S2-4AI#Value
 pin-grid	symbol/PLC-Turck.kicad_sym	TBEN-S2-4AI#P2
@@ -7161,7 +7091,6 @@ pin-length	symbol/PLC-Turck.kicad_sym	TBEN-S2-4AI#X1-3
 pin-bidirectional	symbol/PLC-Turck.kicad_sym	TBEN-S2-4AI#X1-4
 pin-grid	symbol/PLC-Turck.kicad_sym	TBEN-S2-4AI#X1-4
 pin-length	symbol/PLC-Turck.kicad_sym	TBEN-S2-4AI#X1-4
-arc-radius	symbol/PLC-Turck.kicad_sym	TBEN-S2-4AI
 field-center	symbol/PLC-Unitronics.kicad_sym	SMXX-J-TA22-RA22#Reference
 pin-bidirectional	symbol/PLC-Unitronics.kicad_sym	SMXX-J-TA22-RA22#I1
 pin-grid	symbol/PLC-Unitronics.kicad_sym	SMXX-J-TA22-RA22#I1
@@ -7591,7 +7520,6 @@ pin-bidirectional	symbol/Pneumatic.kicad_sym	Cylinder_Hydra-Pmatic#A1
 pin-grid	symbol/Pneumatic.kicad_sym	Cylinder_Hydra-Pmatic#A1
 pin-bidirectional	symbol/Pneumatic.kicad_sym	Cylinder_Hydra-Pmatic#B1
 pin-grid	symbol/Pneumatic.kicad_sym	Cylinder_Hydra-Pmatic#B1
-arc-radius	symbol/Pneumatic.kicad_sym	Cylinder_Hydra-Pmatic
 field-center	symbol/Pneumatic.kicad_sym	Elbow#Reference
 field-center	symbol/Pneumatic.kicad_sym	Elbow#Value
 keywords	symbol/Pneumatic.kicad_sym	Elbow
@@ -7721,14 +7649,12 @@ pin-grid	symbol/Pneumatic.kicad_sym	ManualValve_Relief_Lockout#A
 pin-length	symbol/Pneumatic.kicad_sym	ManualValve_Relief_Lockout#A
 pin-grid	symbol/Pneumatic.kicad_sym	ManualValve_Relief_Lockout#P
 pin-length	symbol/Pneumatic.kicad_sym	ManualValve_Relief_Lockout#P
-arc-radius	symbol/Pneumatic.kicad_sym	ManualValve_Relief_Lockout
 field-center	symbol/Pneumatic.kicad_sym	Nozzle#Reference
 field-center	symbol/Pneumatic.kicad_sym	Nozzle#Value
 keywords	symbol/Pneumatic.kicad_sym	Nozzle
 description	symbol/Pneumatic.kicad_sym	Nozzle
 pin-number-visible	symbol/Pneumatic.kicad_sym	Nozzle
 pin-length	symbol/Pneumatic.kicad_sym	Nozzle#1
-arc-radius	symbol/Pneumatic.kicad_sym	Nozzle
 field-center	symbol/Pneumatic.kicad_sym	Passthrough#Reference
 field-center	symbol/Pneumatic.kicad_sym	Passthrough#Value
 keywords	symbol/Pneumatic.kicad_sym	Passthrough
@@ -7794,7 +7720,6 @@ description	symbol/Pneumatic.kicad_sym	Restrictor_Adjustable
 pin-number-visible	symbol/Pneumatic.kicad_sym	Restrictor_Adjustable
 pin-length	symbol/Pneumatic.kicad_sym	Restrictor_Adjustable#1
 pin-length	symbol/Pneumatic.kicad_sym	Restrictor_Adjustable#2
-arc-radius	symbol/Pneumatic.kicad_sym	Restrictor_Adjustable
 field-center	symbol/Pneumatic.kicad_sym	Restrictor_Fixed#Reference
 field-center	symbol/Pneumatic.kicad_sym	Restrictor_Fixed#Value
 keywords	symbol/Pneumatic.kicad_sym	Restrictor_Fixed
@@ -7802,7 +7727,6 @@ description	symbol/Pneumatic.kicad_sym	Restrictor_Fixed
 pin-number-visible	symbol/Pneumatic.kicad_sym	Restrictor_Fixed
 pin-length	symbol/Pneumatic.kicad_sym	Restrictor_Fixed#1
 pin-length	symbol/Pneumatic.kicad_sym	Restrictor_Fixed#2
-arc-radius	symbol/Pneumatic.kicad_sym	Restrictor_Fixed
 field-center	symbol/Pneumatic.kicad_sym	Restrictor_Valve#Reference
 field-center	symbol/Pneumatic.kicad_sym	Restrictor_Valve#Value
 keywords	symbol/Pneumatic.kicad_sym	Restrictor_Valve
@@ -7810,7 +7734,6 @@ description	symbol/Pneumatic.kicad_sym	Restrictor_Valve
 pin-number-visible	symbol/Pneumatic.kicad_sym	Restrictor_Valve
 pin-length	symbol/Pneumatic.kicad_sym	Restrictor_Valve#1
 pin-length	symbol/Pneumatic.kicad_sym	Restrictor_Valve#2
-arc-radius	symbol/Pneumatic.kicad_sym	Restrictor_Valve
 field-center	symbol/Pneumatic.kicad_sym	Sensor_Electronic_Relay#Reference
 field-center	symbol/Pneumatic.kicad_sym	Sensor_Electronic_Relay#Value
 keywords	symbol/Pneumatic.kicad_sym	Sensor_Electronic_Relay
@@ -8089,7 +8012,6 @@ pin-length	symbol/Power-Line.kicad_sym	CircuitBreaker_1P#1
 pin-bidirectional	symbol/Power-Line.kicad_sym	CircuitBreaker_1P#2
 pin-grid	symbol/Power-Line.kicad_sym	CircuitBreaker_1P#2
 pin-length	symbol/Power-Line.kicad_sym	CircuitBreaker_1P#2
-arc-radius	symbol/Power-Line.kicad_sym	CircuitBreaker_1P
 field-center	symbol/Power-Line.kicad_sym	CircuitBreaker_2P#Reference
 field-center	symbol/Power-Line.kicad_sym	CircuitBreaker_2P#Value
 keywords	symbol/Power-Line.kicad_sym	CircuitBreaker_2P
@@ -8106,7 +8028,6 @@ pin-length	symbol/Power-Line.kicad_sym	CircuitBreaker_2P#4
 pin-bidirectional	symbol/Power-Line.kicad_sym	CircuitBreaker_2P#2
 pin-grid	symbol/Power-Line.kicad_sym	CircuitBreaker_2P#2
 pin-length	symbol/Power-Line.kicad_sym	CircuitBreaker_2P#2
-arc-radius	symbol/Power-Line.kicad_sym	CircuitBreaker_2P
 field-center	symbol/Power-Line.kicad_sym	CircuitBreaker_3P#Reference
 field-center	symbol/Power-Line.kicad_sym	CircuitBreaker_3P#Value
 keywords	symbol/Power-Line.kicad_sym	CircuitBreaker_3P
@@ -8129,7 +8050,6 @@ pin-length	symbol/Power-Line.kicad_sym	CircuitBreaker_3P#4
 pin-bidirectional	symbol/Power-Line.kicad_sym	CircuitBreaker_3P#2
 pin-grid	symbol/Power-Line.kicad_sym	CircuitBreaker_3P#2
 pin-length	symbol/Power-Line.kicad_sym	CircuitBreaker_3P#2
-arc-radius	symbol/Power-Line.kicad_sym	CircuitBreaker_3P
 field-center	symbol/Power-Line.kicad_sym	Fuse#Reference
 field-center	symbol/Power-Line.kicad_sym	Fuse#Value
 pin-number-visible	symbol/Power-Line.kicad_sym	Fuse
@@ -8159,7 +8079,6 @@ pin-length	symbol/Power-Line.kicad_sym	LineFilter#2'
 pin-bidirectional	symbol/Power-Line.kicad_sym	LineFilter#3'
 pin-grid	symbol/Power-Line.kicad_sym	LineFilter#3'
 pin-length	symbol/Power-Line.kicad_sym	LineFilter#3'
-arc-radius	symbol/Power-Line.kicad_sym	LineFilter
 field-center	symbol/Power-Line.kicad_sym	PowerCable_3Pos_BareLead#Reference
 field-center	symbol/Power-Line.kicad_sym	PowerCable_3Pos_BareLead#Value
 keywords	symbol/Power-Line.kicad_sym	PowerCable_3Pos_BareLead
@@ -8214,7 +8133,6 @@ pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Filtered#2
 pin-bidirectional	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Filtered#3
 pin-grid	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Filtered#3
 pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Filtered#3
-arc-radius	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Filtered
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Filtered_Switched#Reference
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Filtered_Switched#Value
 keywords	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Filtered_Switched
@@ -8228,7 +8146,6 @@ pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Filtered_Switched
 pin-bidirectional	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Filtered_Switched#3
 pin-grid	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Filtered_Switched#3
 pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Filtered_Switched#3
-arc-radius	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Filtered_Switched
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused#Reference
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused#Value
 keywords	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused
@@ -8255,7 +8172,6 @@ pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Filtered#2
 pin-bidirectional	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Filtered#3
 pin-grid	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Filtered#3
 pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Filtered#3
-arc-radius	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Filtered
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Filtered_Switched#Reference
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Filtered_Switched#Value
 keywords	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Filtered_Switched
@@ -8269,7 +8185,6 @@ pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Filtered_Sw
 pin-bidirectional	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Filtered_Switched#3
 pin-grid	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Filtered_Switched#3
 pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Filtered_Switched#3
-arc-radius	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Filtered_Switched
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Switched#Reference
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Switched#Value
 keywords	symbol/Power-Line.kicad_sym	PowerEntryModule_1Phase_Fused_Switched
@@ -8318,7 +8233,6 @@ pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Filtered#2
 pin-bidirectional	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Filtered#3
 pin-grid	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Filtered#3
 pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Filtered#3
-arc-radius	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Filtered
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Filtered_Switched#Reference
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Filtered_Switched#Value
 keywords	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Filtered_Switched
@@ -8332,7 +8246,6 @@ pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Filtered_Switched
 pin-bidirectional	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Filtered_Switched#3
 pin-grid	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Filtered_Switched#3
 pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Filtered_Switched#3
-arc-radius	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Filtered_Switched
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused#Reference
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused#Value
 keywords	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused
@@ -8359,7 +8272,6 @@ pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Filtered#2
 pin-bidirectional	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Filtered#3
 pin-grid	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Filtered#3
 pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Filtered#3
-arc-radius	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Filtered
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Filtered_Switched#Reference
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Filtered_Switched#Value
 keywords	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Filtered_Switched
@@ -8373,7 +8285,6 @@ pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Filtered_Sw
 pin-bidirectional	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Filtered_Switched#3
 pin-grid	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Filtered_Switched#3
 pin-length	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Filtered_Switched#3
-arc-radius	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Filtered_Switched
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Switched#Reference
 field-center	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Switched#Value
 keywords	symbol/Power-Line.kicad_sym	PowerEntryModule_3Phase_Fused_Switched
@@ -8435,7 +8346,6 @@ pin-bidirectional	symbol/Power-Line.kicad_sym	PowerSupply#5
 pin-length	symbol/Power-Line.kicad_sym	PowerSupply#5
 pin-bidirectional	symbol/Power-Line.kicad_sym	PowerSupply#4
 pin-length	symbol/Power-Line.kicad_sym	PowerSupply#4
-arc-radius	symbol/Power-Line.kicad_sym	PowerSupply
 field-center	symbol/Power-Line.kicad_sym	PowerSwitch_2-Pole#Reference
 field-center	symbol/Power-Line.kicad_sym	PowerSwitch_2-Pole#Value
 pin-bidirectional	symbol/Power-Line.kicad_sym	PowerSwitch_2-Pole#1
@@ -8474,7 +8384,6 @@ pin-bidirectional	symbol/Power-Line.kicad_sym	Transformer_1P_1S#4
 pin-length	symbol/Power-Line.kicad_sym	Transformer_1P_1S#4
 pin-bidirectional	symbol/Power-Line.kicad_sym	Transformer_1P_1S#3
 pin-length	symbol/Power-Line.kicad_sym	Transformer_1P_1S#3
-arc-radius	symbol/Power-Line.kicad_sym	Transformer_1P_1S
 field-center	symbol/Power-Line.kicad_sym	Transformer_1P_2S#Reference
 field-center	symbol/Power-Line.kicad_sym	Transformer_1P_2S#Value
 pin-bidirectional	symbol/Power-Line.kicad_sym	Transformer_1P_2S#1
@@ -8491,7 +8400,6 @@ pin-grid	symbol/Power-Line.kicad_sym	Transformer_1P_2S#5
 pin-length	symbol/Power-Line.kicad_sym	Transformer_1P_2S#5
 pin-bidirectional	symbol/Power-Line.kicad_sym	Transformer_1P_2S#6
 pin-length	symbol/Power-Line.kicad_sym	Transformer_1P_2S#6
-arc-radius	symbol/Power-Line.kicad_sym	Transformer_1P_2S
 field-center	symbol/Power-Line.kicad_sym	Transformer_1P_SS#Reference
 field-center	symbol/Power-Line.kicad_sym	Transformer_1P_SS#Value
 pin-bidirectional	symbol/Power-Line.kicad_sym	Transformer_1P_SS#1
@@ -8504,7 +8412,6 @@ pin-bidirectional	symbol/Power-Line.kicad_sym	Transformer_1P_SS#4
 pin-length	symbol/Power-Line.kicad_sym	Transformer_1P_SS#4
 pin-bidirectional	symbol/Power-Line.kicad_sym	Transformer_1P_SS#3
 pin-length	symbol/Power-Line.kicad_sym	Transformer_1P_SS#3
-arc-radius	symbol/Power-Line.kicad_sym	Transformer_1P_SS
 field-center	symbol/Power-Line.kicad_sym	Transformer_SP_1S#Reference
 field-center	symbol/Power-Line.kicad_sym	Transformer_SP_1S#Value
 pin-bidirectional	symbol/Power-Line.kicad_sym	Transformer_SP_1S#1
@@ -8517,7 +8424,6 @@ pin-bidirectional	symbol/Power-Line.kicad_sym	Transformer_SP_1S#5
 pin-length	symbol/Power-Line.kicad_sym	Transformer_SP_1S#5
 pin-bidirectional	symbol/Power-Line.kicad_sym	Transformer_SP_1S#4
 pin-length	symbol/Power-Line.kicad_sym	Transformer_SP_1S#4
-arc-radius	symbol/Power-Line.kicad_sym	Transformer_SP_1S
 field-center	symbol/Power-Line.kicad_sym	Transformer_SP_2S#Reference
 field-center	symbol/Power-Line.kicad_sym	Transformer_SP_2S#Value
 pin-bidirectional	symbol/Power-Line.kicad_sym	Transformer_SP_2S#1
@@ -8536,7 +8442,6 @@ pin-grid	symbol/Power-Line.kicad_sym	Transformer_SP_2S#6
 pin-length	symbol/Power-Line.kicad_sym	Transformer_SP_2S#6
 pin-bidirectional	symbol/Power-Line.kicad_sym	Transformer_SP_2S#7
 pin-length	symbol/Power-Line.kicad_sym	Transformer_SP_2S#7
-arc-radius	symbol/Power-Line.kicad_sym	Transformer_SP_2S
 field-center	symbol/Relay-IEC.kicad_sym	Contactor_3P_AC#Value
 description	symbol/Relay-IEC.kicad_sym	Contactor_3P_AC
 pin-number-visible	symbol/Relay-IEC.kicad_sym	Contactor_3P_AC
@@ -8754,7 +8659,6 @@ pin-bidirectional	symbol/Safety-Banner.kicad_sym	OTB-TouchButton_AC_OTBA5#5
 pin-length	symbol/Safety-Banner.kicad_sym	OTB-TouchButton_AC_OTBA5#5
 pin-bidirectional	symbol/Safety-Banner.kicad_sym	OTB-TouchButton_AC_OTBA5#1
 pin-length	symbol/Safety-Banner.kicad_sym	OTB-TouchButton_AC_OTBA5#1
-arc-radius	symbol/Safety-Banner.kicad_sym	OTB-TouchButton_AC_OTBA5
 field-center	symbol/Safety-Banner.kicad_sym	SC10-Safety_Controller#Reference
 field-center	symbol/Safety-Banner.kicad_sym	SC10-Safety_Controller#Value
 pin-bidirectional	symbol/Safety-Banner.kicad_sym	SC10-Safety_Controller#1
@@ -8870,11 +8774,9 @@ pin-grid	symbol/Safety-Banner.kicad_sym	STB-TouchButton#3
 pin-length	symbol/Safety-Banner.kicad_sym	STB-TouchButton#3
 pin-grid	symbol/Safety-Banner.kicad_sym	STB-TouchButton#4
 pin-length	symbol/Safety-Banner.kicad_sym	STB-TouchButton#4
-arc-radius	symbol/Safety-Banner.kicad_sym	STB-TouchButton
 field-center	symbol/Safety-Banner.kicad_sym	SafetySwitch-Door_Actuator_SI-RF-A#Reference
 field-center	symbol/Safety-Banner.kicad_sym	SafetySwitch-Door_Actuator_SI-RF-A#Value
 extends-parent	symbol/Safety-Banner.kicad_sym	SafetySwitch-Door_Actuator_SI-RF-A
-arc-radius	symbol/Safety-Banner.kicad_sym	SafetySwitch-Door_Actuator_SI-RF-A
 field-center	symbol/Safety-Banner.kicad_sym	SafetySwitch-Door_OSSD_SI-RFDT-LP8#Reference
 field-center	symbol/Safety-Banner.kicad_sym	SafetySwitch-Door_OSSD_SI-RFDT-LP8#Value
 extends-parent	symbol/Safety-Banner.kicad_sym	SafetySwitch-Door_OSSD_SI-RFDT-LP8
@@ -8902,7 +8804,6 @@ pin-length	symbol/Safety-Banner.kicad_sym	SafetySwitch-Door_OSSD_SI-RFDT-LP8#7
 pin-bidirectional	symbol/Safety-Banner.kicad_sym	SafetySwitch-Door_OSSD_SI-RFDT-LP8#8
 pin-grid	symbol/Safety-Banner.kicad_sym	SafetySwitch-Door_OSSD_SI-RFDT-LP8#8
 pin-length	symbol/Safety-Banner.kicad_sym	SafetySwitch-Door_OSSD_SI-RFDT-LP8#8
-arc-radius	symbol/Safety-Banner.kicad_sym	SafetySwitch-Door_OSSD_SI-RFDT-LP8
 field-center	symbol/Safety-Banner.kicad_sym	SafetySwitch-Interlock-2NO_SI-LS83E-Q5A#Reference
 field-center	symbol/Safety-Banner.kicad_sym	SafetySwitch-Interlock-2NO_SI-LS83E-Q5A#Value
 extends-parent	symbol/Safety-Banner.kicad_sym	SafetySwitch-Interlock-2NO_SI-LS83E-Q5A
@@ -8932,7 +8833,6 @@ pin-grid	symbol/Safety-IDEM.kicad_sym	Safety Switch - E-Stop OSSD ES-P-Z/ESL-SS-
 pin-bidirectional	symbol/Safety-IDEM.kicad_sym	Safety Switch - E-Stop OSSD ES-P-Z/ESL-SS-Z#6
 pin-grid	symbol/Safety-IDEM.kicad_sym	Safety Switch - E-Stop OSSD ES-P-Z/ESL-SS-Z#6
 pin-grid	symbol/Safety-IDEM.kicad_sym	Safety Switch - E-Stop OSSD ES-P-Z/ESL-SS-Z#QC
-arc-radius	symbol/Safety-IDEM.kicad_sym	Safety Switch - E-Stop OSSD ES-P-Z/ESL-SS-Z
 description	symbol/Safety-IDEM.kicad_sym	Safety Switch - Hinge OSSD HS-SS/HSM
 extends-parent	symbol/Safety-IDEM.kicad_sym	Safety Switch - Hinge OSSD HS-SS/HSM
 pin-grid	symbol/Safety-IDEM.kicad_sym	Safety Switch - Hinge OSSD HS-SS/HSM#4
@@ -8963,7 +8863,6 @@ pin-grid	symbol/Safety-IDEM.kicad_sym	Safety Switch - RFID Non-Contact OSSD BPZ/
 pin-bidirectional	symbol/Safety-IDEM.kicad_sym	Safety Switch - RFID Non-Contact OSSD BPZ/BMZ#1
 pin-grid	symbol/Safety-IDEM.kicad_sym	Safety Switch - RFID Non-Contact OSSD BPZ/BMZ#1
 pin-grid	symbol/Safety-IDEM.kicad_sym	Safety Switch - RFID Non-Contact OSSD BPZ/BMZ#QC
-arc-radius	symbol/Safety-IDEM.kicad_sym	Safety Switch - RFID Non-Contact OSSD BPZ/BMZ
 extends-parent	symbol/Safety-IDEM.kicad_sym	Z-Range Junction - 140210-Z
 pin-grid	symbol/Safety-IDEM.kicad_sym	Z-Range Junction - 140210-Z#S.1
 pin-length	symbol/Safety-IDEM.kicad_sym	Z-Range Junction - 140210-Z#S.1
@@ -9345,12 +9244,10 @@ pin-grid	symbol/Safety.kicad_sym	Safety Switch - E-Stop - 2NC#11
 pin-grid	symbol/Safety.kicad_sym	Safety Switch - E-Stop - 2NC#12
 pin-grid	symbol/Safety.kicad_sym	Safety Switch - E-Stop - 2NC#13
 pin-grid	symbol/Safety.kicad_sym	Safety Switch - E-Stop - 2NC#14
-arc-radius	symbol/Safety.kicad_sym	Safety Switch - E-Stop - 2NC
 pin-grid	symbol/Safety.kicad_sym	Safety Switch - E-Stop - NC/NO#11
 pin-grid	symbol/Safety.kicad_sym	Safety Switch - E-Stop - NC/NO#12
 pin-grid	symbol/Safety.kicad_sym	Safety Switch - E-Stop - NC/NO#13
 pin-grid	symbol/Safety.kicad_sym	Safety Switch - E-Stop - NC/NO#14
-arc-radius	symbol/Safety.kicad_sym	Safety Switch - E-Stop - NC/NO
 field-center	symbol/Safety.kicad_sym	Safety Switch - Interlock-2NO#Reference
 field-center	symbol/Safety.kicad_sym	Safety Switch - Interlock-2NO#Value
 keywords	symbol/Safety.kicad_sym	Safety Switch - Interlock-2NO
@@ -9393,7 +9290,6 @@ pin-grid	symbol/Safety.kicad_sym	Safety Switch - RFID Non-Contact 2NC#12
 pin-grid	symbol/Safety.kicad_sym	Safety Switch - RFID Non-Contact 2NC#21
 pin-bidirectional	symbol/Safety.kicad_sym	Safety Switch - RFID Non-Contact 2NC#22
 pin-grid	symbol/Safety.kicad_sym	Safety Switch - RFID Non-Contact 2NC#22
-arc-radius	symbol/Safety.kicad_sym	Safety Switch - RFID Non-Contact 2NC
 description	symbol/Safety.kicad_sym	Safety Switch - RFID Non-Contact 2NC 1NO
 pin-grid	symbol/Safety.kicad_sym	Safety Switch - RFID Non-Contact 2NC 1NO#+V
 pin-grid	symbol/Safety.kicad_sym	Safety Switch - RFID Non-Contact 2NC 1NO#0V
@@ -9406,7 +9302,6 @@ pin-grid	symbol/Safety.kicad_sym	Safety Switch - RFID Non-Contact 2NC 1NO#14
 pin-grid	symbol/Safety.kicad_sym	Safety Switch - RFID Non-Contact 2NC 1NO#21
 pin-bidirectional	symbol/Safety.kicad_sym	Safety Switch - RFID Non-Contact 2NC 1NO#22
 pin-grid	symbol/Safety.kicad_sym	Safety Switch - RFID Non-Contact 2NC 1NO#22
-arc-radius	symbol/Safety.kicad_sym	Safety Switch - RFID Non-Contact 2NC 1NO
 field-center	symbol/Safety.kicad_sym	Safety_Contactor_3P_DC#Reference
 field-center	symbol/Safety.kicad_sym	Safety_Contactor_3P_DC#Value
 description	symbol/Safety.kicad_sym	Safety_Contactor_3P_DC

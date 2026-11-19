@@ -18,6 +18,6 @@ Each file in `symbol/` is one KiCad symbol library. The name of the file is the 
 
 ## Symbol lint
 
-`tools/kicad_sym_lint.py` checks symbol libraries for field placement, pin grid, pin length, pin type, visible pin numbers, the 0.635 mm curl, keywords, descriptions, and manufacturer symbols that extend a generic. Severity is set in `tools/kicad-sym-lint.yaml`. The picture check in the guidelines is separate. The linter cannot tell whether a drawing matches its source.
+`tools/kicad_sym_lint.py` checks symbol libraries for field placement, pin grid, pin length, pin type, visible pin numbers, winding-curl radius, keywords, descriptions, and manufacturer symbols that extend a generic. A winding curl is a chained run of semicircles. The default radius is 0.635 mm, and 0.508 mm is approved for the tight cable-pigtail curl. Severity is set in `tools/kicad-sym-lint.yaml`. The picture check in the guidelines is separate. The linter cannot tell whether a drawing matches its source.
 
 Violations that already existed are listed in `tools/kicad-sym-lint-baseline.txt` and do not fail the check. Delete a line when that symbol is fixed. `symbol/Transformer-IEC.kicad_sym` is not grandfathered. Install the same check as a commit hook with `pre-commit install`. CI runs `pre-commit run --all-files`.  
