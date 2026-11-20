@@ -2730,15 +2730,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_winding_gap" "10.16 reason: spacing kept from the Radica IEC drawing until it is reviewed against the source"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(symbol "Current Transformer 1 Core 2 Windings_0_1"
 			(polyline
 				(pts
@@ -3024,15 +3015,6 @@
 			)
 		)
 		(property "ki_keywords" "current transformer, CT, two cores, two windings, IEC"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_winding_gap" "10.16 reason: spacing kept from the Radica IEC drawing until it is reviewed against the source"
 			(at 0 0 0)
 			(effects
 				(font

@@ -188,22 +188,50 @@ class DatasheetTests(unittest.TestCase):
 
 
 class WindingGapTests(unittest.TestCase):
-    def body(self, gap):
+    def body(self, gap, extra_sections=0):
         # Two four-curl windings on one baseline, gap mm of empty line between.
-        first = chain_at(0.0, 0.635, 4)
-        second = chain_at(5.08 + gap, 0.635, 4)
-        return "\n".join(first + second)
+        # extra_sections adds windings on a second line, one grid step apart,
+        # so the symbol has more sections without another gap on this line.
+        parts = chain_at(0.0, 0.635, 4) + chain_at(5.08 + gap, 0.635, 4)
+        for index in range(extra_sections):
+            parts += chain_at(index * 10.16, 0.635, 4, y=-7.62)
+        return "\n".join(parts)
+
+    def found(self, gap, extra_sections=0, props=""):
+        text = symbol_library("Fixture", props, self.body(gap, extra_sections))
+        return findings_for(text, "fixture.kicad_sym", "winding-gap")
 
     def test_one_grid_step_passes(self):
-        text = symbol_library("Fixture", body=self.body(5.08))
-        self.assertEqual(findings_for(text, "fixture.kicad_sym", "winding-gap"), [])
+        self.assertEqual(self.found(5.08), [])
+        self.assertEqual(self.found(5.08, extra_sections=2), [])
 
-    def test_two_grid_steps_fail(self):
-        # The first Control Transformer 1P left 10.16 mm between 3 and 4.
-        text = symbol_library("Fixture", body=self.body(10.16))
-        found = findings_for(text, "fixture.kicad_sym", "winding-gap")
+    def test_two_sections_may_leave_two_grid_steps(self):
+        # The current transformers with two secondaries keep 10.16 mm.
+        self.assertEqual(self.found(10.16), [])
+
+    def test_two_sections_beyond_two_grid_steps_fail(self):
+        found = self.found(15.24)
+        self.assertEqual(len(found), 1)
+        self.assertIn("15.24", found[0].where)
+
+    def test_three_sections_two_grid_steps_fail(self):
+        # Three or more sections must be tight. One extra section is enough.
+        self.assertEqual(len(self.found(10.16, extra_sections=1)), 1)
+
+    def test_first_control_transformer_fails(self):
+        # The first Control Transformer 1P had four sections, 10.16 mm apart.
+        found = self.found(10.16, extra_sections=2)
         self.assertEqual(len(found), 1)
         self.assertIn("10.16", found[0].where)
+
+    def test_real_current_transformers_need_no_exception(self):
+        tree = lint.parse((lint.ROOT / "symbol" / "Transformer-IEC.kicad_sym").read_text())
+        for symbol in lint.top_symbols(tree):
+            if symbol[1].startswith("Current Transformer"):
+                self.assertEqual(lint.prop_value(symbol, "ki_winding_gap"), "", symbol[1])
+                found = []
+                lint.check_symbol(Path("symbol/Transformer-IEC.kicad_sym"), symbol, "x", found)
+                self.assertEqual([f for f in found if f.rule == "winding-gap"], [], symbol[1])
 
     def test_windings_on_different_lines_pass(self):
         first = chain_at(0.0, 0.635, 4)
@@ -212,13 +240,12 @@ class WindingGapTests(unittest.TestCase):
         self.assertEqual(findings_for(text, "fixture.kicad_sym", "winding-gap"), [])
 
     def test_exception_allows_gap(self):
-        props = '(property "ki_winding_gap" "10.16 reason: fixture" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))'
-        text = symbol_library("Fixture", props, self.body(10.16))
-        self.assertEqual(findings_for(text, "fixture.kicad_sym", "winding-gap"), [])
+        props = '(property "ki_winding_gap" "15.24 reason: fixture" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))'
+        self.assertEqual(self.found(15.24, props=props), [])
 
     def test_exception_without_reason_is_reported(self):
-        props = '(property "ki_winding_gap" "10.16" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))'
-        text = symbol_library("Fixture", props, self.body(10.16))
+        props = '(property "ki_winding_gap" "15.24" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))'
+        text = symbol_library("Fixture", props, self.body(15.24))
         self.assertEqual(len(findings_for(text, "fixture.kicad_sym", "winding-gap")), 1)
         self.assertEqual(len(findings_for(text, "fixture.kicad_sym", "suppress-missing-reason")), 1)
 

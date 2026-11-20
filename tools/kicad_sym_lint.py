@@ -8,7 +8,8 @@ do not mention where a symbol came from; pins on a 200 mil (5.08 mm) grid,
 on the body; winding curls at an approved radius; manufacturer parts
 extend a generic symbol in the same library; manufacturer parts stay out of
 *-IEC libraries; a datasheet link is a document, not a web page; separate
-windings on one baseline sit no more than one grid step apart. A winding
+windings on one baseline sit no more than one grid step apart (two grid
+steps when the symbol has only two winding sections). A winding
 curl is a run of semicircles chained on a straight line. Other arcs are not
 checked.
 
@@ -64,8 +65,15 @@ LOCKED_LIBS = (NEW_LIB, "Transformer-Murrelektronik.kicad_sym")
 # Generic libraries. Every symbol in one is a generic drawn to the IEC
 # standards, so it carries no manufacturer or part number.
 GENERIC_LIB_RE = re.compile(r"-IEC$", re.I)
-# Largest empty span between two windings on one baseline: one grid step.
-WINDING_GAP_MAX = GRID
+# Largest empty span between two windings on one baseline. It depends on how
+# many winding sections the whole symbol draws. A part with three or more
+# sections (a multi-tap primary in two sections plus two secondaries) gets
+# wide fast, so its sections sit one grid step apart. A part with only two
+# sections (a current transformer with two secondaries) may leave two grid
+# steps between them.
+WINDING_GAP_TIGHT = GRID
+WINDING_GAP_LOOSE = 2 * GRID
+WINDING_GAP_TIGHT_FROM = 3
 
 RULES = (
     "parse",
@@ -99,7 +107,7 @@ MESSAGES = {
     "arc-radius": "This winding curl is not an approved radius. The default is 0.635 mm. Set ki_winding_curl with a reason to allow another size on this symbol.",
     "generic-lib-manufacturer": "This symbol names a manufacturer (MFG or MPN) but sits in a *-IEC generic library. Move it to a <Category>-<Manufacturer> library.",
     "datasheet-document": "Datasheet must link the document itself: a .pdf URL, or a download URL listed under datasheet_downloads in tools/kicad-sym-lint.yaml. A bare domain or a product page is not a datasheet.",
-    "winding-gap": "Two windings on one baseline are more than one grid step (5.08 mm) apart. Close the gap between the sections.",
+    "winding-gap": "Two windings on one baseline are too far apart. With 3 or more winding sections in the symbol the gap is at most 5.08 mm (one grid step); with 2 sections it is at most 10.16 mm.",
     "terminal-row": "A pin listed in ki_terminal_rows is missing, off its row, facing another way, or out of order. Every terminal on one strip, shield and PE included, sits in that strip's row in strip order.",
     "suppress-missing-reason": "A kicad-sym-lint suppression has no reason.",
 }
@@ -869,8 +877,10 @@ def check_symbol(path, symbol, where_file, findings):
     gap_allowed, gap_missing = winding_curl_exceptions(symbol, "ki_winding_gap")
     if gap_missing:
         findings.append(Finding("suppress-missing-reason", where_file, name + "#winding-gap"))
+    sections = len(winding_curl_groups(prims))
+    gap_max = WINDING_GAP_TIGHT if sections >= WINDING_GAP_TIGHT_FROM else WINDING_GAP_LOOSE
     for gap in winding_gaps(prims):
-        if gap <= WINDING_GAP_MAX + JOIN_TOL:
+        if gap <= gap_max + JOIN_TOL:
             continue
         if any(abs(gap - ok) <= CURL_TOL for ok in gap_allowed):
             continue

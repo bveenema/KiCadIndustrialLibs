@@ -110,9 +110,18 @@ distributor table.
 
 ## Spacing between sections
 
-Separate windings, taps, or contact sections of one part sit one grid step
-(5.08 mm) apart, not more. The empty span between two windings on one baseline
-is checked by the lint rule `winding-gap`. A wider gap needs a `ki_winding_gap`
+How far apart separate windings may sit depends on how many winding sections
+the symbol draws. A winding section is one chained run of curls.
+
+- Three or more sections: one grid step (5.08 mm) at most. A part like the
+  MST control transformer, with a two-section primary and two secondaries,
+  gets wide quickly, so every section is drawn tight.
+- Two sections: two grid steps (10.16 mm) at most. A current transformer
+  with two secondaries has room, and its 10.16 mm spacing is intentional
+  (Ben, 2026-11-20). Do not tighten the CTs.
+
+The empty span between two windings on one baseline is checked by the lint
+rule `winding-gap` with those limits. A wider gap needs a `ki_winding_gap`
 property on that symbol with the gap in millimetres and a reason, in the same
 form as `ki_winding_curl`. Pins stay on the 5.08 mm grid, so one empty grid
 step is the tightest gap that still shows two windings.
@@ -177,8 +186,9 @@ grid, pin length, pin type, visible pin numbers, the inner end on the body,
 keywords, descriptions, manufacturer parts that extend a generic, and the
 radius of a winding curl, manufacturer parts in a `*-IEC` library
 (`generic-lib-manufacturer`), datasheet links that are not a document
-(`datasheet-document`), and more than one grid step between windings on one
-baseline (`winding-gap`), and pins that break a symbol's `ki_terminal_rows`
+(`datasheet-document`), windings on one baseline further apart than one grid
+step (two grid steps when the symbol has only two winding sections)
+(`winding-gap`), and pins that break a symbol's `ki_terminal_rows`
 (`terminal-row`). Severity is in `tools/kicad-sym-lint.yaml`.
 
 A winding curl is a run of 2 or more semicircular arcs of equal radius whose
@@ -273,7 +283,8 @@ of the generic. Review found four problems, and each one is now a rule:
   `datasheet-document` rule fails a product page.
 - The primary sections and the two secondaries were two grid steps apart,
   so the symbol was wider than it needed to be. They are now one grid step
-  apart, and the `winding-gap` rule fails a wider gap.
+  apart, and the `winding-gap` rule fails a wider gap on any symbol with three
+  or more winding sections.
 - The secondaries were drawn as 9-11 and 10-12 side by side. Murrelektronik
   crosses the inner leads so the strip reads 9, 10, 11, 12. The symbol now
   draws the crossover. The lint cannot see that; the picture check against
