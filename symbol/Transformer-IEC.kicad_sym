@@ -3346,6 +3346,15 @@
 				(hide yes)
 			)
 		)
+		(property "ki_terminal_rows" "1 2 3 4 5 6 7 8 PE; 9 10 11 12"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(symbol "Control Transformer 1P_0_1"
 			(arc
 				(start -20.32 5.08)
@@ -3877,7 +3886,7 @@
 			)
 			(polyline
 				(pts
-					(xy -20.32 2.54) (xy 16.51 2.54)
+					(xy -20.32 2.54) (xy 20.32 2.54)
 				)
 				(stroke
 					(width 0)
@@ -3889,7 +3898,7 @@
 			)
 			(polyline
 				(pts
-					(xy 16.51 2.54) (xy 16.51 0)
+					(xy 20.32 2.54) (xy 20.32 6.35)
 				)
 				(stroke
 					(width 0)
@@ -4118,7 +4127,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 20.32 0 180)
+				(at 20.32 10.16 270)
 				(length 3.81)
 				(name "~"
 					(effects

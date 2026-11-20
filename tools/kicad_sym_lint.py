@@ -82,6 +82,7 @@ RULES = (
     "generic-lib-manufacturer",
     "datasheet-document",
     "winding-gap",
+    "terminal-row",
 )
 
 MESSAGES = {
@@ -99,6 +100,7 @@ MESSAGES = {
     "generic-lib-manufacturer": "This symbol names a manufacturer (MFG or MPN) but sits in a *-IEC generic library. Move it to a <Category>-<Manufacturer> library.",
     "datasheet-document": "Datasheet must link the document itself: a .pdf URL, or a download URL listed under datasheet_downloads in tools/kicad-sym-lint.yaml. A bare domain or a product page is not a datasheet.",
     "winding-gap": "Two windings on one baseline are more than one grid step (5.08 mm) apart. Close the gap between the sections.",
+    "terminal-row": "A pin listed in ki_terminal_rows is missing, off its row, facing another way, or out of order. Every terminal on one strip, shield and PE included, sits in that strip's row in strip order.",
     "suppress-missing-reason": "A kicad-sym-lint suppression has no reason.",
 }
 
@@ -739,6 +741,51 @@ def datasheet_ok(url, downloads=None):
     return False
 
 
+def terminal_row_findings(symbol, name):
+    """Where-tags for pins that break this symbol's ki_terminal_rows.
+
+    ki_terminal_rows lists each terminal strip as pin numbers in strip order,
+    strips separated by ";", for example "1 2 3 4 5 6 7 8 PE; 9 10 11 12".
+    The pins of one strip face the same way, their connection points sit on
+    one line across that direction, and they run in the listed order.
+    """
+    value = prop_value(symbol, "ki_terminal_rows").strip()
+    if not value:
+        return []
+    pins = {}
+    for pin in pins_of(symbol):
+        at = kid(pin, "at")
+        number = kid(pin, "number")
+        if at is None or len(at) < 3 or number is None:
+            continue
+        angle = fnum(at[3]) if len(at) > 3 else 0.0
+        pins[atom(number, 1, "?")] = (fnum(at[1]), fnum(at[2]), round(angle) % 360)
+    bad = []
+    for index, row in enumerate(value.split(";")):
+        numbers = row.split()
+        if not numbers:
+            continue
+        missing = [n for n in numbers if n not in pins]
+        if missing:
+            bad.extend(f"{name}#row{index + 1}:{n}" for n in missing)
+            continue
+        first = pins[numbers[0]]
+        across_x = first[2] in (90, 270)
+        for n in numbers[1:]:
+            x, y, angle = pins[n]
+            if angle != first[2]:
+                bad.append(f"{name}#row{index + 1}:{n}")
+            elif across_x and not near(y, first[1], 0.01):
+                bad.append(f"{name}#row{index + 1}:{n}")
+            elif not across_x and not near(x, first[0], 0.01):
+                bad.append(f"{name}#row{index + 1}:{n}")
+        along = [pins[n][0] if across_x else pins[n][1] for n in numbers]
+        steps = [b - a for a, b in zip(along, along[1:])]
+        if steps and not (all(s > 0.01 for s in steps) or all(s < -0.01 for s in steps)):
+            bad.append(f"{name}#row{index + 1}:order")
+    return bad
+
+
 def check_symbol(path, symbol, where_file, findings):
     if len(symbol) < 2 or not isinstance(symbol[1], str):
         return
@@ -815,6 +862,9 @@ def check_symbol(path, symbol, where_file, findings):
         inner = pin_inner(x, y, plen, angle)
         if prims and not near_body(inner, prims):
             findings.append(Finding("pin-end-on-body", where_file, tag))
+
+    for tag in terminal_row_findings(symbol, name):
+        findings.append(Finding("terminal-row", where_file, tag))
 
     gap_allowed, gap_missing = winding_curl_exceptions(symbol, "ki_winding_gap")
     if gap_missing:

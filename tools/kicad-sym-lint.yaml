@@ -18,6 +18,7 @@ severity:
   generic-lib-manufacturer: error
   datasheet-document: error
   winding-gap: error
+  terminal-row: error
 
 # Per-file or per-symbol suppressions. reason is required.
 # Do not add Transformer-IEC or Transformer-Murrelektronik here. Those libraries have no exceptions.

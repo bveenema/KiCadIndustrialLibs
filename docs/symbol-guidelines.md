@@ -97,6 +97,16 @@ distributor table.
 - Keep the diagram's grouping: separate windings stay separate, taps stay on
   the winding they come from, and the shield or earth terminal stays a
   separate pin.
+- Every terminal on one strip sits in that strip's row, facing the same way,
+  in strip order. That includes the shield and PE terminal. On the MST the
+  primary strip is 1-8 then the shield, so PE is a ninth pin one grid step
+  after 8, pointing the same way as 1-8, and the dashed shield line turns up
+  into it.
+- Declare the strips with a hidden `ki_terminal_rows` property on the symbol
+  that carries the pins: pin numbers in strip order, strips separated by
+  `;`. The MST is `1 2 3 4 5 6 7 8 PE; 9 10 11 12`. The lint rule
+  `terminal-row` then fails a listed pin that is missing, off the row,
+  facing another way, or out of order.
 
 ## Spacing between sections
 
@@ -168,7 +178,8 @@ keywords, descriptions, manufacturer parts that extend a generic, and the
 radius of a winding curl, manufacturer parts in a `*-IEC` library
 (`generic-lib-manufacturer`), datasheet links that are not a document
 (`datasheet-document`), and more than one grid step between windings on one
-baseline (`winding-gap`). Severity is in `tools/kicad-sym-lint.yaml`.
+baseline (`winding-gap`), and pins that break a symbol's `ki_terminal_rows`
+(`terminal-row`). Severity is in `tools/kicad-sym-lint.yaml`.
 
 A winding curl is a run of 2 or more semicircular arcs of equal radius whose
 endpoints meet and lie on one straight line.
@@ -267,3 +278,7 @@ of the generic. Review found four problems, and each one is now a rule:
   crosses the inner leads so the strip reads 9, 10, 11, 12. The symbol now
   draws the crossover. The lint cannot see that; the picture check against
   the manufacturer diagram can.
+- PE sat on its own level at the right, pointing left, while Murrelektronik's
+  strip runs 1-8 then the shield. PE is now in the 1-8 row, and the
+  `terminal-row` rule fails a strip pin that leaves its row or its order once
+  the symbol declares `ki_terminal_rows`.

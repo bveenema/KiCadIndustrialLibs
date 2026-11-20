@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Move PE on `Control Transformer 1P` and `MST_208-550_2x115` into the primary terminal row, one grid step after pin 8 and pointing the same way. The dashed shield line runs under the primary and turns up into PE. The width stays 40.64 mm.
+- Add lint rule `terminal-row`. A symbol that declares `ki_terminal_rows` (strips of pin numbers in strip order, separated by `;`) fails when a listed pin is missing, off its row, facing another way, or out of order. Both control transformers declare `1 2 3 4 5 6 7 8 PE; 9 10 11 12`.
 - Move the Murrelektronik 630 VA control transformer out of `Transformer-IEC` into a new `symbol/Transformer-Murrelektronik.kicad_sym`. The part is `MST0630-208-550-2x115_86149`, named from Murrelektronik's designation `MST 0630-208...550/2x115` and order number 86149. It extends the family base `MST_208-550_2x115` in the same file. `Datasheet` is Murrelektronik's Product-PDF for 86149, which carries the terminal diagram and connection table.
 - Redraw `Control Transformer 1P` and the Murrelektronik base to the Murrelektronik terminal diagram. The primary sections 1-3 and 4-8 and the two secondaries are one grid step apart instead of two, so the body is 40.64 mm wide instead of 50.8 mm. The secondary windings 9-11 and 10-12 cross their inner leads so the pins read 9, 10, 11, 12, as on the terminal strip.
 - Add lint rules `generic-lib-manufacturer` (an `MFG` or `MPN` in a `*-IEC` library), `datasheet-document` (a datasheet that is not a `.pdf` or an approved download URL), and `winding-gap` (more than 5.08 mm between windings on one baseline, unless `ki_winding_gap` gives a reason), with tests. The 18 existing non-document datasheet links are added to the baseline. `Transformer-Murrelektronik` is not grandfathered.
