@@ -268,7 +268,7 @@ class ControlTransformerTests(unittest.TestCase):
     def test_secondary_reads_9_10_11_12(self):
         # Murrelektronik crosses the inner leads, so 10 sits between 9 and 11.
         for lib, name in (
-            ("Transformer-Murrelektronik.kicad_sym", "MST_208-550_2x115"),
+            ("Transformer-Murrelektronik.kicad_sym", "MST0630-208-550-2x115_86149"),
             ("Transformer-IEC.kicad_sym", "Control Transformer 1P"),
         ):
             pins = self.pins(lib, name)
@@ -338,13 +338,129 @@ class TerminalRowTests(unittest.TestCase):
 
     def test_real_transformers_declare_rows(self):
         for lib, name in (
-            ("Transformer-Murrelektronik.kicad_sym", "MST_208-550_2x115"),
+            ("Transformer-Murrelektronik.kicad_sym", "MST0630-208-550-2x115_86149"),
             ("Transformer-IEC.kicad_sym", "Control Transformer 1P"),
         ):
             tree = lint.parse((lint.ROOT / "symbol" / lib).read_text())
             symbol = [s for s in lint.top_symbols(tree) if s[1] == name][0]
             self.assertIn("PE", lint.prop_value(symbol, "ki_terminal_rows"))
             self.assertEqual(lint.terminal_row_findings(symbol, name), [])
+
+
+def multi_library(*symbols):
+    return "(kicad_symbol_lib (version 20241209)\n" + "\n".join(symbols) + "\n)\n"
+
+
+def bare_symbol(name, props="", extends=""):
+    ext = f'(extends "{extends}")' if extends else ""
+    return f"""(symbol "{name}"
+    {ext}
+    (property "Reference" "T" (at 0 0 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "{name}" (at 0 0 0) (effects (font (size 1.27 1.27))))
+    (property "Description" "fixture" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "ki_keywords" "test" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    {props}
+    (symbol "{name}_0_1")
+  )"""
+
+
+def rule_findings(text, filename, rule):
+    path = Path(filename)
+    tree = lint.parse(text)
+    symbols = lint.top_symbols(tree)
+    found = []
+    for symbol in symbols:
+        lint.check_symbol(path, symbol, filename, found)
+    lint.check_parents(path, symbols, filename, found)
+    found.extend(lint.single_variant_base_findings(path, symbols, filename))
+    return [item for item in found if item.rule == rule]
+
+
+class SingleVariantBaseTests(unittest.TestCase):
+    MPN = '(property "MPN" "86149" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))'
+
+    def test_one_extender_in_manufacturer_library_fails(self):
+        text = multi_library(bare_symbol("MST_Family"), bare_symbol("MST_Part", self.MPN, "MST_Family"))
+        found = rule_findings(text, "Transformer-Murrelektronik.kicad_sym", "single-variant-base")
+        self.assertEqual(len(found), 1)
+        self.assertEqual(found[0].where, "MST_Family")
+        self.assertEqual(found[0].message, "Base symbols need 2+ variants, flatten it.")
+
+    def test_two_extenders_pass(self):
+        text = multi_library(
+            bare_symbol("Family"),
+            bare_symbol("PartA", extends="Family"),
+            bare_symbol("PartB", extends="Family"),
+        )
+        self.assertEqual(rule_findings(text, "Indication-Banner.kicad_sym", "single-variant-base"), [])
+
+    def test_generic_with_one_extender_passes(self):
+        # Placed on the sheet: no MFG or MPN, in a generic library.
+        text = multi_library(bare_symbol("Gauge"), bare_symbol("Gauge_Absolute", extends="Gauge"))
+        self.assertEqual(rule_findings(text, "Pneumatic.kicad_sym", "single-variant-base"), [])
+        self.assertEqual(rule_findings(text, "Relay-IEC.kicad_sym", "single-variant-base"), [])
+
+    def test_manufacturer_part_used_as_parent_fails(self):
+        text = multi_library(
+            bare_symbol("Part24V", self.MPN),
+            bare_symbol("Part110V", self.MPN, "Part24V"),
+        )
+        self.assertEqual(
+            [item.where for item in rule_findings(text, "Switch-StackLight.kicad_sym", "single-variant-base")],
+            ["Part24V"],
+        )
+        # An MPN in a generic library is still a part, so one extender fails.
+        self.assertEqual(
+            [item.where for item in rule_findings(text, "Pneumatic.kicad_sym", "single-variant-base")],
+            ["Part24V"],
+        )
+
+    def test_standalone_part_needs_no_parent(self):
+        props = self.MPN + ' (property "MFG" "Murrelektronik" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))'
+        text = multi_library(bare_symbol("MST0630", props))
+        self.assertEqual(rule_findings(text, "Transformer-Murrelektronik.kicad_sym", "extends-parent"), [])
+        self.assertEqual(rule_findings(text, "Transformer-Murrelektronik.kicad_sym", "single-variant-base"), [])
+
+    def test_missing_parent_is_extends_parent(self):
+        text = multi_library(bare_symbol("Child", extends="Missing"))
+        self.assertEqual(
+            [item.where for item in rule_findings(text, "Indication-Banner.kicad_sym", "extends-parent")],
+            ["Child"],
+        )
+        self.assertEqual(rule_findings(text, "Indication-Banner.kicad_sym", "single-variant-base"), [])
+
+    def test_real_mst_is_standalone(self):
+        saved = list(lint.DATASHEET_DOWNLOADS)
+        lint.load_config(lint.HERE / "kicad-sym-lint.yaml")
+        try:
+            path = lint.ROOT / "symbol" / "Transformer-Murrelektronik.kicad_sym"
+            text = path.read_text()
+            self.assertNotIn("MST_208-550_2x115", text)
+            self.assertNotIn("(extends ", text)
+            tree = lint.parse(text)
+            tops = [s for s in lint.top_symbols(tree) if not lint.is_unit(s[1])]
+            self.assertEqual([s[1] for s in tops], ["MST0630-208-550-2x115_86149"])
+            symbol = tops[0]
+            self.assertEqual(lint.prop_value(symbol, "MPN"), "86149")
+            self.assertEqual(lint.prop_value(symbol, "MFG"), "Murrelektronik")
+            self.assertEqual(lint.prop_value(symbol, "Value"), "MST0630-208-550-2x115_86149")
+            self.assertIn("86149", lint.prop_value(symbol, "ki_keywords"))
+            self.assertIsNone(lint.DERIVED_RE.search(lint.prop_value(symbol, "Description")))
+            self.assertEqual(len(lint.pins_of(symbol)), 13)
+            found = []
+            lint.check_file(path, found)
+            self.assertEqual([(item.rule, item.where) for item in found], [])
+        finally:
+            lint.DATASHEET_DOWNLOADS[:] = saved
+
+    def test_existing_hits_are_baselined(self):
+        baseline = lint.load_baseline(lint.HERE / "kicad-sym-lint-baseline.txt")
+        for path in sorted((lint.ROOT / "symbol").glob("*.kicad_sym")):
+            tree = lint.parse(path.read_text(errors="replace"))
+            where = lint.rel(path)
+            for item in lint.single_variant_base_findings(path, lint.top_symbols(tree), where):
+                self.assertFalse(lint.locked(path), item.key())
+                self.assertIn(item.key(), baseline)
 
 
 if __name__ == "__main__":

@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- `MST0630-208-550-2x115_86149` is a standalone symbol in `Transformer-Murrelektronik`. The one-variant family base `MST_208-550_2x115` is removed. The part keeps the same drawing, pins, terminal rows, and part properties. Add lint rule `single-variant-base`: a symbol extended by exactly one other symbol in the same file is an error unless that symbol is a generic placed on the sheet. The message is that base symbols need 2+ variants and should be flattened. Existing hits in other libraries are in the baseline. `extends-parent` requires a named parent to exist in the same file. A single orderable part does not name a parent.
 - `winding-gap` now scales with the number of winding sections in the symbol: at most 5.08 mm between windings when there are three or more sections, at most 10.16 mm when there are two. The two-winding current transformers keep their 10.16 mm spacing on purpose and no longer carry a `ki_winding_gap` exception.
 - Move PE on `Control Transformer 1P` and `MST_208-550_2x115` into the primary terminal row, one grid step after pin 8 and pointing the same way. The dashed shield line runs under the primary and turns up into PE. The width stays 40.64 mm.
 - Add lint rule `terminal-row`. A symbol that declares `ki_terminal_rows` (strips of pin numbers in strip order, separated by `;`) fails when a listed pin is missing, off its row, facing another way, or out of order. Both control transformers declare `1 2 3 4 5 6 7 8 PE; 9 10 11 12`.

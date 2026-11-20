@@ -5,13 +5,14 @@ Checks .kicad_sym libraries for the symbol rules used on new IEC parts:
 reference and value centered at 0,0; keywords filled in; descriptions that
 do not mention where a symbol came from; pins on a 200 mil (5.08 mm) grid,
 150 mil (3.81 mm) long, bidirectional, with numbers shown and the inner end
-on the body; winding curls at an approved radius; manufacturer parts
-extend a generic symbol in the same library; manufacturer parts stay out of
-*-IEC libraries; a datasheet link is a document, not a web page; separate
-windings on one baseline sit no more than one grid step apart (two grid
-steps when the symbol has only two winding sections). A winding
-curl is a run of semicircles chained on a straight line. Other arcs are not
-checked.
+on the body; winding curls at an approved radius; a symbol that names a
+parent needs that parent in the same library; a base extended by exactly
+one symbol is an error unless that base is a generic placed on the sheet;
+manufacturer parts stay out of *-IEC libraries; a datasheet link is a
+document, not a web page; separate windings on one baseline sit no more
+than one grid step apart (two grid steps when the symbol has only two
+winding sections). A winding curl is a run of semicircles chained on a
+straight line. Other arcs are not checked.
 
 Existing violations are listed in tools/kicad-sym-lint-baseline.txt and do
 not fail the run. The libraries in LOCKED_LIBS (Transformer-IEC and
@@ -83,6 +84,7 @@ RULES = (
     "keywords",
     "description",
     "extends-parent",
+    "single-variant-base",
     "pin-number-visible",
     "pin-end-on-body",
     "pin-bidirectional",
@@ -100,7 +102,8 @@ MESSAGES = {
     "pin-length": "Pin length must be 3.81 mm (150 mil). PLC and panel IO symbols may use 7.62 mm (300 mil).",
     "keywords": "Fill in ki_keywords.",
     "description": "Write a description, and do not say what the symbol was derived from.",
-    "extends-parent": "A manufacturer symbol extends a generic symbol in the same library. The parent has to exist.",
+    "extends-parent": "A symbol that extends another needs that parent in the same library.",
+    "single-variant-base": "Base symbols need 2+ variants, flatten it.",
     "pin-number-visible": "Show pin numbers. Do not hide pin_numbers.",
     "pin-end-on-body": "The inner end of this pin does not meet the symbol body.",
     "pin-bidirectional": "Use bidirectional pins rather than passive, input, or output.",
@@ -825,14 +828,11 @@ def check_symbol(path, symbol, where_file, findings):
     datasheet = prop_value(symbol, "Datasheet").strip()
     if not datasheet_ok(datasheet):
         findings.append(Finding("datasheet-document", where_file, name))
-    if mpn or mfg:
-        if not parent_name:
-            findings.append(Finding("extends-parent", where_file, name))
-    if parent_name:
-        # Filled in by the caller once the library index is known. Marker only.
-        symbol_parent = (path, parent_name)
-        if symbol_parent[1] == name:
-            findings.append(Finding("extends-parent", where_file, name + "#self"))
+    # A single orderable part stands alone. extends-parent only checks that
+    # a named parent exists (see check_parents) and that a symbol does not
+    # extend itself.
+    if parent_name and parent_name == name:
+        findings.append(Finding("extends-parent", where_file, name + "#self"))
 
     if hidden_pin_numbers(symbol):
         findings.append(Finding("pin-number-visible", where_file, name))
@@ -903,6 +903,68 @@ def check_symbol(path, symbol, where_file, findings):
         findings.append(Finding("arc-radius", where_file, f"{name}#{key:.3f}"))
 
 
+def generic_library(lib_name):
+    """A library of symbols placed as generics.
+
+    *-IEC libraries, and category libraries with no manufacturer suffix
+    (Pneumatic, Safety). <Category>-<Manufacturer> libraries hold parts.
+    """
+    stem = str(lib_name)
+    if stem.endswith(".kicad_sym"):
+        stem = stem[: -len(".kicad_sym")]
+    stem = Path(stem).name
+    if "-" not in stem:
+        return True
+    return bool(GENERIC_LIB_RE.search(stem))
+
+
+def used_directly_as_generic(lib_name, symbol):
+    """A generic placed on a sheet.
+
+    It has no MFG or MPN and lives in a generic library. A family base in a
+    manufacturer library also has no MFG or MPN, and a manufacturer part
+    used as a parent has one or the other. Neither of those is a generic.
+    """
+    if prop_value(symbol, "MPN").strip() or prop_value(symbol, "MFG").strip():
+        return False
+    return generic_library(lib_name)
+
+
+def single_variant_base_findings(path, symbols, where_file):
+    """A base extended by exactly one symbol in this file.
+
+    A base is justified when two or more symbols extend it. A symbol used
+    directly as a generic is placed on the sheet, so one extender does not
+    make it a base that should be flattened.
+    """
+    by_name = {}
+    children = {}
+    for symbol in symbols:
+        if len(symbol) < 2 or not isinstance(symbol[1], str) or is_unit(symbol[1]):
+            continue
+        name = symbol[1]
+        by_name[name] = symbol
+        extends = kid(symbol, "extends")
+        if extends is None:
+            continue
+        parent = atom(extends, 1, "")
+        if not parent or parent == name:
+            continue
+        children.setdefault(parent, []).append(name)
+    lib_name = path.stem if isinstance(path, Path) else Path(str(path)).stem
+    found = []
+    for parent, derived in children.items():
+        if len(derived) != 1:
+            continue
+        symbol = by_name.get(parent)
+        if symbol is None:
+            continue
+        if used_directly_as_generic(lib_name, symbol):
+            continue
+        found.append(Finding("single-variant-base", where_file, parent))
+    return found
+
+
 def check_parents(path, symbols, where_file, findings):
     names = set()
     for symbol in symbols:
@@ -931,6 +993,7 @@ def check_file(path, findings):
     for symbol in symbols:
         check_symbol(path, symbol, where, findings)
     check_parents(path, symbols, where, findings)
+    findings.extend(single_variant_base_findings(path, symbols, where))
 
 
 def where_symbol(where):
