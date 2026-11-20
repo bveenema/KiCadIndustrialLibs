@@ -1,5 +1,5 @@
 # Existing violations. rule, path, where. Delete a line when you fix that one.
-# symbol/Transformer-IEC.kicad_sym is not listed and is not grandfathered.
+# The LOCKED_LIBS transformer libraries are not listed and are not grandfathered.
 description	symbol/Actuators-IEC.kicad_sym	AC Coil
 pin-grid	symbol/Actuators-IEC.kicad_sym	AC Coil#A1
 pin-grid	symbol/Actuators-IEC.kicad_sym	AC Coil#A2
@@ -10285,3 +10285,21 @@ pin-grid	symbol/VFD.kicad_sym	GS20(X)_AC_Drive#SG-
 pin-length	symbol/VFD.kicad_sym	GS20(X)_AC_Drive#SG-
 pin-grid	symbol/VFD.kicad_sym	GS20(X)_AC_Drive#SGND
 pin-length	symbol/VFD.kicad_sym	GS20(X)_AC_Drive#SGND
+datasheet-document	symbol/Bijur.kicad_sym	GreasePump_PM-3-Series_Return_120LB_9120
+datasheet-document	symbol/Bijur.kicad_sym	GreasePump_PM-3-Series_Return_120LB_F302
+datasheet-document	symbol/Bijur.kicad_sym	GreasePump_PM-3-Series_Return_35LB_9035
+datasheet-document	symbol/Bijur.kicad_sym	GreasePump_PM-3-Series_Return_35LB_F300
+datasheet-document	symbol/Bijur.kicad_sym	GreasePump_PM-3-Series_Return_400LB_9400
+datasheet-document	symbol/Bijur.kicad_sym	GreasePump_PM-3-Series_Return_400LB_F304
+datasheet-document	symbol/Bijur.kicad_sym	Injector_FL-1-Series_1Pos_FL11
+datasheet-document	symbol/Bijur.kicad_sym	Injector_FL-1-Series_2Pos_FL12
+datasheet-document	symbol/Bijur.kicad_sym	Injector_FL-1-Series_3Pos_FL13
+datasheet-document	symbol/Bijur.kicad_sym	Injector_FL-1-Series_4Pos_FL14
+datasheet-document	symbol/Bijur.kicad_sym	Injector_FL-1-Series_5Pos_FL15
+datasheet-document	symbol/Bijur.kicad_sym	Injector_FL-1-Series_6Pos_FL16
+datasheet-document	symbol/Bijur.kicad_sym	VentValve_Pneumatic_13850
+datasheet-document	symbol/Bijur.kicad_sym	VentValve_Pneumatic_Kit_32087
+datasheet-document	symbol/CablesConnectors-McMaster.kicad_sym	M12x05_Male-to-BareLead_6897K45
+datasheet-document	symbol/HMI-MapleSystems.kicad_sym	cMT-SVR-200
+datasheet-document	symbol/PLC-Waveshare.kicad_sym	TTL to RS485 (B)
+datasheet-document	symbol/RelayIndustrial-AllenBradley.kicad_sym	Relay_EMR_SPDT_700-HLT1L1x

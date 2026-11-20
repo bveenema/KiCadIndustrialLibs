@@ -1,6 +1,7 @@
 # Severity for tools/kicad_sym_lint.py. error blocks pre-commit and CI.
 # warn prints and does not fail. off skips the rule.
-# symbol/Transformer-IEC.kicad_sym is never grandfathered and cannot be suppressed.
+# symbol/Transformer-IEC.kicad_sym and symbol/Transformer-Murrelektronik.kicad_sym are never
+# grandfathered and cannot be suppressed.
 severity:
   # parse is always an error. The linter ignores off, warn, baseline, and suppress for it.
   parse: error
@@ -14,7 +15,17 @@ severity:
   pin-end-on-body: error
   pin-bidirectional: error
   arc-radius: error
+  generic-lib-manufacturer: error
+  datasheet-document: error
+  winding-gap: error
 
 # Per-file or per-symbol suppressions. reason is required.
-# Do not add Transformer-IEC here. That library has no exceptions.
+# Do not add Transformer-IEC or Transformer-Murrelektronik here. Those libraries have no exceptions.
 suppress: []
+
+# Datasheet links that return the document without a .pdf path. pattern is a
+# Python regex matched against the whole URL. reason is required. Add one only
+# after the URL was fetched and came back as the document itself.
+datasheet_downloads:
+  - pattern: '^https://shop\.murrelektronik\.com/index\.php\?anid=\d+_\d+&cl=details&fnc=outputSpecSheet'
+    reason: Murrelektronik shop Product-PDF. Returns application/pdf with the terminal diagram and connection table.

@@ -42,11 +42,70 @@ will look about twice as big as the contactor.
 
 ## Drawing a symbol
 
-Generic symbols are drawn fresh. A manufacturer part such as `86149` extends
-its generic and only overrides properties. A new generic may borrow the curl
-radius, the stroke width, and the text size from an existing `*-IEC` symbol.
-It does not start from that symbol's graphics, and the description does not
-say where the drawing came from.
+Generic symbols are drawn fresh. A new generic may borrow the curl radius,
+the stroke width, and the text size from an existing `*-IEC` symbol. It does
+not start from that symbol's graphics, and the description does not say where
+the drawing came from.
+
+## Where a symbol lives and what it is called
+
+A `*-IEC` library holds generics only: symbols drawn to the IEC standards with
+no manufacturer and no part number. A symbol with an `MFG` or `MPN` goes in a
+`<Category>-<Manufacturer>` library, for example
+`Transformer-Murrelektronik`. The lint rule `generic-lib-manufacturer` fails a
+manufacturer part in a `*-IEC` library.
+
+`extends` only works inside one file, so a manufacturer part cannot extend a
+generic in a `*-IEC` library. In the manufacturer library, draw a family base
+symbol with no `MFG` or `MPN`. It may copy the generic's graphics. Each
+orderable part extends that base and only overrides properties. The same
+pattern is in `Indication-AutomationDirect` and `Indication-Banner`.
+
+Name a manufacturer part after the manufacturer's own model designation, the
+way the KiCad official libraries name parts by MPN. Remove spaces, replace
+`/` and `...` with `-`, and append `_<order number>` when the number you order
+by is not in the designation. Murrelektronik's `MST 0630-208...550/2x115`,
+ordered as 86149, is `MST0630-208-550-2x115_86149`. The family base drops the
+size: `MST_208-550_2x115`. Value is the symbol name. Put the order number in
+`MPN` and the keywords so a search for it finds the part.
+
+## Datasheet
+
+`Datasheet` links the document itself, not a product page or a home page.
+Fetch the link before committing and check that it returns a PDF for that
+exact part. Prefer the manufacturer's PDF when it carries the terminal
+diagram; a distributor cut sheet often does not. The lint rule
+`datasheet-document` accepts a URL whose path ends in `.pdf`, or a download URL
+listed under `datasheet_downloads` in `tools/kicad-sym-lint.yaml` with a
+reason. Add a pattern there only after fetching it and seeing the PDF. A
+generic may leave `Datasheet` empty.
+
+## Matching a manufacturer terminal diagram
+
+A manufacturer part is drawn to the manufacturer's terminal diagram, the one
+the installer will have open. Read it from the datasheet, not from memory or a
+distributor table.
+
+- Terminal numbers run in the same order as on the diagram. When the
+  diagram crosses two leads so the terminals read in order, draw the
+  crossover. On the Murrelektronik MST the secondary windings are 9-11 and
+  10-12, and the inner leads cross so the terminals read 9, 10, 11, 12. A
+  symbol that puts 9 and 11 side by side reads differently from the
+  terminal strip and gets miswired.
+- Two leads that cross without a junction dot are not connected. Do not
+  put a dot on a crossover.
+- Keep the diagram's grouping: separate windings stay separate, taps stay on
+  the winding they come from, and the shield or earth terminal stays a
+  separate pin.
+
+## Spacing between sections
+
+Separate windings, taps, or contact sections of one part sit one grid step
+(5.08 mm) apart, not more. The empty span between two windings on one baseline
+is checked by the lint rule `winding-gap`. A wider gap needs a `ki_winding_gap`
+property on that symbol with the gap in millimetres and a reason, in the same
+form as `ki_winding_curl`. Pins stay on the 5.08 mm grid, so one empty grid
+step is the tightest gap that still shows two windings.
 
 Reference and Value sit at 0,0. Keywords are filled in. Pins are
 bidirectional, 3.81 mm long, on the 5.08 mm grid, with numbers shown. The
@@ -106,7 +165,10 @@ this check. The lint cannot see a picture.
 `tools/kicad_sym_lint.py` checks the mechanical rules: fields at 0,0, pin
 grid, pin length, pin type, visible pin numbers, the inner end on the body,
 keywords, descriptions, manufacturer parts that extend a generic, and the
-radius of a winding curl. Severity is in `tools/kicad-sym-lint.yaml`.
+radius of a winding curl, manufacturer parts in a `*-IEC` library
+(`generic-lib-manufacturer`), datasheet links that are not a document
+(`datasheet-document`), and more than one grid step between windings on one
+baseline (`winding-gap`). Severity is in `tools/kicad-sym-lint.yaml`.
 
 A winding curl is a run of 2 or more semicircular arcs of equal radius whose
 endpoints meet and lie on one straight line.
@@ -149,14 +211,18 @@ mm. This is an approval of that size on that symbol, including in
 curl, and that library still cannot suppress the rule.
 
 Existing violations of the other rules are listed in
-`tools/kicad-sym-lint-baseline.txt`. `symbol/Transformer-IEC.kicad_sym` is
-not in that file and cannot be suppressed. The earlier arc check flagged
+`tools/kicad-sym-lint-baseline.txt`. `symbol/Transformer-IEC.kicad_sym` and
+`symbol/Transformer-Murrelektronik.kicad_sym` are not in that file and cannot
+be suppressed. The earlier arc check flagged
 every non-0.635 arc, including arcs that are not windings. Those baseline
 lines are gone, because the winding-curl definition does not flag them.
 
 These are not lint rules, because they cannot be checked reliably:
 
-- Whether a drawing matches a source SVG. That is the picture check above.
+- Whether a drawing matches a source SVG or a manufacturer terminal
+  diagram, including crossovers. That is the picture check above.
+- Whether a datasheet URL actually returns the right PDF. The lint only checks
+  the shape of the link. Fetch it.
 - A body-size budget against pin count. A three-phase row is wider than a
   one-phase coil on purpose, and a PLC body is large on purpose. The
   contactor comparison is the size check.
@@ -182,3 +248,22 @@ so the tap moved to the wrong junction.
 
 Do the measurement and the side-by-side render first. A symbol that has not
 been seen next to the source and next to the contactor is not ready to push.
+
+## What went wrong on 86149
+
+The first Murrelektronik 86149 symbol was put in `Transformer-IEC` as a child
+of the generic. Review found four problems, and each one is now a rule:
+
+- A manufacturer part sat in an IEC generic library. It moved to
+  `Transformer-Murrelektronik` and the `generic-lib-manufacturer` lint rule
+  fails the next one.
+- `Datasheet` was the Murrelektronik shop page, not the PDF. It now links
+  Murrelektronik's Product-PDF, which has the terminal diagram, and the
+  `datasheet-document` rule fails a product page.
+- The primary sections and the two secondaries were two grid steps apart,
+  so the symbol was wider than it needed to be. They are now one grid step
+  apart, and the `winding-gap` rule fails a wider gap.
+- The secondaries were drawn as 9-11 and 10-12 side by side. Murrelektronik
+  crosses the inner leads so the strip reads 9, 10, 11, 12. The symbol now
+  draws the crossover. The lint cannot see that; the picture check against
+  the manufacturer diagram can.

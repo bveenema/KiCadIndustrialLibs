@@ -6,12 +6,15 @@ reference and value centered at 0,0; keywords filled in; descriptions that
 do not mention where a symbol came from; pins on a 200 mil (5.08 mm) grid,
 150 mil (3.81 mm) long, bidirectional, with numbers shown and the inner end
 on the body; winding curls at an approved radius; manufacturer parts
-extend a generic symbol in the same library. A winding curl is a run of
-semicircles chained on a straight line. Other arcs are not checked.
+extend a generic symbol in the same library; manufacturer parts stay out of
+*-IEC libraries; a datasheet link is a document, not a web page; separate
+windings on one baseline sit no more than one grid step apart. A winding
+curl is a run of semicircles chained on a straight line. Other arcs are not
+checked.
 
 Existing violations are listed in tools/kicad-sym-lint-baseline.txt and do
-not fail the run. symbol/Transformer-IEC.kicad_sym is never grandfathered
-and cannot be suppressed.
+not fail the run. The libraries in LOCKED_LIBS (Transformer-IEC and
+Transformer-Murrelektronik) are never grandfathered and cannot be suppressed.
 
     python tools/kicad_sym_lint.py [files...]
     python tools/kicad_sym_lint.py --write-baseline
@@ -56,6 +59,13 @@ EPS = 0.02
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 NEW_LIB = "Transformer-IEC.kicad_sym"
+# Libraries added with the house rules. No baseline, no suppressions.
+LOCKED_LIBS = (NEW_LIB, "Transformer-Murrelektronik.kicad_sym")
+# Generic libraries. Every symbol in one is a generic drawn to the IEC
+# standards, so it carries no manufacturer or part number.
+GENERIC_LIB_RE = re.compile(r"-IEC$", re.I)
+# Largest empty span between two windings on one baseline: one grid step.
+WINDING_GAP_MAX = GRID
 
 RULES = (
     "parse",
@@ -69,6 +79,9 @@ RULES = (
     "pin-end-on-body",
     "pin-bidirectional",
     "arc-radius",
+    "generic-lib-manufacturer",
+    "datasheet-document",
+    "winding-gap",
 )
 
 MESSAGES = {
@@ -83,6 +96,9 @@ MESSAGES = {
     "pin-end-on-body": "The inner end of this pin does not meet the symbol body.",
     "pin-bidirectional": "Use bidirectional pins rather than passive, input, or output.",
     "arc-radius": "This winding curl is not an approved radius. The default is 0.635 mm. Set ki_winding_curl with a reason to allow another size on this symbol.",
+    "generic-lib-manufacturer": "This symbol names a manufacturer (MFG or MPN) but sits in a *-IEC generic library. Move it to a <Category>-<Manufacturer> library.",
+    "datasheet-document": "Datasheet must link the document itself: a .pdf URL, or a download URL listed under datasheet_downloads in tools/kicad-sym-lint.yaml. A bare domain or a product page is not a datasheet.",
+    "winding-gap": "Two windings on one baseline are more than one grid step (5.08 mm) apart. Close the gap between the sections.",
     "suppress-missing-reason": "A kicad-sym-lint suppression has no reason.",
 }
 
@@ -214,6 +230,11 @@ def load_config(path):
     for item in data.get("suppress") or []:
         if isinstance(item, dict):
             suppress.append(item)
+    downloads = []
+    for item in data.get("datasheet_downloads") or []:
+        if isinstance(item, dict) and item.get("pattern") and reason_ok(item.get("reason", "")):
+            downloads.append(item["pattern"])
+    DATASHEET_DOWNLOADS[:] = downloads
     return severity, suppress
 
 
@@ -293,7 +314,7 @@ def rel(path):
 
 
 def locked(path):
-    return path.name == NEW_LIB or path.as_posix().endswith("/" + NEW_LIB) or str(path).endswith(NEW_LIB)
+    return any(str(path).replace("\\", "/").endswith(name) for name in LOCKED_LIBS)
 
 
 def pin_inner(x, y, length, angle):
@@ -413,8 +434,8 @@ def points_on_line(points, tol=LINE_TOL):
     return True
 
 
-def winding_curl_runs(arcs):
-    """Radii of winding curls among arc primitives.
+def winding_curl_groups(arcs):
+    """Winding curls among arc primitives, as lists of (start, end, radius).
 
     A winding curl is a chain of 2 or more equal-radius semicircles whose
     endpoints meet and lie on one straight line. A repeated copy of the same
@@ -468,12 +489,70 @@ def winding_curl_runs(arcs):
     groups = {}
     for index in range(count):
         groups.setdefault(find(index), []).append(humps[index])
-    radii = []
-    for group in groups.values():
-        if len(group) < 2:
+    return [group for group in groups.values() if len(group) >= 2]
+
+
+def winding_curl_runs(arcs):
+    """Radii of winding curls among arc primitives. See winding_curl_groups."""
+    return [sum(item[2] for item in group) / len(group) for group in winding_curl_groups(arcs)]
+
+
+def run_extent(group):
+    """The two farthest-apart endpoints of one winding run."""
+    points = [p for hump in group for p in hump[:2]]
+    best = (points[0], points[0], 0.0)
+    for i, a in enumerate(points):
+        for b in points[i + 1:]:
+            dist = math.hypot(a[0] - b[0], a[1] - b[1])
+            if dist > best[2]:
+                best = (a, b, dist)
+    return best
+
+
+def winding_gaps(arcs):
+    """Empty spans between neighbouring windings that share one baseline.
+
+    Two runs share a baseline when both are parallel and their ends lie
+    within LINE_TOL of one line. Returns the gaps in millimetres between
+    neighbours along that line. Overlapping or touching runs give no gap.
+    """
+    runs = []
+    for group in winding_curl_groups(arcs):
+        a, b, dist = run_extent(group)
+        if dist < 1e-9:
             continue
-        radii.append(sum(item[2] for item in group) / len(group))
-    return radii
+        dx, dy = (b[0] - a[0]) / dist, (b[1] - a[1]) / dist
+        if dx < -1e-9 or (abs(dx) <= 1e-9 and dy < 0):
+            dx, dy = -dx, -dy
+        runs.append((a, b, dx, dy))
+    lines = []
+    for run in runs:
+        a, b, dx, dy = run
+        for line in lines:
+            la, lb, ldx, ldy, members = line
+            if abs(dx * ldy - dy * ldx) > 1e-3:
+                continue
+            if points_on_line([la, lb, a, b]):
+                members.append(run)
+                break
+        else:
+            lines.append((a, b, dx, dy, [run]))
+    gaps = []
+    for la, _lb, ldx, ldy, members in lines:
+        if len(members) < 2:
+            continue
+        spans = []
+        for a, b, _dx, _dy in members:
+            ta = (a[0] - la[0]) * ldx + (a[1] - la[1]) * ldy
+            tb = (b[0] - la[0]) * ldx + (b[1] - la[1]) * ldy
+            spans.append((min(ta, tb), max(ta, tb)))
+        spans.sort()
+        reach = spans[0][1]
+        for lo, hi in spans[1:]:
+            if lo > reach + JOIN_TOL:
+                gaps.append(lo - reach)
+            reach = max(reach, hi)
+    return gaps
 
 
 def curl_allowed(radius, exceptions):
@@ -488,16 +567,17 @@ def curl_allowed(radius, exceptions):
     return False
 
 
-def winding_curl_exceptions(symbol):
-    """Radii allowed on this symbol by a ki_winding_curl property.
+def winding_curl_exceptions(symbol, prop_name="ki_winding_curl"):
+    """Sizes allowed on this symbol by a ki_winding_curl (or ki_winding_gap)
+    property.
 
     The property value is "<millimetres> reason: <why>". A missing reason
-    is reported and does not allow the radius.
+    is reported and does not allow the size.
     """
     allowed = []
     missing = False
     for prop in kids(symbol, "property"):
-        if len(prop) < 3 or prop[1] != "ki_winding_curl":
+        if len(prop) < 3 or prop[1] != prop_name:
             continue
         value = prop[2] if isinstance(prop[2], str) else ""
         match = WINDING_CURL_RE.match(value.strip())
@@ -634,6 +714,31 @@ def index_libraries(paths):
     return index
 
 
+# Download URLs that return a document without ending in .pdf. Filled from
+# datasheet_downloads in tools/kicad-sym-lint.yaml. Each entry has a reason.
+DATASHEET_DOWNLOADS = []
+
+
+def datasheet_ok(url, downloads=None):
+    """An empty or ~ datasheet is fine on a generic. A filled one is a document.
+
+    The URL is http(s), has a path past the domain, and either the path ends
+    in .pdf or the whole URL matches an approved download pattern.
+    """
+    if not url or url == "~":
+        return True
+    match = re.match(r"^https?://[^/?#]+(/[^?#]*)?(\?[^#]*)?", url, re.I)
+    if match is None:
+        return False
+    path = match.group(1) or ""
+    if path.lower().endswith(".pdf"):
+        return True
+    for pattern in DATASHEET_DOWNLOADS if downloads is None else downloads:
+        if re.search(pattern, url):
+            return True
+    return False
+
+
 def check_symbol(path, symbol, where_file, findings):
     if len(symbol) < 2 or not isinstance(symbol[1], str):
         return
@@ -659,6 +764,12 @@ def check_symbol(path, symbol, where_file, findings):
 
     mpn = prop_value(symbol, "MPN").strip()
     mfg = prop_value(symbol, "MFG").strip()
+    if (mpn or mfg) and GENERIC_LIB_RE.search(lib_name):
+        findings.append(Finding("generic-lib-manufacturer", where_file, name))
+
+    datasheet = prop_value(symbol, "Datasheet").strip()
+    if not datasheet_ok(datasheet):
+        findings.append(Finding("datasheet-document", where_file, name))
     if mpn or mfg:
         if not parent_name:
             findings.append(Finding("extends-parent", where_file, name))
@@ -674,7 +785,7 @@ def check_symbol(path, symbol, where_file, findings):
     prims = body_primitives(symbol)
     allow_io = PIN_IO if IO_LIB.match(lib_name) else None
     # The new transformer library is standard symbols: 150 mil only.
-    if path.name == NEW_LIB:
+    if locked(path):
         allow_io = None
     for pin in pins_of(symbol):
         at = kid(pin, "at")
@@ -704,6 +815,17 @@ def check_symbol(path, symbol, where_file, findings):
         inner = pin_inner(x, y, plen, angle)
         if prims and not near_body(inner, prims):
             findings.append(Finding("pin-end-on-body", where_file, tag))
+
+    gap_allowed, gap_missing = winding_curl_exceptions(symbol, "ki_winding_gap")
+    if gap_missing:
+        findings.append(Finding("suppress-missing-reason", where_file, name + "#winding-gap"))
+    for gap in winding_gaps(prims):
+        if gap <= WINDING_GAP_MAX + JOIN_TOL:
+            continue
+        if any(abs(gap - ok) <= CURL_TOL for ok in gap_allowed):
+            continue
+        findings.append(Finding("winding-gap", where_file, f"{name}#{gap:.2f}"))
+        break
 
     # Only a chained winding curl is checked. A lone semicircle, a sine-wave
     # arc, a dot, or an arrow is left alone. Body size is not checked.
@@ -838,14 +960,14 @@ def main():
     if args.write_baseline:
         lines = [
             "# Existing violations. rule, path, where. Delete a line when you fix that one.",
-            "# symbol/Transformer-IEC.kicad_sym is not listed and is not grandfathered.",
+            "# The LOCKED_LIBS transformer libraries are not listed and are not grandfathered.",
         ]
         for finding in findings:
             if finding.rule == "parse":
                 continue
             if severity.get(finding.rule, "error") == "off":
                 continue
-            if finding.path.endswith(NEW_LIB):
+            if locked(Path(finding.path)):
                 continue
             lines.append(finding.key())
         baseline_path.write_text("\n".join(lines) + "\n")
@@ -872,7 +994,7 @@ def main():
             continue
         if how:
             continue
-        if finding.rule != "parse" and finding.key() in baseline and not finding.path.endswith(NEW_LIB):
+        if finding.rule != "parse" and finding.key() in baseline and not locked(Path(finding.path)):
             kept += 1
             continue
         print(f"{level}\t{finding.format()}", file=sys.stderr)

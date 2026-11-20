@@ -14,10 +14,10 @@ In this repository, both atomic and non-atomic libraries are included. For insta
 
 ## Libraries
 
-Each file in `symbol/` is one KiCad symbol library. The name of the file is the library name. `Transformer-IEC` holds IEC transformer, autotransformer, and current-transformer symbols, plus the Murrelektronik 86149 control transformer.
+Each file in `symbol/` is one KiCad symbol library. The name of the file is the library name. `Transformer-IEC` holds generic IEC transformer, autotransformer, current-transformer, and control-transformer symbols. `Transformer-Murrelektronik` holds Murrelektronik parts, starting with the MST 630 VA control transformer `MST0630-208-550-2x115_86149` (AutomationDirect 86149). `*-IEC` libraries hold generics only; a part with a manufacturer goes in a `<Category>-<Manufacturer>` library.
 
 ## Symbol lint
 
-`tools/kicad_sym_lint.py` checks symbol libraries for field placement, pin grid, pin length, pin type, visible pin numbers, winding-curl radius, keywords, descriptions, and manufacturer symbols that extend a generic. A winding curl is a chained run of semicircles. The default radius is 0.635 mm, and 0.508 mm is approved for the tight cable-pigtail curl. Severity is set in `tools/kicad-sym-lint.yaml`. The picture check in the guidelines is separate. The linter cannot tell whether a drawing matches its source.
+`tools/kicad_sym_lint.py` checks symbol libraries for field placement, pin grid, pin length, pin type, visible pin numbers, winding-curl radius, keywords, descriptions, manufacturer symbols that extend a generic, manufacturer parts in a `*-IEC` library, datasheet links that are not a document, and more than one grid step between windings. A winding curl is a chained run of semicircles. The default radius is 0.635 mm, and 0.508 mm is approved for the tight cable-pigtail curl. Severity is set in `tools/kicad-sym-lint.yaml`. The picture check in the guidelines is separate. The linter cannot tell whether a drawing matches its source.
 
-Violations that already existed are listed in `tools/kicad-sym-lint-baseline.txt` and do not fail the check. Delete a line when that symbol is fixed. `symbol/Transformer-IEC.kicad_sym` is not grandfathered. Install the same check as a commit hook with `pre-commit install`. CI runs `pre-commit run --all-files`.  
+Violations that already existed are listed in `tools/kicad-sym-lint-baseline.txt` and do not fail the check. Delete a line when that symbol is fixed. `symbol/Transformer-IEC.kicad_sym` and `symbol/Transformer-Murrelektronik.kicad_sym` are not grandfathered. Install the same check as a commit hook with `pre-commit install`. CI runs `pre-commit run --all-files`.  

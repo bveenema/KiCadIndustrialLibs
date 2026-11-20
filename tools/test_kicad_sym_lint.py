@@ -101,5 +101,158 @@ class WindingCurlTests(unittest.TestCase):
         self.assertIsNone(lint.semicircle_radius((0, 0), (0.5, 0.2), (1, 0)))
 
 
+def symbol_library(name, props="", body=""):
+    return f"""(kicad_symbol_lib
+  (version 20241209)
+  (symbol "{name}"
+    (property "Reference" "T" (at 0 0 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "{name}" (at 0 0 0) (effects (font (size 1.27 1.27))))
+    (property "Description" "fixture" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "ki_keywords" "test" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    {props}
+    (symbol "{name}_0_1"
+      {body}
+    )
+  )
+)
+"""
+
+
+def findings_for(text, filename, rule):
+    tree = lint.parse(text)
+    found = []
+    for symbol in lint.top_symbols(tree):
+        lint.check_symbol(Path(filename), symbol, filename, found)
+    return [item for item in found if item.rule == rule]
+
+
+def chain_at(x0, radius, count, y=0.0):
+    parts = []
+    x = x0
+    for index in range(count):
+        parts.append(semicircle(x, radius, y=y, sign=1 if index % 2 == 0 else -1))
+        x += 2 * radius
+    return parts
+
+
+class GenericLibraryTests(unittest.TestCase):
+    MFG = '(property "MFG" "Murrelektronik" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))'
+
+    def test_manufacturer_part_in_iec_library_fails(self):
+        text = symbol_library("86149", self.MFG)
+        self.assertEqual(len(findings_for(text, "Transformer-IEC.kicad_sym", "generic-lib-manufacturer")), 1)
+
+    def test_manufacturer_part_in_manufacturer_library_passes(self):
+        text = symbol_library("86149", self.MFG)
+        self.assertEqual(findings_for(text, "Transformer-Murrelektronik.kicad_sym", "generic-lib-manufacturer"), [])
+
+    def test_generic_in_iec_library_passes(self):
+        text = symbol_library("Transformer 1P")
+        self.assertEqual(findings_for(text, "Transformer-IEC.kicad_sym", "generic-lib-manufacturer"), [])
+
+    def test_manufacturer_library_is_locked(self):
+        self.assertTrue(lint.locked(Path("symbol/Transformer-Murrelektronik.kicad_sym")))
+        self.assertTrue(lint.locked(Path("symbol/Transformer-IEC.kicad_sym")))
+        self.assertFalse(lint.locked(Path("symbol/Relay-IEC.kicad_sym")))
+
+
+class DatasheetTests(unittest.TestCase):
+    MURR = r"^https://shop\.murrelektronik\.com/index\.php\?anid=\d+_\d+&cl=details&fnc=outputSpecSheet"
+
+    def test_empty_and_tilde_pass(self):
+        self.assertTrue(lint.datasheet_ok(""))
+        self.assertTrue(lint.datasheet_ok("~"))
+
+    def test_pdf_passes(self):
+        self.assertTrue(lint.datasheet_ok("https://cdn.automationdirect.com/static/specs/cutsheet/86149_cutsheet.pdf"))
+        self.assertTrue(lint.datasheet_ok("https://rexel-cdn.com/Products/Allen-Bradley/700-HA33A1.pdf?i=6B33"))
+
+    def test_product_page_fails(self):
+        # The first 86149 symbol pointed here. It is the shop page, not the PDF.
+        self.assertFalse(lint.datasheet_ok("https://shop.murrelektronik.com/86149"))
+        self.assertFalse(lint.datasheet_ok("https://www.murrelektronik.com"))
+        self.assertFalse(lint.datasheet_ok("https://www.murrelektronik.com/"))
+
+    def test_text_is_not_a_url(self):
+        self.assertFalse(lint.datasheet_ok("700-HL Solid State Relay Output"))
+
+    def test_approved_download_passes(self):
+        url = "https://shop.murrelektronik.com/index.php?anid=000000000000086149_1&cl=details&fnc=outputSpecSheet&lang=1"
+        self.assertFalse(lint.datasheet_ok(url, []))
+        self.assertTrue(lint.datasheet_ok(url, [self.MURR]))
+
+    def test_rule_reports_symbol(self):
+        props = '(property "Datasheet" "https://shop.murrelektronik.com/86149" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))'
+        text = symbol_library("Fixture", props)
+        self.assertEqual(len(findings_for(text, "fixture.kicad_sym", "datasheet-document")), 1)
+
+
+class WindingGapTests(unittest.TestCase):
+    def body(self, gap):
+        # Two four-curl windings on one baseline, gap mm of empty line between.
+        first = chain_at(0.0, 0.635, 4)
+        second = chain_at(5.08 + gap, 0.635, 4)
+        return "\n".join(first + second)
+
+    def test_one_grid_step_passes(self):
+        text = symbol_library("Fixture", body=self.body(5.08))
+        self.assertEqual(findings_for(text, "fixture.kicad_sym", "winding-gap"), [])
+
+    def test_two_grid_steps_fail(self):
+        # The first Control Transformer 1P left 10.16 mm between 3 and 4.
+        text = symbol_library("Fixture", body=self.body(10.16))
+        found = findings_for(text, "fixture.kicad_sym", "winding-gap")
+        self.assertEqual(len(found), 1)
+        self.assertIn("10.16", found[0].where)
+
+    def test_windings_on_different_lines_pass(self):
+        first = chain_at(0.0, 0.635, 4)
+        second = chain_at(25.4, 0.635, 4, y=-7.62)
+        text = symbol_library("Fixture", body="\n".join(first + second))
+        self.assertEqual(findings_for(text, "fixture.kicad_sym", "winding-gap"), [])
+
+    def test_exception_allows_gap(self):
+        props = '(property "ki_winding_gap" "10.16 reason: fixture" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))'
+        text = symbol_library("Fixture", props, self.body(10.16))
+        self.assertEqual(findings_for(text, "fixture.kicad_sym", "winding-gap"), [])
+
+    def test_exception_without_reason_is_reported(self):
+        props = '(property "ki_winding_gap" "10.16" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))'
+        text = symbol_library("Fixture", props, self.body(10.16))
+        self.assertEqual(len(findings_for(text, "fixture.kicad_sym", "winding-gap")), 1)
+        self.assertEqual(len(findings_for(text, "fixture.kicad_sym", "suppress-missing-reason")), 1)
+
+
+class ControlTransformerTests(unittest.TestCase):
+    """Regression checks on the redrawn control transformer."""
+
+    def pins(self, lib, name):
+        path = lint.ROOT / "symbol" / lib
+        tree = lint.parse(path.read_text())
+        for symbol in lint.top_symbols(tree):
+            if symbol[1] == name:
+                found = {}
+                for pin in lint.pins_of(symbol):
+                    at = lint.kid(pin, "at")
+                    found[lint.atom(lint.kid(pin, "number"), 1)] = (float(at[1]), float(at[2]))
+                return found
+        self.fail(f"{name} not in {lib}")
+
+    def test_secondary_reads_9_10_11_12(self):
+        # Murrelektronik crosses the inner leads, so 10 sits between 9 and 11.
+        for lib, name in (
+            ("Transformer-Murrelektronik.kicad_sym", "MST_208-550_2x115"),
+            ("Transformer-IEC.kicad_sym", "Control Transformer 1P"),
+        ):
+            pins = self.pins(lib, name)
+            xs = [pins[n][0] for n in ("9", "10", "11", "12")]
+            self.assertEqual(xs, sorted(xs), name)
+
+    def test_no_manufacturer_part_in_transformer_iec(self):
+        text = (lint.ROOT / "symbol" / "Transformer-IEC.kicad_sym").read_text()
+        self.assertNotIn('(property "MFG"', text)
+        self.assertNotIn('(property "MPN"', text)
+
+
 if __name__ == "__main__":
     unittest.main()
