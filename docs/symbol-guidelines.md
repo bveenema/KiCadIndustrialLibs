@@ -56,18 +56,23 @@ no manufacturer and no part number. A symbol with an `MFG` or `MPN` goes in a
 manufacturer part in a `*-IEC` library.
 
 `extends` only works inside one file, so a manufacturer part cannot extend a
-generic in a `*-IEC` library. In the manufacturer library, draw a family base
-symbol with no `MFG` or `MPN`. It may copy the generic's graphics. Each
-orderable part extends that base and only overrides properties. The same
-pattern is in `Indication-AutomationDirect` and `Indication-Banner`.
+generic in a `*-IEC` library. A family base belongs in the manufacturer
+library only when two or more orderable parts share one drawing. The base
+has no `MFG` or `MPN`. Each part extends that base and overrides properties
+only. One orderable part is its own symbol: the graphics, the pins, and
+`ki_terminal_rows` sit on that symbol. The lint rule `single-variant-base`
+fails a symbol that exactly one other symbol in the same file extends,
+unless that symbol is a generic placed on the sheet (no `MFG` or `MPN`, in
+a `*-IEC` library or a category library with no manufacturer suffix). A
+description does not say what a symbol was derived from.
 
 Name a manufacturer part after the manufacturer's own model designation, the
 way the KiCad official libraries name parts by MPN. Remove spaces, replace
 `/` and `...` with `-`, and append `_<order number>` when the number you order
 by is not in the designation. Murrelektronik's `MST 0630-208...550/2x115`,
-ordered as 86149, is `MST0630-208-550-2x115_86149`. The family base drops the
-size: `MST_208-550_2x115`. Value is the symbol name. Put the order number in
-`MPN` and the keywords so a search for it finds the part.
+ordered as 86149, is `MST0630-208-550-2x115_86149`. Value is the symbol name.
+Put the order number in `MPN` and the keywords so a search for it finds the
+part.
 
 ## Datasheet
 
@@ -183,13 +188,22 @@ this check. The lint cannot see a picture.
 
 `tools/kicad_sym_lint.py` checks the mechanical rules: fields at 0,0, pin
 grid, pin length, pin type, visible pin numbers, the inner end on the body,
-keywords, descriptions, manufacturer parts that extend a generic, and the
-radius of a winding curl, manufacturer parts in a `*-IEC` library
-(`generic-lib-manufacturer`), datasheet links that are not a document
-(`datasheet-document`), windings on one baseline further apart than one grid
-step (two grid steps when the symbol has only two winding sections)
-(`winding-gap`), and pins that break a symbol's `ki_terminal_rows`
-(`terminal-row`). Severity is in `tools/kicad-sym-lint.yaml`.
+keywords, descriptions, a named parent that is missing from the library
+(`extends-parent`), a base extended by exactly one symbol
+(`single-variant-base`), and the radius of a winding curl, manufacturer
+parts in a `*-IEC` library (`generic-lib-manufacturer`), datasheet links
+that are not a document (`datasheet-document`), windings on one baseline
+further apart than one grid step (two grid steps when the symbol has only
+two winding sections) (`winding-gap`), and pins that break a symbol's
+`ki_terminal_rows` (`terminal-row`). Severity is in
+`tools/kicad-sym-lint.yaml`.
+
+`single-variant-base` fails when exactly one symbol in the file extends
+another, and the parent is not a generic placed on the sheet. The message
+is: base symbols need 2+ variants, flatten it. Two or more extenders is a
+family base. A description stays silent about where the drawing came from.
+The `description` rule fails text that says the symbol was derived from,
+extends, or was copied from another symbol.
 
 A winding curl is a run of 2 or more semicircular arcs of equal radius whose
 endpoints meet and lie on one straight line.

@@ -10303,3 +10303,26 @@ datasheet-document	symbol/CablesConnectors-McMaster.kicad_sym	M12x05_Male-to-Bar
 datasheet-document	symbol/HMI-MapleSystems.kicad_sym	cMT-SVR-200
 datasheet-document	symbol/PLC-Waveshare.kicad_sym	TTL to RS485 (B)
 datasheet-document	symbol/RelayIndustrial-AllenBradley.kicad_sym	Relay_EMR_SPDT_700-HLT1L1x
+single-variant-base	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x05_Female_0.5m_7231-13521-9720050
+single-variant-base	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x05_Male_0.5m_7231-13521-9720050
+single-variant-base	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x08_Female_0.5m_7231-17181-9730050
+single-variant-base	symbol/CablesConnectors-AutomationDirect.kicad_sym	Bulkhead_M12x08_Male_0.5m_7000-17162-9820050
+single-variant-base	symbol/CablesConnectors-AutomationDirect.kicad_sym	Cable_M12x05_Female_Male_Axial_1m_7000-40041-0250100
+single-variant-base	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_7-8-16_Female_Axial_D5-13mm_ZP-S1C-4FP-FW
+single-variant-base	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_7-8-16_Male_Axial_D5-13mm_ZP-S1C-4MP-FW
+single-variant-base	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x05_Male_Axial_D4-6mm_7000-12721-0000000
+single-variant-base	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x08_Female_Axial_D6-8mm_7000-17321-0000000
+single-variant-base	symbol/CablesConnectors-AutomationDirect.kicad_sym	Connector_M12x08_Male_Axial_D6-8mm_7000-17301-0000000
+single-variant-base	symbol/CablesConnectors-AutomationDirect.kicad_sym	PassThru_M12_Ethernet_RJ45_Axial_7000-44671-0000000
+single-variant-base	symbol/Indication-Banner.kicad_sym	K30-Core_Touch
+single-variant-base	symbol/Indication-Banner.kicad_sym	K30-Pro_IO-Link
+single-variant-base	symbol/Switch-StackLight.kicad_sym	PBCB_NONC_Latch_Ind24V_1Pos
+single-variant-base	symbol/Switch-StackLight.kicad_sym	PBCB_NONC_Latch_Ind24V_2Pos
+single-variant-base	symbol/Switch-StackLight.kicad_sym	PBCB_NONC_Latch_Ind24V_3Pos
+single-variant-base	symbol/Switch-StackLight.kicad_sym	PBCB_NONC_Latch_Ind24V_4Pos
+single-variant-base	symbol/Switch-StackLight.kicad_sym	PBCB_NONC_Latch_Ind24V_5Pos
+single-variant-base	symbol/Switch-StackLight.kicad_sym	PBCB_NONC_Mom_Ind24V_1Pos
+single-variant-base	symbol/Switch-StackLight.kicad_sym	PBCB_NONC_Mom_Ind24V_2Pos
+single-variant-base	symbol/Switch-StackLight.kicad_sym	PBCB_NONC_Mom_Ind24V_3Pos
+single-variant-base	symbol/Switch-StackLight.kicad_sym	PBCB_NONC_Mom_Ind24V_4Pos
+single-variant-base	symbol/Switch-StackLight.kicad_sym	PBCB_NONC_Mom_Ind24V_5Pos

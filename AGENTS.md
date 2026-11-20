@@ -8,7 +8,8 @@ Before drawing or changing a symbol, read [docs/symbol-guidelines.md](docs/symbo
 
 ## Rules for agents
 
-- `*-IEC` libraries hold generics only. A part with a manufacturer or part number goes in a `<Category>-<Manufacturer>` library as a child of a family base symbol in that file. See "Where a symbol lives" in the guidelines.
+- `*-IEC` libraries hold generics only. A part with a manufacturer or part number goes in a `<Category>-<Manufacturer>` library. A family base in that file is for two or more variants. A single part is a standalone symbol. See "Where a symbol lives" in the guidelines.
+- A base extended by exactly one symbol in the same file fails `single-variant-base`, unless that symbol is a generic placed on the sheet. Base symbols need 2+ variants; flatten a one-variant base. Descriptions do not say what a symbol was derived from.
 - Name a manufacturer part after the manufacturer's model designation (spaces removed, `/` and `...` become `-`), with `_<order number>` appended when the order number is not in it. Value is the symbol name.
 - `Datasheet` is a direct link to the part's PDF. Fetch it and confirm it is a PDF for that exact part before you commit. A shop or product page is not a datasheet.
 - Draw a manufacturer part to the manufacturer's terminal diagram, including crossed leads. Terminal order on the symbol matches the terminal strip. Render it next to that diagram before pushing.

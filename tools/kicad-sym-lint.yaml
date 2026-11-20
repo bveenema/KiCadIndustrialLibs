@@ -11,6 +11,7 @@ severity:
   keywords: error
   description: error
   extends-parent: error
+  single-variant-base: error
   pin-number-visible: error
   pin-end-on-body: error
   pin-bidirectional: error
